@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginRight="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px20dp">
+
+        <com.tongcheng.soothsay.widget.BigRoundImageView
+            android:id="@+id/riv_master"
+            android:layout_width="@dimen/px190dp"
+            android:layout_height="@dimen/px250dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitXY"
+            app:imgborderRadius="@dimen/px10dp"
+            app:imgtype="round" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20dp"
+            android:layout_toRightOf="@id/riv_master"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_master_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王阳明"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/px32sp" />
+
+            <TextView
+                android:id="@+id/tv_master_chenghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20dp"
+                android:text="称号"
+                android:textColor="@color/tint_gray_text"
+                android:textSize="@dimen/px28sp" />
+
+            <TextView
+                android:id="@+id/tv_master_sanchang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20dp"
+                android:text="擅长"
+                android:textColor="@color/tint_gray_text"
+                android:textSize="@dimen/px28sp" />
+
+            <TextView
+                android:id="@+id/tv_master_jianjie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="简介"
+                android:textColor="@color/tint_gray_text"
+                android:textSize="@dimen/px28sp" />
+
+
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_master_more"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="@dimen/px24dp"-->
+        <!--android:text="了解详情>>"-->
+        <!--android:textColor="#d3995a"-->
+        <!--android:textSize="@dimen/px28sp" />-->
+    </RelativeLayout>
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_master_yuyue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_marginBottom="@dimen/px10dp"
+        android:layout_marginLeft="@dimen/px24dp"
+        android:layout_marginRight="@dimen/px24dp"
+        android:layout_marginTop="@dimen/px30dp"
+        android:text="咨询"
+        app:bootstrapBrand="warning"
+        app:roundedCorners="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@color/item_divider" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zeri_bg_dialog_mid"
+                android:orientation="horizontal"
+                android:padding="10.0dip">
+
+    <TextView
+        android:id="@+id/zeri_zhouqi_textView_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="一个星期内"
+        android:textColor="@color/oms_mmc_black"
+        android:textSize="@dimen/px18sp"/>
+
+    <CheckBox
+        android:id="@+id/zeri_zhouqi_checkBox_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/lingji_subject_rdo"
+        android:clickable="false"
+        android:focusable="false"/>
+</RelativeLayout>

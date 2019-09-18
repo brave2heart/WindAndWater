@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="@dimen/px528dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/qifu_base_dialog_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/qifu_base_dialog_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8.0dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:gravity="center"
+                android:text="@string/qifu_gongping_guidedialog_text1"
+                android:textColor="@color/color_text_d3995a"
+                android:textSize="@dimen/px32dp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="3.0dip">
+
+                <TextView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@drawable/qifu_cricle_bg_green"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/oms_mmc_white"
+                    android:textSize="14.0sp"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:text="@string/qifu_gongping_guidedialog_text2"
+                    android:textColor="@color/color_text_333"
+                    android:textSize="@dimen/px28dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="50.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/lingji_qifutai_flower6"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="@dimen/px30dp">
+
+                <TextView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@drawable/qifu_cricle_bg_green"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/oms_mmc_white"
+                    android:textSize="14.0sp"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qifu_gongping_guidedialog_text3"
+                    android:textColor="@color/color_text_333"
+                    android:textSize="@dimen/px28dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="60.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/gp_57"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="@dimen/px30dp">
+
+                <TextView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@drawable/qifu_cricle_bg_green"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/oms_mmc_white"
+                    android:textSize="14.0sp"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qifu_gongping_guidedialog_text4"
+                    android:textColor="@color/color_text_333"
+                    android:textSize="@dimen/px32dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="60.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/lingji_qifutai_xiang2"/>
+
+            <Button
+                android:id="@+id/qifu_gongfeng_dailog_btn"
+                android:layout_width="@dimen/px340dp"
+                android:layout_height="@dimen/px68dp"
+                android:layout_marginBottom="@dimen/px30dp"
+                android:layout_marginTop="16.0dip"
+                android:background="@drawable/lingji_login_button2"
+                android:text="@string/qifu_gongping_guidedialog_text5"
+                android:textColor="@color/oms_mmc_white"
+                android:textSize="@dimen/px32dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

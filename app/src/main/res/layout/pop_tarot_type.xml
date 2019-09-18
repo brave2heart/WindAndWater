@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_larger"
+    android:layout_marginRight="@dimen/margin_larger"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_radius_bg">
+
+    <TextView
+        android:id="@+id/tv_tarot_type_love"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="爱情"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_l"
+        android:drawableRight="@drawable/select_tarot_type"
+        android:background="?android:selectableItemBackground"
+        android:padding="@dimen/margin_middle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line"></View>
+
+    <TextView
+        android:id="@+id/tv_tarot_type_shiye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="事业"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_l"
+        android:drawableRight="@drawable/select_tarot_type"
+        android:background="?android:selectableItemBackground"
+        android:padding="@dimen/margin_middle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line"></View>
+
+    <TextView
+        android:id="@+id/tv_tarot_type_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="财富"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_l"
+        android:padding="@dimen/margin_middle"
+        android:background="?android:selectableItemBackground"
+        android:drawableRight="@drawable/select_tarot_type" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line"></View>
+
+    <TextView
+        android:id="@+id/tv_tarot_type_health"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="健康"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_l"
+        android:padding="@dimen/margin_middle"
+        android:background="?android:selectableItemBackground"
+        android:drawableRight="@drawable/select_tarot_type" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line" />
+
+
+        <TextView
+            android:id="@+id/btn_tarot_type"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px70dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingLeft="@dimen/margin_large"
+            android:background="@drawable/shape_tarot_btn"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/brown"/>
+
+
+
+
+
+</LinearLayout>

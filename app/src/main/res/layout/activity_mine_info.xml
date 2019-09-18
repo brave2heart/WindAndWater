@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_info_photo"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/px20dp"
+            android:layout_height="@dimen/dp_50"
+            android:background="@drawable/selector_touch"
+            android:foreground="?android:selectableItemBackground"
+       >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px34dp"
+                android:text="头像"
+                android:textColor="@color/mine_txt"
+                android:textSize="@dimen/px30sp" />
+
+            <com.tongcheng.soothsay.widget.RoundImageView
+                android:id="@+id/iv_mine_info_photo"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px34dp"
+                android:src="@drawable/default_head_icon" />
+        </RelativeLayout>
+
+        <View style="@style/horizontalDivider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_info_phone"
+            android:layout_width="match_parent"
+            android:background="@drawable/selector_touch"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_height="@dimen/px100dp"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:text="绑定手机号"
+                android:textColor="@color/mine_txt"
+                android:textSize="@dimen/px30sp" />
+
+            <TextView
+                android:id="@+id/tv_mine_info_bangding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px34dp"
+                android:src="@drawable/icon_toright"
+                android:text="（未绑定）" />
+        </RelativeLayout>
+
+        <View style="@style/horizontalDivider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@drawable/selector_touch"
+            android:foreground="?android:selectableItemBackground">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:text="我的昵称"
+                android:textColor="@color/mine_txt"
+                android:textSize="@dimen/px30sp" />
+
+            <TextView
+                android:id="@+id/tv_mine_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px34dp"
+                android:src="@drawable/icon_toright" />
+        </RelativeLayout>
+
+        <View style="@style/horizontalDivider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_info_shengri"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@drawable/selector_touch"
+            android:foreground="?android:selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:text="我的生日"
+                android:textColor="@color/mine_txt"
+                android:textSize="@dimen/px30sp" />
+
+            <TextView
+                android:id="@+id/tv_mine_info_shengri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px34dp" />
+        </RelativeLayout>
+
+        <View style="@style/horizontalDivider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_info_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@drawable/selector_touch"
+            android:foreground="?android:selectableItemBackground">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:text="我的性别"
+                android:textColor="@color/mine_txt"
+                android:textSize="@dimen/px30sp" />
+
+            <TextView
+                android:id="@+id/tv_mine_info_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px34dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_info_work"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/px20dp"
+            android:background="@drawable/selector_touch"
+            android:foreground="?android:selectableItemBackground">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:text="工作状况"
+                android:textColor="@color/mine_txt"
+                android:textSize="@dimen/px30sp" />
+
+            <TextView
+                android:id="@+id/tv_mine_info_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px34dp" />
+
+        </RelativeLayout>
+
+        <View style="@style/horizontalDivider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mine_info_hunyin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@drawable/selector_touch"
+            android:foreground="?android:selectableItemBackground">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:text="婚姻状况"
+                android:textColor="@color/mine_txt"
+                android:textSize="@dimen/px30sp" />
+
+            <TextView
+                android:id="@+id/tv_mine_info_hunyin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px34dp" />
+        </RelativeLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btn_tuichu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/px34dp"
+            android:layout_marginRight="@dimen/px34dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:text="退出登录"
+            app:bootstrapBrand="success"
+            app:roundedCorners="true" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px30dp"
+        android:layout_marginRight="@dimen/px30dp"
+        android:layout_marginTop="@dimen/px10dp"
+        android:lines="2"
+        android:text="要想旺财，先补财库  "
+        android:textColor="#000"
+        android:textSize="15sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_news_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_news_title"
+        android:layout_alignStart="@+id/tv_news_title"
+        android:layout_below="@+id/tv_news_title"
+        android:layout_marginTop="16dp"
+        android:text="网络收集"
+        android:textColor="@color/color_text_999"
+        android:textSize="@dimen/px22dp"/>
+
+    <TextView
+        android:id="@+id/tv_news_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_news_source"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="@dimen/px30dp"
+        android:text="2015-11-23"
+        android:textColor="@color/color_text_999"
+        android:textSize="@dimen/px22dp"/>
+
+</RelativeLayout>

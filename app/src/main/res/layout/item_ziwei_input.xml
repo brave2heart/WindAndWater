@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/margin_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.tongcheng.soothsay.widget.RoundImageView
+        android:layout_margin="@dimen/px20dp"
+        android:id="@+id/img_ziwei_input_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/default_head_icon"/>
+
+    <TextView
+        android:id="@+id/tv_ziwei_input_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_ziwei_input_icon"
+        android:layout_alignTop="@id/img_ziwei_input_icon"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:maxLength="7"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_ziwei_input_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ziwei_input_name"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_toRightOf="@id/tv_ziwei_input_name"
+        android:layout_alignLeft="@id/tv_ziwei_input_name"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/img_ziwei_input_icon"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@color/item_divider"></View>
+
+    <TextView
+        android:id="@+id/tv_ziwei_input_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="51dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="51dp"
+        android:layout_alignBaseline="@+id/tv_ziwei_input_name"
+        android:layout_alignBottom="@+id/tv_ziwei_input_name"
+        android:layout_toRightOf="@+id/tv_ziwei_input_name"
+        android:layout_toEndOf="@+id/tv_ziwei_input_name"/>
+
+</RelativeLayout>

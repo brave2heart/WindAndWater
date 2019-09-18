@@ -1,0 +1,1 @@
+include ':app', ':refreshLibs', ':IMLib', ':IMKit', ':pickerview', ':librarydemo', ':imagewatcher'

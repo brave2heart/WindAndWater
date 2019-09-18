@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px166dp"
+    android:background="@drawable/selector_touch"
+    android:foreground="?android:selectableItemBackground"
+    >
+
+    <ImageView
+        android:id="@+id/iv_url"
+        android:layout_width="@dimen/px100dp"
+        android:layout_height="@dimen/px100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:descendantFocusability="blocksDescendants"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_100" />
+
+    <TextView
+        android:id="@+id/tv_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic__more"
+        />
+
+    <TextView
+        android:textSize="@dimen/textSize_m"
+        android:id="@+id/tv_name"
+        style="@style/tv_item_open_modle_title_style"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_alignTop="@id/iv_url"
+        android:layout_toRightOf="@id/iv_url"
+        android:layout_marginTop="@dimen/px30dp"
+        />
+
+    <TextView
+        android:textSize="@dimen/textSize_m"
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_gravity="left"
+        android:layout_marginBottom="@dimen/px20dp"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginRight="@dimen/px30dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:layout_toLeftOf="@id/tv_open"
+        android:layout_toRightOf="@id/iv_url"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+
+</RelativeLayout>

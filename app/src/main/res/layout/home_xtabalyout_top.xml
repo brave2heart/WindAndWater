@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_ll_tablayout_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rl_huangli_head"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+
+    <!--<com.ogaclejapan.smarttablayout.SmartTabLayout-->
+    <!--android:id="@+id/tabs"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:layout_weight="10"-->
+    <!--android:background="@android:color/white"-->
+    <!--app:layout_scrollFlags="scroll"-->
+    <!--app:stl_customTabTextLayoutId="@layout/custom_tab"-->
+    <!--app:stl_customTabTextViewId="@+id/custom_text"-->
+    <!--app:stl_distributeEvenly="true"-->
+    <!--app:stl_dividerColor="@color/colorPrimaryDark"-->
+    <!--app:stl_dividerThickness="0dp"-->
+    <!--app:stl_indicatorColor="@color/colorPrimary"-->
+    <!--app:stl_indicatorCornerRadius="0dp"-->
+    <!--app:stl_indicatorGravity="bottom"-->
+    <!--app:stl_indicatorInterpolation="linear"-->
+    <!--app:stl_indicatorThickness="2.5dp"-->
+    <!--app:stl_titleOffset="auto_center"-->
+    <!--app:stl_indicatorWithoutPadding="true"-->
+    <!--app:stl_underlineColor="@android:color/transparent"-->
+    <!--app:stl_underlineThickness="0dp" />-->
+
+
+    <!-- app:stl_indicatorColor="#40C4FF" 天蓝色-->
+    <!--<com.ogaclejapan.smarttablayout.SmartTabLayout-->
+    <!--android:id="@+id/tabs_huangli"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_weight="10"-->
+    <!--android:background="@android:color/white"-->
+    <!--app:layout_scrollFlags="scroll"-->
+    <!--app:stl_clickable="true"-->
+    <!--app:stl_customTabTextLayoutId="@layout/custom_tab_oldhuangli"-->
+    <!--app:stl_customTabTextViewId="@+id/custom_text"-->
+    <!--app:stl_defaultTabBackground="?attr/selectableItemBackground"-->
+    <!--app:stl_defaultTabTextAllCaps="true"-->
+    <!--app:stl_defaultTabTextColor="#FC000000"-->
+    <!--app:stl_defaultTabTextHorizontalPadding="16dp"-->
+    <!--app:stl_defaultTabTextMinWidth="0dp"-->
+    <!--app:stl_defaultTabTextSize="12sp"-->
+    <!--app:stl_distributeEvenly="false"-->
+    <!--app:stl_dividerColor="@color/colorPrimary"-->
+    <!--app:stl_dividerThickness="0dp"-->
+    <!--app:stl_drawDecorationAfterTab="false"-->
+    <!--app:stl_indicatorAlwaysInCenter="false"-->
+    <!--app:stl_indicatorColor="@color/colorPrimary"-->
+    <!--app:stl_indicatorCornerRadius="0dp"-->
+    <!--app:stl_indicatorGravity="bottom"-->
+    <!--app:stl_indicatorInFront="false"-->
+    <!--app:stl_indicatorInterpolation="smart"-->
+    <!--app:stl_indicatorThickness="2dp"-->
+    <!--app:stl_indicatorWidth="auto"-->
+    <!--app:stl_indicatorWithoutPadding="false"-->
+    <!--app:stl_overlineColor="#4D000000"-->
+    <!--app:stl_overlineThickness="0dp"-->
+    <!--app:stl_titleOffset="24dp"-->
+    <!--app:stl_underlineColor="#4D000000"-->
+    <!--app:stl_underlineThickness="0dp"   下划线/>-->
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/home_xtablayout_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        app:xTabIndicatorColor="#E14D33"
+        app:xTabIndicatorHeight="3dp"
+        app:xTabIndicatorWidth="15dp"
+        app:xTabMode="scrollable"
+        app:xTabSelectedTextColor="#E14D33"
+        app:xTabTextColor="#000"
+        app:xTabTextSize="15sp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_weight="1"
+        android:src="@drawable/home_tablayout_right" />
+</LinearLayout>
+
+

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.tongcheng.soothsay.ui.activity.huangli.AddNoteActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_add_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_add_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_small"
+            android:background="#fff"
+            android:hint="请输入标题"
+            android:textSize="@dimen/textSize_l"
+            android:textColorHint="@color/tint_gray_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/item_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_updata_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible"
+                android:text="2011-11-20 20:08"
+                android:textSize="25sp"
+                android:textColor="@color/tint_gray_text"
+                />
+
+            <EditText
+                android:id="@+id/edit_add_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tv_updata_time"
+                android:gravity="left"
+                android:padding="@dimen/margin_small"
+                android:background="#fff"
+                android:hint="这里输入内容..."
+                android:textSize="@dimen/textSize_l"
+                android:textColorHint="@color/tint_gray_text" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add_warn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/edit_add_warn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="left"
+            android:padding="@dimen/margin_small"
+            android:background="#fff"
+            android:hint="将容易忘记的事情写下来呗"
+            android:textSize="@dimen/textSize_l"
+            android:textColorHint="@color/tint_gray_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/item_divider"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_add_note_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="@dimen/margin_small">
+
+            <TextView
+                android:id="@+id/tv_add_note_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11月06日 周日"
+                android:textColor="@color/tint_gray_text"
+                />
+
+            <TextView
+                android:id="@+id/tv_add_note_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_add_note_date"
+                android:text="06:00"
+                android:textSize="22sp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/tv_right" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/item_divider"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

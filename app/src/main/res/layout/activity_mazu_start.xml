@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/qqws_mz_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/qqws_mazu_qian"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/iv_tong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/qqws_mazu_qiantong"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55000000"
+            android:visibility="gone"/>
+
+        <com.tongcheng.soothsay.widget.QianModel
+            android:id="@+id/qian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="invisible"/>
+
+        <com.tongcheng.soothsay.widget.AskSkewerView
+            android:id="@+id/ask_skewer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/px20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:background="@drawable/selector_btn_touch"
+                android:id="@+id/btn_auto_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动抽签"/>
+
+            <CheckBox
+                android:checked="true"
+                android:id="@+id/cb_play_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="静音"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

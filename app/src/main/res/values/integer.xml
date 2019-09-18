@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="祖天师">1</integer>
+    <integer name="紫薇大帝">2</integer>
+    <integer name="武财神赵元帅">3</integer>
+    <integer name="月老">4</integer>
+    <integer name="斗姥天尊">5</integer>
+    <integer name="南极仙翁">6</integer>
+    <integer name="天乙贵人">7</integer>
+    <integer name="文昌帝君">8</integer>
+    <integer name="关帝">9</integer>
+    <integer name="福神">10</integer>
+    <integer name="送子娘娘">11</integer>
+    <integer name="太乙救苦天尊">12</integer>
+    <integer name="禄星">13</integer>
+    <integer name="牛王">14</integer>
+    <integer name="玉皇大帝">15</integer>
+    <integer name="玄天上帝">16</integer>
+    <integer name="妈祖">17</integer>
+    <integer name="瑶池金母">18</integer>
+    <integer name="大日如来">19</integer>
+    <integer name="阿弥陀佛">20</integer>
+    <integer name="释迦牟尼佛">21</integer>
+    <integer name="观音菩萨">22</integer>
+    <integer name="文殊菩萨">23</integer>
+    <integer name="普贤菩萨">24</integer>
+    <integer name="药师佛">25</integer>
+    <integer name="弥勒菩萨">26</integer>
+    <integer name="地藏菩萨">27</integer>
+    <integer name="大势至菩萨">28</integer>
+    <integer name="不动尊菩萨">29</integer>
+    <integer name="韦陀菩萨">30</integer>
+    <integer name="准提菩萨">31</integer>
+    <integer name="虚空藏菩萨">32</integer>
+</resources>

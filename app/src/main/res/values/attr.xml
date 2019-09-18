@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--View.setTag(key,value)用的key-->
+    <item name="tag_first" type="id" />
+    <item name="tag_second" type="id" />
+
+
+    <!-- 圆形进度条 -->
+    <declare-styleable name="CircularProgress">
+        <!--进度  0<= value <= 100 -->
+        <attr name="value" format="integer"></attr>
+        <!--圆弧半径-->
+        <attr name="radius" format="dimension"></attr>
+        <!--圆弧宽度-->
+        <attr name="proWidth" format="dimension"></attr>
+        <attr name="textSize" format="dimension"></attr>
+        <!--进度条颜色-->
+        <attr name="proColor" format="color"></attr>
+        <!--背景圆颜色-->
+        <attr name="circularColor" format="color"></attr>
+        <!--半透明圆颜色-->
+        <attr name="alphaColor" format="color"></attr>
+    </declare-styleable>
+
+    <!-- 动画进度条 -->
+    <declare-styleable name="AnimationProgress">
+        <!--进度  0<= value <= 100 -->
+        <attr name="ap_Value" format="integer"></attr>
+        <attr name="ap_Color" format="color"></attr>
+        <!--圆角半径-->
+        <attr name="ap_roundRadius" format="dimension"></attr>
+        <!--进度条文本描述大小-->
+        <attr name="ap_textSize" format="dimension"></attr>
+        <!--进度条文本描述颜色-->
+        <attr name="ap_textColor" format="color"></attr>
+        <attr name="ap_text" format="string"></attr>
+        <!--进度数字颜色-->
+        <attr name="ap_numColor" format="color"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="AskSkewerView">
+        <attr name="qian_Text" format="string|reference" />
+        <attr name="qian_TextSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- 圆角view -->
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" format="integer" />
+        <attr name="type" format="integer" />
+        <attr name="topLeft" format="integer" />
+        <attr name="topRight" format="integer" />
+        <attr name="bottomLeft" format="integer" />
+        <attr name="bottomRight" format="integer" />
+    </declare-styleable>
+    <!--大图圆角-->
+    <declare-styleable name="BigRoundImageView">
+        <attr name="imgborderRadius" format="dimension" />
+        <attr name="imgtype">
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--滑动标签-->
+    <declare-styleable name="MPagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <!-- custom修改title的字体跟大小还有下面的条形图 -->
+        <attr name="pstsTabTextSize" format="dimension" />
+        <attr name="pstsTabTextColor" format="color" />
+        <attr name="pstsTabSelectedTextSize" format="dimension" />
+        <attr name="pstsTabSelectedTextColor" format="color" />
+    </declare-styleable>
+
+    <!-- 紫微命盘 -->
+    <declare-styleable name="MingpanView">
+        <attr name="mp_lineColor" format="color|integer"></attr>
+    </declare-styleable>
+
+    <!-- ListView -->
+    <declare-styleable name="MListView">
+        <attr name="lockScroll" format="boolean" />
+    </declare-styleable>
+
+    <!--大德符运顶部布局样式-->
+    <declare-styleable name="DadeTopViewStyle">
+        <attr name="dadeTopViewStyle" format="reference" />
+        <attr name="dadeNames" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="OMSMMCFontText">
+        <attr name="font_name" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension" />
+        <!--星星间距-->
+        <attr name="starPadding" format="dimension" />
+        <!--星星总数-->
+        <attr name="starCount" format="integer" />
+        <!--空白的星星资源文件值-->
+        <attr name="starEmpty" format="reference" />
+        <!--满星资源文件值-->
+        <attr name="starFill" format="reference" />
+        <!--半星资源文件值-->
+        <attr name="starHalf" format="reference" />
+        <!--是否可点击boolean值-->
+        <attr name="clickable" format="boolean" />
+        <!--当前进度float值-->
+        <attr name="starStep" format="float" />
+        <!--每次进度方式的值，整星还是半星-->
+        <attr name="stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <!--天气预报折线图-->
+    <attr name="CircleTextSize" format="dimension" />
+    <attr name="MinLineColor" format="color" />
+    <attr name="MaxLineColor" format="color" />
+    <attr name="CircleTextColor" format="color" />
+    <attr name="CircleColor" format="color" />
+    <attr name="ChartAlpha" format="integer" />
+
+    <declare-styleable name="WeatherLineChart">
+        <attr name="CircleTextSize" />
+        <attr name="MinLineColor" />
+        <attr name="MaxLineColor" />
+        <attr name="CircleTextColor" />
+        <attr name="CircleColor" />
+        <attr name="ChartAlpha" />
+    </declare-styleable>
+
+
+
+
+</resources>

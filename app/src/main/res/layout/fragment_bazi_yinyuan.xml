@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="@dimen/px30dp"
+        android:layout_marginLeft="@dimen/px40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bazi_yinyuan_day_title"
+            android:textSize="@dimen/px32dp"
+            android:textColor="@color/add_note_note"
+            android:text="日干支： "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/bazi_yinyuan_day_content"
+            android:textSize="@dimen/px32dp"
+            android:textColor="@color/color_text_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="@dimen/px30dp"
+        android:layout_marginLeft="@dimen/px40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bazi_yinyuan_shishen_title"
+
+
+            android:textSize="@dimen/px32dp"
+            android:textColor="@color/add_note_note"
+            android:text="日十神： "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/bazi_yinyuan_shishen_content"
+            android:textSize="@dimen/px32dp"
+            android:textColor="@color/color_text_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bazi_yinyuan_details_title"
+        android:textSize="@dimen/px32dp"
+        android:layout_marginTop="@dimen/px40dp"
+        android:layout_marginLeft="@dimen/px40dp"
+        android:layout_marginRight="@dimen/px40dp"
+        android:text="结论："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_marginTop="@dimen/px40dp"
+        android:layout_marginLeft="@dimen/px40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/bazi_yinyuan_details_content"
+            android:textSize="@dimen/px28dp"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

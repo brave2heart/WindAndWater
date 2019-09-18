@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@drawable/qq_jiandingshu_bgv2"
+      >
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:id="@+id/tv_qq"
+                    android:textColor="@color/red_text"
+                    android:text="QQ:"
+                    android:lines="1"
+                    android:textSize="@dimen/px36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  />
+
+                <TextView
+                    android:lines="1"
+                    android:textSize="@dimen/px36dp"
+                    android:text="texttexttext"
+                    android:id="@+id/tv_testqq_qqnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textIsSelectable="true"
+                   />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:drawablePadding="@dimen/px10dp"
+            android:drawableLeft="@drawable/ic_bookmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/px40dp"
+            android:text="凶吉测算"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_testqq_cs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:drawablePadding="@dimen/px10dp"
+            android:drawableLeft="@drawable/ic_bookmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="性格分析"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_testqq_xg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+</ScrollView>

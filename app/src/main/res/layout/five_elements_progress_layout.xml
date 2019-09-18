@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:stretchColumns="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_bazipaipan">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金"
+            android:textColor="@color/color_gold" />
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:padding="@dimen/px5dp"
+            app:rcBackgroundColor="@color/white"
+            app:rcBackgroundPadding="0dp"
+            app:rcMax="100"
+            app:rcProgress="80"
+            app:rcProgressColor="@color/color_gold"
+            app:rcRadius="@dimen/px10dp"
+            app:rcReverse="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99.99%" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="木"
+            android:textColor="@color/color_wood" />
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:padding="@dimen/px5dp"
+            app:rcBackgroundColor="@color/white"
+            app:rcBackgroundPadding="0dp"
+            app:rcMax="100"
+            app:rcProgress="80"
+            app:rcProgressColor="@color/color_wood"
+            app:rcRadius="@dimen/px10dp"
+            app:rcReverse="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99.99%" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水"
+            android:textColor="@color/color_water" />
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:padding="@dimen/px5dp"
+            app:rcBackgroundColor="@color/white"
+            app:rcBackgroundPadding="0dp"
+            app:rcMax="100"
+            app:rcProgress="80"
+            app:rcProgressColor="@color/color_water"
+            app:rcRadius="@dimen/px10dp"
+            app:rcReverse="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99.99%" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="火"
+            android:textColor="@color/color_fire" />
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:padding="@dimen/px5dp"
+            app:rcBackgroundColor="@color/white"
+            app:rcBackgroundPadding="0dp"
+            app:rcMax="100"
+            app:rcProgress="80"
+            app:rcProgressColor="@color/color_fire"
+            app:rcRadius="@dimen/px10dp"
+            app:rcReverse="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99.99%" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="土"
+            android:textColor="@color/color_soil" />
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:padding="@dimen/px5dp"
+            app:rcBackgroundColor="@color/white"
+            app:rcBackgroundPadding="0dp"
+            app:rcMax="100"
+            app:rcProgress="80"
+            app:rcProgressColor="@color/color_soil"
+            app:rcRadius="@dimen/px10dp"
+            app:rcReverse="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99.99%" />
+    </TableRow>
+</TableLayout>

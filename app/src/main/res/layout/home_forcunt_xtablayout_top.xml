@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.TabLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tablayout_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:tabGravity="center"
+    android:layout_below="@+id/head_parent"
+    app:tabTextAppearance="@style/TabLayoutTextSizeStyle"
+    app:xTabIndicatorColor="#D2A871"
+    app:xTabIndicatorHeight="3dp"
+    app:xTabIndicatorWidth="50dp"
+    app:xTabSelectedTextColor="#D2A871"
+    android:visibility="gone"
+    app:xTabSelectedTextSize="15sp"
+    app:xTabTextColor="#989898"
+    app:xTabTextSize="15sp">
+
+
+</android.support.design.widget.TabLayout>
+
+
+    <!--<com.ogaclejapan.smarttablayout.SmartTabLayout--><!--android:id="@+id/tabs"--><!--android:layout_width="match_parent"--><!--android:layout_height="35dp"--><!--android:background="@android:color/white"--><!--app:layout_scrollFlags="scroll"--><!--app:stl_customTabTextLayoutId="@layout/custom_tab"--><!--app:stl_customTabTextViewId="@+id/custom_text"--><!--app:stl_distributeEvenly="true"--><!--app:stl_dividerColor="@color/colorPrimary"--><!--app:stl_dividerThickness="0dp"--><!--app:stl_indicatorColor="@color/colorPrimary"--><!--app:stl_indicatorCornerRadius="0dp"--><!--app:stl_indicatorGravity="bottom"--><!--app:stl_indicatorInterpolation="linear"--><!--app:stl_indicatorThickness="2.5dp"--><!--app:stl_indicatorWithoutPadding="true"--><!--app:stl_underlineColor="@android:color/transparent"--><!--app:stl_underlineThickness="0dp" />--><!----><!--app:stl_distributeEvenly="true"   均匀分散式，false 从左至右紧挨排列
+        app:stl_dividerThickness="0dp"    分隔线厚度
+        app:stl_indicatorCornerRadius="0dp"  指示器的圆角
+        app:stl_indicatorGravity="bottom"  指示器的方向
+        app:stl_indicatorInterpolation="linear"  指示器线性插入 smart剧烈
+        app:stl_indicatorThickness="2.5dp"  指示器厚度
+        app:stl_indicatorWithoutPadding="true"  指示器没有超出填充
+        app:stl_underlineColor="@android:color/transparent" 下面划线的颜色
+         app:stl_defaultTabTextAllCaps="false"  字体大写
+
+    -->
+
+

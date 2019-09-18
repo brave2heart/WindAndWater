@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:id="@+id/gotoMaster"
+        style="@style/item_click_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/mingli_dashi_image"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/xuetang_dashi_lifazhang" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mingli_dashi_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="李法章大师"
+                    android:textSize="@dimen/textSize_l" />
+                <!--易圣大师-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/mingli_dahsi_zhouyi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_mingli_dashi_tv_bg"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="周易"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_12" />
+
+                    <TextView
+                        android:id="@+id/mingli_dashi_gx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@drawable/shape_mingli_dashi_tv_bg"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="国学"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_12" />
+
+                    <TextView
+                        android:id="@+id/mingli_dashi_zhuanye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@drawable/shape_mingli_dashi_tv_bg"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="专业"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_12" />
+
+                    <TextView
+                        android:id="@+id/mingli_dashi_hp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@drawable/shape_mingli_dashi_tv_bg"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="好评推荐"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_12" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/mingli_dashi_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="@dimen/dp_5"
+                    android:lineSpacingMultiplier="1.2"
+                    android:lines="2"
+                    android:text="掌握一年中每月运势好坏预测，助你在婚恋、工作、事业中及时调整方向大展身手，如鱼得水"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/textSize_m" />
+
+                <TextView
+                    android:id="@+id/mingli_dashi_ability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="掌握一年中每月运势好坏预测，助你在婚恋、工作、事业中及时调整方向大展身手，如鱼得水"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/textSize_m" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@id/tv_my_yunshi"
+                    android:background="@color/divide_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_5">
+
+
+                    <ImageView
+                        android:id="@+id/mingli_dashi_jd"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/jieda" />
+
+                    <TextView
+                        android:id="@+id/mingli_dashi_jd_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="1428" />
+
+                    <ImageView
+                        android:id="@+id/mingli_dashi_pl"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:src="@mipmap/pinglun" />
+
+                    <TextView
+                        android:id="@+id/mingli_dashi_pl_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="592" />
+
+                    <ImageView
+                        android:id="@+id/mingli_dashi_cy"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:src="@mipmap/canyu" />
+
+                    <TextView
+                        android:id="@+id/mingli_dashi_cy_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="1764" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

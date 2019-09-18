@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+             >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/color_bg_fef9e9"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px60dp">
+
+            <TextView
+                android:id="@+id/tv_credits_count"
+                android:drawablePadding="@dimen/px10dp"
+                android:drawableLeft="@drawable/dsjf_icon"
+                android:text="积分300"
+                android:gravity="center"
+                android:textColor="@color/color_text_999"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px60dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="@dimen/px20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/dsjf_icon"
+                android:drawablePadding="10dp"
+                android:text="@string/jifen_text_title1"/>
+
+            <TextView
+                android:text="@string/jifen_text_content1"
+                style="@style/text_credits_intro"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="@dimen/px20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/dsjf_icon"
+                android:drawablePadding="10dp"
+                android:text="@string/jifen_text_title2"/>
+
+            <TextView
+
+                style="@style/text_credits_intro"
+                android:text="@string/jifen_text_content2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="@dimen/px20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/dsjf_icon"
+                android:drawablePadding="10dp"
+                android:text="@string/jifen_text_title3"/>
+
+            <TextView
+                style="@style/text_credits_intro"
+                android:text="@string/jifen_text_content3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray"/>
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="免费获取积分方法："/>-->
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="每天签到"
+                style="@style/text_credits_style1"/>
+            <TextView
+                android:text="5积分奖励/天"
+                style="@style/text_credits_style2"/>
+
+           <include layout="@layout/lineview_color_gray"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="完善个人信息"
+                style="@style/text_credits_style1"/>
+            <TextView
+                android:id="@+id/tv_credits_obtain_intro_mine"
+                android:text="100积分奖励  1/1"
+                style="@style/text_credits_style2"/>
+
+           <include layout="@layout/lineview_color_gray"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="祈福台祈拜"
+                style="@style/text_credits_style1"/>
+            <TextView
+                android:text="1-20积分奖励 每天/次"
+                style="@style/text_credits_style2"/>
+
+           <include layout="@layout/lineview_color_gray"/>
+        </LinearLayout>
+
+
+        <!--<FrameLayout-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="60.0dip"-->
+                    <!--android:layout_height="fill_parent">-->
+
+                    <!--<View-->
+                        <!--android:layout_width="1.0dip"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_above="@+id/qifu_task_sign_user"-->
+                        <!--android:layout_below="@+id/qifu_task_sign_day"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginBottom="-245.0dip"-->
+                        <!--android:background="#ffdadad6"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@id/qifu_task_sign_day"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="5.0dip"-->
+                        <!--android:src="@drawable/qifu_task_done"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/qifu_task_sign2"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="85.0dip"-->
+                        <!--android:src="@drawable/qifu_task_done"-->
+                        <!--android:visibility="gone"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/qifu_task_sign_user"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="85.0dip"-->
+                        <!--android:src="@drawable/qifu_task_done"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/qifu_task_sign_mail"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="165.0dip"-->
+                        <!--android:src="@drawable/qifu_task_done"/>-->
+                <!--</RelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="78.0dip">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_status1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="10.0dip"-->
+                            <!--android:text="每天签到"-->
+                            <!--android:textColor="@color/qifu_text_404040"-->
+                            <!--android:textSize="16.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:layout_below="@id/qifu_task_status1"-->
+                            <!--android:layout_marginTop="5.0dip"-->
+                            <!--android:text="@string/qifu_heart_get"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_count1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@id/qifu_task_desc1"-->
+                            <!--android:layout_toRightOf="@id/qifu_task_desc1"-->
+                            <!--android:text="5"-->
+                            <!--android:textColor="@color/qifu_d2a771"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc12"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@id/qifu_task_desc1"-->
+                            <!--android:layout_toRightOf="@id/qifu_task_count1"-->
+                            <!--android:text="@string/lingji_score_task_score"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc_day"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@id/qifu_task_desc1"-->
+                            <!--android:layout_marginLeft="5.0dip"-->
+                            <!--android:layout_toRightOf="@id/qifu_task_desc12"-->
+                            <!--android:text="1/1"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<Button-->
+                            <!--android:id="@+id/qifu_btn_day"-->
+                            <!--android:layout_width="70.0dip"-->
+                            <!--android:layout_height="36.0dip"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_marginRight="15.0dip"-->
+                            <!--android:background="@drawable/selector_credits_intro_btn_bg"-->
+                            <!--android:text="已完成"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="1.0dip"-->
+                        <!--android:layout_marginRight="8.0dip"-->
+                        <!--android:src="#ffdadad6"-->
+                        <!--android:visibility="gone"/>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="78.0dip"-->
+                        <!--android:visibility="gone">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_status2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="10.0dip"-->
+                            <!--android:textColor="@color/qifu_text_404040"-->
+                            <!--android:textSize="18.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:layout_below="@+id/qifu_task_status2"-->
+                            <!--android:layout_marginTop="5.0dip"-->
+                            <!--android:text="@string/qifu_heart_get"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_count2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@+id/qifu_task_desc2"-->
+                            <!--android:layout_toRightOf="@+id/qifu_task_desc2"-->
+                            <!--android:text="0"-->
+                            <!--android:textColor="@color/qifu_d2a771"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc22"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@+id/qifu_task_desc2"-->
+                            <!--android:layout_toRightOf="@+id/qifu_task_count2"-->
+                            <!--android:text="@string/lingji_score_task_score"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc23"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@+id/qifu_task_desc2"-->
+                            <!--android:layout_marginLeft="5.0dip"-->
+                            <!--android:layout_toRightOf="@+id/qifu_task_desc22"-->
+                            <!--android:text="1/1"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/qifu_btn_4"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="70.0dip"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="36.0dip"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_marginRight="15.0dip"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:background="@drawable/qifu_heart_task_btn"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="@string/qifu_go_make_wish"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textColor="@color/oms_mmc_white"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="15.0sp"/>&ndash;&gt;-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="1.0dip"-->
+                        <!--android:layout_marginRight="8.0dip"-->
+                        <!--android:src="#ffdadad6"/>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="78.0dip">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_status3"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="10.0dip"-->
+                            <!--android:text="完善个人资料"-->
+                            <!--android:textColor="@color/qifu_text_404040"-->
+                            <!--android:textSize="18.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc3"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:layout_below="@+id/qifu_task_status3"-->
+                            <!--android:layout_marginTop="5.0dip"-->
+                            <!--android:text="@string/qifu_heart_get"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_count3"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@+id/qifu_task_desc3"-->
+                            <!--android:layout_toRightOf="@+id/qifu_task_desc3"-->
+                            <!--android:text="100"-->
+                            <!--android:textColor="@color/qifu_d2a771"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc32"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@+id/qifu_task_desc3"-->
+                            <!--android:layout_toRightOf="@+id/qifu_task_count3"-->
+                            <!--android:text="@string/lingji_score_task_score"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc_user"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@+id/qifu_task_desc3"-->
+                            <!--android:layout_marginLeft="5.0dip"-->
+                            <!--android:layout_toRightOf="@+id/qifu_task_desc32"-->
+                            <!--android:text="@string/qifu_per_day_times"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<Button-->
+                            <!--android:id="@+id/qifu_btn_user"-->
+                            <!--android:layout_width="70.0dip"-->
+                            <!--android:layout_height="36.0dip"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_marginRight="15.0dip"-->
+                            <!--android:background="@drawable/selector_credits_intro_btn_bg"-->
+                            <!--android:text="@string/qifu_had_prayed"-->
+                            <!--android:textColor="@color/oms_mmc_white"-->
+                            <!--android:textSize="15.0sp"/>-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="1.0dip"-->
+                        <!--android:layout_marginRight="8.0dip"-->
+                        <!--android:src="#ffdadad6"/>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="78.0dip">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_status4"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="10.0dip"-->
+                            <!--android:text="@string/qifu_pray_complete"-->
+                            <!--android:textColor="@color/qifu_text_404040"-->
+                            <!--android:textSize="18.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc4"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:layout_below="@+id/qifu_task_status4"-->
+                            <!--android:layout_marginTop="5.0dip"-->
+                            <!--android:text="@string/qifu_heart_get"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_count4"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@+id/qifu_task_desc4"-->
+                            <!--android:layout_toRightOf="@+id/qifu_task_desc4"-->
+                            <!--android:text="100"-->
+                            <!--android:textColor="@color/qifu_d2a771"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc42"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@+id/qifu_task_desc4"-->
+                            <!--android:layout_toRightOf="@+id/qifu_task_count4"-->
+                            <!--android:text="@string/lingji_score_task_score"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/qifu_task_desc_mail"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignBottom="@+id/qifu_task_desc4"-->
+                            <!--android:layout_marginLeft="5.0dip"-->
+                            <!--android:layout_toRightOf="@+id/qifu_task_desc42"-->
+                            <!--android:text="@string/qifu_per_day_times"-->
+                            <!--android:textColor="@color/qifu_text_7b7b7b"-->
+                            <!--android:textSize="15.0sp"/>-->
+
+                        <!--<Button-->
+                            <!--android:id="@+id/qifu_btn_mail"-->
+                            <!--android:layout_width="70.0dip"-->
+                            <!--android:layout_height="36.0dip"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_marginRight="15.0dip"-->
+                            <!--android:background="@drawable/selector_credits_intro_btn_bg"-->
+                            <!--android:text="@string/qifu_had_prayed"-->
+                            <!--android:textColor="@color/oms_mmc_white"-->
+                            <!--android:textSize="15.0sp"/>-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="1.0dip"-->
+                        <!--android:layout_marginRight="8.0dip"-->
+                        <!--android:src="#ffdadad6"/>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+        <!--</FrameLayout>-->
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

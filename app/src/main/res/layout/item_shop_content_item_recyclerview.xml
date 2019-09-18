@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--android:foreground="?android:selectableItemBackground"-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_touch"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <RelativeLayout
+                android:layout_width="210dp"
+                android:layout_height="150dp">
+
+                <com.tongcheng.soothsay.widget.BigRoundImageView
+                    android:id="@+id/iv_classroom_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="fill_vertical"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/xuetang_kecheng_kanxiang"
+                    app:imgborderRadius="4dp"
+                    app:imgtype="round" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_classroom_shop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20dp"
+                android:lineSpacingExtra="@dimen/dp_5"
+                android:lineSpacingMultiplier="1.2"
+                android:lines="2"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/px28sp" />
+
+            <TextView
+                android:id="@+id/tv_classroom_shop_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px10dp"
+                android:layout_marginTop="@dimen/px10dp"
+                android:lines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/px24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_classroom_shop_newprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥ 199"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tv_classroom_shop_oldprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="¥ 399"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="14dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/shape_shop_hot_bg"
+            android:padding="3dp"
+            android:text="爆\n款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_8" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_immortal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="请仙供奉"
+        android:textSize="@dimen/sp_15"
+        app:bootstrapBrand="success"
+        app:roundedCorners="false" />
+
+    <!--PRIMARY(R.color.bootstrap_brand_primary),-->
+    <!--SUCCESS(R.color.bootstrap_brand_success),-->
+    <!--INFO(R.color.bootstrap_brand_info),-->
+    <!--WARNING(R.color.bootstrap_brand_warning),-->
+    <!--DANGER(R.color.bootstrap_brand_danger),-->
+    <!--SECONDARY(R.color.bootstrap_brand_secondary_fill, R.color.bootstrap_brand_secondary_text),-->
+    <!--REGULAR(R.color.bootstrap_gray_light);-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_immortal"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<TextView-->
+                <!--android:layout_width="@dimen/dp_110"-->
+                <!--android:layout_height="@dimen/dp_120"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="@dimen/dp_20"-->
+                <!--android:background="@drawable/qifu_item_daxian_bg" />-->
+
+            <ImageView
+                android:id="@+id/iv_immortal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/god_0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_immortal"
+                android:layout_marginTop="@dimen/dp_16"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_immortal_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/px28dp" />
+
+                    <ImageView
+                        android:id="@+id/qifutai_ispraying"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px20dp"
+                        android:src="@drawable/lingji_qifutai_please"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_immrotal_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/px28dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_immortal"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/px30dp"
+                    android:background="@drawable/qifu_god_intro_frame"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="神明简介"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/px32dp" />
+
+                    <TextView
+                        android:id="@+id/tv_immortal_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px20dp"
+                        android:lines="3"
+                        android:textColor="@color/color_text_666"
+                        android:textSize="@dimen/px28dp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_immortal_zk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_immortal_zk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="展开"
+                            android:textColor="@color/black_text"
+                            android:textSize="@dimen/sp_13" />
+
+                        <ImageView
+                            android:id="@+id/iv_immortal_zk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/qifu_intro_spread" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/px40dp"
+                    android:background="@drawable/qifu_god_intro_frame"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="祈福许愿流程"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/px32dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_immortal_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/qifu_intro_addgod" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/qifu_intro_arrow" />
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_below="@id/iv_immortal_1"-->
+                                <!--android:layout_centerHorizontal="true"-->
+                                <!--android:layout_marginTop="@dimen/dp_30"-->
+                                <!--android:text="请仙"-->
+                                <!--android:textColor="@color/colorAccent" />-->
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_immortal_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/qifu_intro_makewish" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/qifu_intro_arrow" />
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_below="@id/iv_immortal_2"-->
+                                <!--android:layout_centerHorizontal="true"-->
+                                <!--android:layout_marginTop="@dimen/dp_30"-->
+                                <!--android:text="许愿"-->
+                                <!--android:textColor="@color/colorAccent" />-->
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_immortal_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/qifu_intro_pray" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/qifu_intro_arrow" />
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_below="@id/iv_immortal_3"-->
+                                <!--android:layout_centerHorizontal="true"-->
+                                <!--android:layout_marginTop="@dimen/dp_30"-->
+                                <!--android:text="供奉"-->
+                                <!--android:textColor="@color/colorAccent" />-->
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_immortal_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/qifu_intro_complete" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/qifu_intro_arrow"
+                                android:visibility="invisible" />
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_below="@id/iv_immortal_4"-->
+                                <!--android:layout_centerHorizontal="true"-->
+                                <!--android:layout_marginTop="@dimen/dp_30"-->
+                                <!--android:text="愿望达成"-->
+                                <!--android:textColor="@color/colorAccent" />-->
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

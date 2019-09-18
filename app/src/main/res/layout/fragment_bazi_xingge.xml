@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/px30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px40dp"
+                android:layout_marginRight="@dimen/px40dp"
+                android:text="五行生肖： "
+                android:textColor="@color/add_note_note"
+                android:textSize="@dimen/px32dp"/>
+
+            <TextView
+                android:id="@+id/bazi_xingge_wuxingshengxiao_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="土马"
+                android:textColor="@color/color_text_333"
+                android:textSize="@dimen/px32dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px40dp"
+            android:layout_marginRight="@dimen/px40dp"
+            android:layout_marginTop="@dimen/px30dp"
+            android:text="性格分析:"
+            android:textColor="@color/color_text_666"
+            android:textSize="@dimen/px32dp"/>
+
+        <TextView
+            android:id="@+id/bazi_xingge_fenxi_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px40dp"
+            android:layout_marginRight="@dimen/px40dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="性格分析内容"
+            android:textColor="@color/color_text_666"
+            android:textSize="@dimen/px28dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--暂时的到时候有ui图再改-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <!--头  用户的简单信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/px10dp">
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="姓名：" />-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="李小龙"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--<TextView-->
+            <!--android:text="性别："-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--<TextView-->
+            <!--android:text="男"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px30dp">
+
+                <TableRow>
+
+                    <TextView android:text="姓名：" />
+
+                    <TextView
+                        android:id="@+id/tv_bazipaipan_name"
+                        android:text="李小龙" />
+
+                    <TextView android:text="性别：" />
+
+                    <TextView
+                        android:id="@+id/tv_bazipaipan_sex"
+                        android:text="男" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="公历：" />
+
+                    <TextView
+                        android:id="@+id/tv_bazipaipan_birthday"
+                        android:layout_span="3"
+                        android:lines="1"
+                        android:text="1904年12月25日0时" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="农历：" />
+
+                    <TextView
+                        android:id="@+id/tv_bazipaipan_nongLi"
+                        android:layout_span="3"
+                        android:lines="1"
+                        android:text="庚辰年冬月廿七子时" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_shengxiao"
+                    android:layout_width="@dimen/px100dp"
+                    android:layout_height="@dimen/px100dp"
+                    android:src="@drawable/paipan_shengxiao_01" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="生肖:" />
+
+                    <TextView
+                        android:id="@+id/tv_shengxiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="龙" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--排盘详情-->
+        <!--<TableLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TableRow android:paddingTop="@dimen/px20dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text=""-->
+                    <!--android:textColor="@color/add_note_note"-->
+                    <!--android:id="@+id/textView5" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="年柱" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="月柱" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="日柱" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="时柱" />-->
+            <!--</TableRow>-->
+
+            <!--<TableRow android:paddingTop="@dimen/px20dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="十神"-->
+                    <!--android:textColor="@color/add_note_note" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_sishishen1"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="年柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_sishishen2"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="月柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_sishishen3"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="日柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_sishishen4"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="时柱" />-->
+            <!--</TableRow>-->
+
+            <!--<TableRow android:paddingTop="@dimen/px20dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="乾造"-->
+                    <!--android:textColor="@color/add_note_note" />-->
+
+                <!--<TextView-->
+
+                    <!--android:id="@+id/tv_bazi1"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="年\n柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_bazi2"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="月\n柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_bazi3"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="日\n柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_bazi4"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="时\n柱" />-->
+            <!--</TableRow>-->
+
+            <!--<TableRow android:paddingTop="@dimen/px20dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="藏干"-->
+                    <!--android:textColor="@color/add_note_note" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvzangGan1"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="年柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvzangGan2"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="月柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvzangGan3"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="日柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvzangGan4"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="时柱" />-->
+            <!--</TableRow>-->
+
+            <!--<TableRow android:paddingTop="@dimen/px20dp">-->
+
+            <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="支神"-->
+            <!--android:textColor="@color/add_note_note" />-->
+
+            <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="年柱" />-->
+
+            <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="月柱" />-->
+
+            <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="日柱" />-->
+
+            <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="时柱" />-->
+            <!--</TableRow>-->
+
+            <!--<TableRow android:paddingTop="@dimen/px20dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="纳音"-->
+                    <!--android:textColor="@color/add_note_note" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_nayin1"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="年柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_nayin2"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="月柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_nayin3"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="日柱" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_nayin4"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="时柱" />-->
+            <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+
+            <!--<TableRow android:paddingTop="@dimen/px20dp">-->
+
+            <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="地势"-->
+            <!--android:textColor="@color/add_note_note" />-->
+
+            <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="年柱" />-->
+
+            <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="月柱" />-->
+
+            <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="日柱" />-->
+
+            <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="时柱" />-->
+            <!--</TableRow>-->
+        <!--</TableLayout>-->
+        <GridLayout
+
+            android:columnCount="5"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/add_note_note"
+                android:id="@+id/textView5" />
+
+            <TextView
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="年柱" />
+
+            <TextView
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="月柱" />
+
+            <TextView
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="日柱" />
+
+            <TextView
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="时柱" />
+
+
+
+
+            <TextView
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="十神"
+                android:textColor="@color/add_note_note" />
+
+            <TextView
+                android:id="@+id/tv_sishishen1"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="年柱" />
+
+            <TextView
+                android:id="@+id/tv_sishishen2"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="月柱" />
+
+            <TextView
+                android:id="@+id/tv_sishishen3"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="日柱" />
+
+            <TextView
+                android:id="@+id/tv_sishishen4"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="时柱" />
+
+
+
+
+            <LinearLayout android:layout_width="wrap_content" android:gravity="center" android:layout_height="42dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    style="@style/table_textview_style"
+                    android:gravity="center"
+                    android:text="乾造"
+                    android:textColor="@color/add_note_note" />
+            </LinearLayout>
+
+
+            <TextView
+
+                android:id="@+id/tv_bazi1"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="年\n柱" />
+
+            <TextView
+                android:id="@+id/tv_bazi2"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="月\n柱" />
+
+            <TextView
+                android:id="@+id/tv_bazi3"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="日\n柱" />
+
+            <TextView
+                android:id="@+id/tv_bazi4"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="时\n柱" />
+
+
+
+
+            <TextView
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="藏干"
+                android:textColor="@color/add_note_note" />
+
+            <TextView
+                android:id="@+id/tvzangGan1"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="年柱" />
+
+            <TextView
+                android:id="@+id/tvzangGan2"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="月柱" />
+
+            <TextView
+                android:id="@+id/tvzangGan3"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="日柱" />
+
+            <TextView
+                android:id="@+id/tvzangGan4"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="时柱" />
+
+
+            <!---->
+
+            <!--<TextView-->
+            <!--style="@style/table_textview_style"-->
+            <!--android:gravity="center"-->
+            <!--android:text="支神"-->
+            <!--android:textColor="@color/add_note_note" />-->
+
+            <!--<TextView-->
+            <!--style="@style/table_textview_style"-->
+            <!--android:gravity="center"-->
+            <!--android:text="年柱" />-->
+
+            <!--<TextView-->
+            <!--style="@style/table_textview_style"-->
+            <!--android:gravity="center"-->
+            <!--android:text="月柱" />-->
+
+            <!--<TextView-->
+            <!--style="@style/table_textview_style"-->
+            <!--android:gravity="center"-->
+            <!--android:text="日柱" />-->
+
+            <!--<TextView-->
+            <!--style="@style/table_textview_style"-->
+            <!--android:gravity="center"-->
+            <!--android:text="时柱" />-->
+            <!---->
+
+
+
+            <TextView
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="纳音"
+                android:textColor="@color/add_note_note" />
+
+            <TextView
+                android:id="@+id/tv_nayin1"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="年柱" />
+
+            <TextView
+                android:id="@+id/tv_nayin2"
+                android:text="月柱"
+                style="@style/table_textview_style" />
+
+            <TextView
+                android:id="@+id/tv_nayin3"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="日柱" />
+
+            <TextView
+                android:id="@+id/tv_nayin4"
+                style="@style/table_textview_style"
+                android:gravity="center"
+                android:text="时柱" />
+
+
+            <!---->
+
+            <!--<TextView-->
+            <!--style="@style/table_textview_style"-->
+            <!--android:gravity="center"-->
+            <!--android:text="地势"-->
+            <!--android:textColor="@color/add_note_note" />-->
+
+            <!--<TextView-->
+            <!--style="@style/table_textview_style"-->
+            <!--android:gravity="center"-->
+            <!--android:text="年柱" />-->
+
+            <!--<TextView-->
+            <!--style="@style/table_textview_style"-->
+            <!--android:gravity="center"-->
+            <!--android:text="月柱" />-->
+
+            <!--<TextView-->
+            <!--style="@style/table_textview_style"-->
+            <!--android:gravity="center"-->
+            <!--android:text="日柱" />-->
+
+            <!--<TextView-->
+            <!--style="@style/table_textview_style"-->
+            <!--android:gravity="center"-->
+            <!--android:text="时柱" />-->
+            <!---->
+
+        </GridLayout>
+        <!--<include layout="@layout/table_grid" />-->
+
+        <!--五行进度-->
+        <!--<include layout="@layout/five_elements_progress_layout" />-->
+
+        <!---->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp"
+            android:text="四柱吉凶神煞"
+            android:textColor="@color/add_note_note" />
+
+        <TextView
+            android:id="@+id/tv_sizhushensha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px30dp"
+            android:minLines="4"
+            android:text="这是一个测试\n可以吗\n可以吗\n可以吗" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起大运："
+                android:textColor="@color/add_note_note" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="显示起大运时间" />
+        </LinearLayout>
+
+
+        <!--表-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/tv_dayun"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:background="@color/add_note_note"-->
+                <!--android:padding="0.5dp"-->
+                <!--android:paddingBottom="1dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="0.5dp"-->
+                    <!--android:layout_marginLeft="0.5dp"-->
+                    <!--android:layout_marginTop="0.5dp"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:paddingRight="5dp"-->
+                    <!--android:text="\n大\n运\n"-->
+                    <!--android:textColor="@color/add_note_note" />-->
+            <!--</LinearLayout>-->
+
+            <!--<TableLayout-->
+                <!--android:id="@+id/tableLayout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_toEndOf="@+id/tv_dayun"-->
+                <!--android:layout_toRightOf="@+id/tv_dayun"-->
+                <!--android:background="@color/add_note_note">-->
+
+                <!--<TableRow android:layout_margin="0.5dp">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_shishen1"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="食神" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_shishen2"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="伤官" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_shishen3"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="比肩" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_shishen4"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="劫财" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_shishen5"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="偏印" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_shishen6"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="正印" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_shishen7"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="七杀" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_shishen8"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="正官" />-->
+                <!--</TableRow>-->
+
+                <!--<TableRow android:layout_margin="0.5dp">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun1"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun2"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun3"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun4"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun5"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun6"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun7"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun8"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+                <!--</TableRow>-->
+
+                <!--<TableRow android:layout_margin="0.5dp">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun_year1"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun_year2"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun_year3"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun_year4"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun_year5"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun_year6"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun_year7"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_dayun_year8"-->
+                        <!--style="@style/table_style"-->
+                        <!--android:text="BeanTest" />-->
+                <!--</TableRow>-->
+            <!--</TableLayout>-->
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content">
+                <TextView    android:gravity="center" android:text="大\n运"
+                    android:background="@color/white" android:layout_margin="0.5dp"
+                    android:layout_height="match_parent" android:paddingRight="5dp" android:paddingLeft="5dp"
+                    android:layout_width="wrap_content" android:textColor="@color/colorAccent" />
+        <GridLayout
+
+            android:layout_width="wrap_content"
+            android:columnCount="8"
+            android:rowCount="3"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_shishen1"
+                style="@style/table_style"
+                android:text="食神" />
+
+            <TextView
+                android:id="@+id/tv_shishen2"
+                style="@style/table_style"
+                android:text="伤官" />
+
+            <TextView
+                android:id="@+id/tv_shishen3"
+                style="@style/table_style"
+                android:text="比肩" />
+
+            <TextView
+                android:id="@+id/tv_shishen4"
+                style="@style/table_style"
+                android:text="劫财" />
+
+            <TextView
+                android:id="@+id/tv_shishen5"
+                style="@style/table_style"
+                android:text="偏印" />
+
+            <TextView
+                android:id="@+id/tv_shishen6"
+                style="@style/table_style"
+                android:text="正印" />
+
+            <TextView
+                android:id="@+id/tv_shishen7"
+                style="@style/table_style"
+                android:text="七杀" />
+
+            <TextView
+                android:id="@+id/tv_shishen8"
+                style="@style/table_style"
+                android:text="正官" />
+
+            <TextView
+                android:id="@+id/tv_dayun1"
+                style="@style/table_style"
+                android:text="Test" />
+            <TextView
+                android:id="@+id/tv_dayun2"
+                style="@style/table_style"
+                android:text="Test" />
+            <TextView
+                android:id="@+id/tv_dayun3"
+                style="@style/table_style"
+                android:text="Test" />
+            <TextView
+                android:id="@+id/tv_dayun4"
+                style="@style/table_style"
+                android:text="Test" />
+            <TextView
+                android:id="@+id/tv_dayun5"
+                style="@style/table_style"
+                android:text="Test" />
+            <TextView
+                android:id="@+id/tv_dayun6"
+                style="@style/table_style"
+                android:text="Test" />
+
+            <TextView
+                android:id="@+id/tv_dayun7"
+                style="@style/table_style"
+                android:text="Test" />
+
+            <TextView
+                android:id="@+id/tv_dayun8"
+                style="@style/table_style"
+                android:text="Test" />
+
+            <TextView
+                android:id="@+id/tv_dayun_year1"
+                style="@style/table_style"
+                android:layout_marginBottom="0.5dp"
+                android:text="Test" />
+            <TextView
+
+                android:id="@+id/tv_dayun_year2"
+                style="@style/table_style"
+                android:layout_marginBottom="0.5dp"
+                android:text="Test" />
+
+            <TextView
+                android:id="@+id/tv_dayun_year3"
+                style="@style/table_style"
+                android:layout_marginBottom="0.5dp"
+                android:text="Test" />
+
+            <TextView
+                android:id="@+id/tv_dayun_year4"
+                style="@style/table_style"
+                android:layout_marginBottom="0.5dp"
+                android:text="Test" />
+
+            <TextView
+                android:id="@+id/tv_dayun_year5"
+                style="@style/table_style"
+                android:layout_marginBottom="0.5dp"
+                android:text="Test" />
+
+            <TextView
+                android:id="@+id/tv_dayun_year6"
+                style="@style/table_style"
+                android:layout_marginBottom="0.5dp"
+                android:text="Test" />
+
+            <TextView
+                android:id="@+id/tv_dayun_year7"
+                style="@style/table_style"
+                android:layout_marginBottom="0.5dp"
+                android:text="Test" />
+
+            <TextView
+                android:id="@+id/tv_dayun_year8"
+                style="@style/table_style"
+                android:layout_marginBottom="0.5dp"
+                android:text="Test" />
+        </GridLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

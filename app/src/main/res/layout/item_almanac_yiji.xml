@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_almanac_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="子"
+        android:textSize="@dimen/textSize_xs"
+        android:textColor="@color/tint_gray_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="|"
+        android:textSize="@dimen/textSize_xs"
+        android:textColor="@color/tint_gray_text"/>
+
+    <TextView
+        android:id="@+id/tv_almanac_chong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="冲\n兔"
+        android:textSize="@dimen/textSize_xs"
+        android:textColor="@color/tint_gray_text"/>
+
+</LinearLayout>

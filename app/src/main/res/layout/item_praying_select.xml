@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/lingji_qifutai_table" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-30dp"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_toLeftOf="@+id/second" />
+
+    <TextView
+        android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="123"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/first_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_name"
+        android:layout_marginLeft="65dp"
+        android:gravity="center"
+        android:text="123"
+        android:textColor="#ffff00" />
+
+    <ImageView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-30dp" />
+
+    <TextView
+        android:id="@+id/second_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="456"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/second_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_name"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="456"
+        android:textColor="#ffff00" />
+
+    <ImageView
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-30dp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_toRightOf="@+id/second" />
+
+    <TextView
+        android:id="@+id/third_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/third"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="789"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/third_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/third_name"
+        android:layout_marginRight="65dp"
+        android:gravity="center"
+        android:text="789"
+        android:textColor="#ffff00" />
+
+
+</RelativeLayout>

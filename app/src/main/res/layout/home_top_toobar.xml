@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_huangli_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:id="@+id/home_ll_top_two_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_27"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tv_huangli_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="2016.10.19"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+
+            android:id="@+id/tv_huangli_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="丙申猴年二月三"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <!--        android:background="@drawable/bg_ripple"-->
+    <FrameLayout
+        android:id="@+id/fl_current"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="@dimen/dp_33">
+
+        <ImageView
+            android:id="@+id/ib_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@mipmap/menu_action_calendar_mvp"
+            android:tint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_current_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="13"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+</RelativeLayout>

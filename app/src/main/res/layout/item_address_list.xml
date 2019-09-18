@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:foreground="?android:selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px20dp"
+    android:paddingTop="@dimen/px20dp">
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_v" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_toRightOf="@id/iv_select"
+        android:text="姓名" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px50dp"
+        android:layout_toRightOf="@id/tv_name"
+        android:inputType="phone"
+        android:text="1596666555" />
+
+    <TextView
+        android:id="@+id/tv_address_defult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_toRightOf="@id/tv_phone"
+        android:background="@color/colorAccent"
+        android:text="默认"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="@dimen/px20dp"
+        android:layout_marginRight="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px30dp"
+        android:layout_toRightOf="@id/iv_select"
+        android:text="地址" />
+
+    <ImageView
+        android:id="@+id/img_address_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:src="@drawable/icon_edit" />
+</RelativeLayout>

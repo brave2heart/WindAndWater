@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_testname_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_testname_wx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_testname_bh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_testname_tbh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:text="五格测算"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_16" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_testname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/margin_middle" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:text="凶吉测算"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_testname_cs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:text="性格分析"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_testname_xg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+</ScrollView>

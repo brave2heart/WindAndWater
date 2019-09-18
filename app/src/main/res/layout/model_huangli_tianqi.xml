@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/rl_tianqi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:foreground="?android:selectableItemBackground"
+        android:paddingBottom="@dimen/margin_middle"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_middle">
+
+        <TextView
+            android:id="@+id/tv_tianqi_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tint_gray_text"
+            android:textSize="@dimen/textSize_l"
+            tools:text="你好啊"/>
+
+        <TextView
+            android:id="@+id/tv_huangli_time_slot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tianqi_date"
+            android:textColor="@color/tint_gray_text"
+            android:textSize="@dimen/textSize_xl" />
+
+        <ImageView
+            android:id="@+id/img_tianqi_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_toRightOf="@id/tv_tianqi_date"
+            android:scaleType="centerCrop"
+            android:src="@drawable/weather_no" />
+
+        <TextView
+            android:id="@+id/tv_tianqi_loca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_tianqi_icon"
+            android:textColor="@color/tint_gray_text" />
+
+        <TextView
+            android:id="@+id/tv_tianqi_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_huangli_time_slot"
+            android:layout_alignLeft="@id/tv_tianqi_loca"
+            android:layout_below="@id/tv_tianqi_loca"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:textColor="@color/tint_gray_text" />
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/huangli_tianqi_wuran"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@id/tv_tianqi_status"-->
+        <!--android:layout_alignBaseline="@id/tv_tianqi_status"-->
+        <!--android:layout_marginLeft="@dimen/margin_small"-->
+        <!--android:paddingLeft="@dimen/margin_small"-->
+        <!--android:paddingRight="@dimen/margin_small"-->
+        <!--android:paddingTop="2dp"-->
+        <!--android:paddingBottom="2dp"-->
+        <!--android:text="19 良"-->
+        <!--android:textSize="@dimen/textSize_s"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:background="@drawable/shape_tianqi_liang"-->
+        <!--/>-->
+
+
+        <ImageView
+            android:id="@+id/img_tianqi_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:src="@drawable/tv_right" />
+
+
+        <TextView
+            android:id="@+id/tv_tianqi_wendu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/img_tianqi_right"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_xxl" />
+
+        <TextView
+            android:id="@+id/tv_tianqi_fanwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_tianqi_wendu"
+            android:layout_below="@id/tv_tianqi_wendu"
+            android:textColor="@color/tint_gray_text"
+            android:textSize="@dimen/textSize_xs" />
+
+        <TextView
+            android:id="@+id/tv_tianqi_reLoca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_toRightOf="@id/img_tianqi_icon"
+            android:text="定位城市失败，点击重试"
+            android:textColor="@color/tint_gray_text"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</merge>

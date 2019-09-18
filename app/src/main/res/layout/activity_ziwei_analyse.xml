@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_ziwei_analyse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tongcheng.soothsay.widget.MPagerSlidingTabStrip
+        android:id="@+id/pst_tab_analyse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/iv_more"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        app:pstsIndicatorColor="@color/colorAccent"
+        app:pstsIndicatorHeight="@dimen/dp_1"
+        app:pstsTabPaddingLeftRight="@dimen/dp_10"
+        app:pstsTabSelectedTextColor="@color/colorAccent"
+        app:pstsTabTextColor="@color/tint_gray_text"
+        app:pstsTabTextSize="@dimen/sp_15"
+        app:pstsTabSelectedTextSize="@dimen/sp_15"
+        app:pstsShouldExpand="true"
+        app:pstsUnderlineHeight="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_analyse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

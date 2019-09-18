@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bit_ziwei_mingpan_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/ziwei"></View>
+
+    <!--小item 按顺时针顺序摆放-->
+    <include
+        android:id="@+id/item_ziwei_1"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_below="@id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <include
+        android:id="@+id/item_ziwei_2"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/item_ziwei_1" />
+
+    <include
+        android:id="@+id/item_ziwei_3"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_ziwei_2"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%" />
+
+    <include
+        android:id="@+id/item_ziwei_4"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_ziwei_3"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%" />
+
+
+    <include
+        android:id="@+id/item_ziwei_5"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/item_ziwei_3"
+        android:layout_alignParentRight="true" />
+
+
+    <include
+        android:id="@+id/item_ziwei_6"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/item_ziwei_5"
+        android:layout_alignParentRight="true" />
+
+    <include
+        android:id="@+id/item_ziwei_7"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_ziwei_6"
+        android:layout_alignLeft="@id/item_ziwei_4"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%" />
+
+    <include
+        android:id="@+id/item_ziwei_8"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/item_ziwei_6"
+        android:layout_toLeftOf="@+id/item_ziwei_6" />
+
+
+    <include
+        android:id="@+id/item_ziwei_9"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/item_ziwei_8"
+        android:layout_alignBottom="@id/item_ziwei_8"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%" />
+
+    <include
+        android:id="@+id/item_ziwei_10"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/item_ziwei_6"
+        android:layout_alignParentLeft="true" />
+
+    <include
+        android:id="@+id/item_ziwei_11"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/item_ziwei_10"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%" />
+
+
+    <include
+        android:id="@+id/item_ziwei_12"
+        layout="@layout/item_ziwei_paipan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/item_ziwei_1"
+        android:layout_alignParentLeft="true" />
+
+    <include
+        android:id="@+id/item_ziwei_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/item_ziwei_paipan_content"
+        android:layout_toLeftOf="@id/item_ziwei_6"
+        android:layout_toRightOf="@id/item_ziwei_11"
+        android:layout_below="@id/item_ziwei_2"
+        android:layout_above="@id/item_ziwei_8"/>
+
+
+
+</android.support.percent.PercentRelativeLayout>
+
+

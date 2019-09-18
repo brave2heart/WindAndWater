@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.tongcheng.soothsay.widget.RoundImageView
+        android:id="@+id/life_details_use_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/weather_bg1" />
+
+
+    <TextView
+        android:id="@+id/life_details_use_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/life_details_use_icon"
+        android:text="用户名"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/life_details_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/life_details_use_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/life_details_use_icon"
+        android:text="河北秦皇岛市"
+        android:textSize="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/life_details_send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/life_details_use_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/life_details_location"
+        android:text="发送时间"
+        android:textSize="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/life_details_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/life_details_location"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/life_details_use_icon"
+        android:text="动弹内容666666666666666666"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/life_details_comment"
+        android:layout_marginTop="5dp"
+        android:background="#e5e5e5" />
+
+</RelativeLayout>
+
+    <!--<com.itheima.openchina.wedigt.FlowLayout--><!--android:id="@+id/flowlayout"--><!--android:layout_width="wrap_content"--><!----><!--android:layout_height="wrap_content"--><!--android:layout_below="@id/tv_tweet_content" />-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rl_bottom"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@id/tv_tweet_content"--><!--android:layout_toRightOf="@+id/profile_image">-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/tv_send_time"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginTop="8dp"&ndash;&gt;--><!--&lt;!&ndash;android:text="发送时间"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="11dp" />&ndash;&gt;-->
+
+    <!--<TextView--><!--android:id="@+id/tv_platfrom"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="5dp"--><!--android:layout_marginTop="8dp"--><!--android:layout_toRightOf="@+id/tv_send_time"--><!--android:text="Android"--><!--android:textColor="@color/colorPrimary"--><!--android:textSize="11dp" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentRight="true"--><!--android:layout_marginRight="20dp"--><!--android:layout_marginTop="8dp"--><!--android:orientation="horizontal">-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/ic_thumbup"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="15dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="15dp"&ndash;&gt;--><!--&lt;!&ndash;android:src="@mipmap/ic_thumbup_normal" />&ndash;&gt;-->
+
+    <!--<TextView--><!--android:id="@+id/tv_thumbup_num"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="4dp"--><!--android:text="0" />-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/ic_comment"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="15dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="15dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginTop="2dp"&ndash;&gt;--><!--&lt;!&ndash;android:src="@mipmap/ic_comment_40" />&ndash;&gt;-->
+
+    <!--<TextView--><!--android:id="@+id/tv_comment_num"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="4dp"--><!--android:text="0" />--><!--</LinearLayout>--><!--</RelativeLayout>-->
+
+
+    <!--<LinearLayout
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>
+    </LinearLayout>-->
+

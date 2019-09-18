@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/rv_shop_classsify"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="@dimen/px14dp"-->
+        <!--android:layout_marginRight="@dimen/px14dp"-->
+        <!--android:layout_marginTop="@dimen/px20dp" />-->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rv_shop_classsify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin_tiny"
+        android:paddingRight="@dimen/margin_tiny"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:divider="@color/divide_line"
+        android:dividerHeight="1px"
+        android:scrollbars="none"
+        android:numColumns="2"
+        android:horizontalSpacing="@dimen/margin_small"
+        android:verticalSpacing="@dimen/margin_middle"
+        ptr:ptrMode="both"
+        ptr:ptrOverScroll="false"
+        ptr:ptrShowIndicator="false" />
+    <!--<GridView-->
+        <!--android:id="@+id/rv_shop_classsify"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="@dimen/margin_middle"-->
+        <!--android:divider="@color/divide_line"-->
+        <!--android:dividerHeight="1px"-->
+        <!--android:horizontalSpacing="@dimen/margin_small"-->
+        <!--android:numColumns="2"-->
+        <!--android:paddingLeft="@dimen/margin_tiny"-->
+        <!--android:paddingRight="@dimen/margin_tiny"-->
+        <!--android:scrollbars="none"-->
+        <!--android:verticalSpacing="@dimen/margin_middle" />-->
+</LinearLayout>

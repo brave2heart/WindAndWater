@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    card:cardBackgroundColor="@color/oms_mmc_white"
+                                    card:cardCornerRadius="2.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/oms_mmc_white"
+            android:padding="5.0dip">
+
+            <FrameLayout
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip">
+
+                <ImageView
+                    android:layout_width="75.0dip"
+                    android:layout_height="75.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/qifu_item_daxian_bg"/>
+
+                <ImageView
+                    android:id="@+id/iv_qifu_item_dx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3.0dip"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/god_3"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1.0dip">
+
+                    <TextView
+                        style="@style/qifu_progress_item_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="恭请于"/>
+
+                    <TextView
+                        android:id="@+id/tv_qifu_item_date"
+                        style="@style/qifu_progress_item_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3.0dip"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="2015年11月23日"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5.0dip"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/qifu_item_text5"
+                        style="@style/qifu_progress_item_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="诚心值"/>
+
+                    <TextView
+                        android:id="@+id/tv_qifu_item_cxz"
+                        style="@style/qifu_progress_item_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="50"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5.0dip"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_qifu_item_totaltimes"
+                        style="@style/qifu_progress_item_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="累计祈福 %d天"/>
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_marginTop="5.0dip"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:padding="0.0dip">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/qifu_item_text3"-->
+                        <!--style="@style/qifu_progress_item_text2"-->
+                        <!--android:layout_width="0.0dip"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:text="连续祈福 %d天"/>-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+<!--诚心的图形 暂时不做出来-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_marginBottom="5.0dip"-->
+                <!--android:gravity="bottom|center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<FrameLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginRight="5.0dip">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/qifu_lotus_image"-->
+                        <!--android:layout_width="70.0dip"-->
+                        <!--android:layout_height="80.0dip"-->
+                        <!--android:adjustViewBounds="true"-->
+                        <!--android:src="@drawable/lingji_qifutai_lotus_0"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/qifu_lotus_done"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="bottom"-->
+                        <!--android:src="@drawable/qifu_done"-->
+                        <!--android:visibility="gone"/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/qifu_lotus_status_text"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:layout_gravity="center|right"-->
+                        <!--android:layout_marginRight="5.0dip"-->
+                        <!--android:text="健康"-->
+                        <!--android:textColor="#ff000000"-->
+                        <!--android:textSize="16.0sp"-->
+                        <!--android:visibility="gone"/>-->
+                <!--</FrameLayout>-->
+
+                <!--<ProgressBar-->
+                    <!--android:id="@+id/qifu_progress"-->
+                    <!--style="@style/qifuProgressStyleRed"-->
+                    <!--android:layout_width="40.0dip"-->
+                    <!--android:layout_height="6.0dip"-->
+                    <!--android:layout_marginTop="5.0dip"-->
+                    <!--android:background="@drawable/qifu_progress_bg"-->
+                    <!--android:indeterminate="false"-->
+                    <!--android:max="49"-->
+                    <!--android:progress="10"/>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#e5e5e5"/>
+
+        <LinearLayout
+            android:id="@+id/qifu_wish_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@color/oms_mmc_white"
+            android:gravity="center"
+            android:paddingLeft="30.0dip"
+            android:paddingRight="30.0dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qifu_item_xinyuantiao"/>
+
+            <TextView
+                android:id="@+id/qifu_wish_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="愿望间述："
+                android:textSize="15.0sp"/>
+
+            <TextView
+                android:id="@+id/tv_qifu_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="7"
+                android:singleLine="true"
+                android:text="我的愿望"
+                android:textSize="15.0sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

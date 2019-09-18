@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_tarot_intro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_middle">
+
+    <TextView
+        android:id="@+id/text_tarot_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_tarot_intro"
+        android:background="@drawable/qimingcezi_bg"/>
+
+
+    <Button
+        android:id="@+id/btn_tarot_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_btn_touch"
+        android:text="选择占卜类型"
+        android:textColor="@color/white"
+        android:layout_below="@+id/text_tarot_intro" />
+
+    <Button
+        android:id="@+id/btn_tarot_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_below="@id/btn_tarot_type"
+        android:background="@drawable/selector_btn_touch"
+        android:text="开始占卜"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="个人信息仅限测算内容，不做商业用途"
+        android:textColor="@color/tint_gray_text"
+        android:textSize="@dimen/textSize_s"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_main_bg1"
+    android:orientation="vertical">
+
+    <!--祈福台-目录-->
+    <include layout="@layout/model_praying_station_catalog" />
+    <!--祈福台-分值-->
+    <include layout="@layout/model_praying_station_score" />
+    <!--祈福台-viewpager布局-->
+    <include layout="@layout/model_praying_station_viewpager" />
+
+</LinearLayout>

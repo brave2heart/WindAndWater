@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<View-->
+        <!--android:layout_width="@dimen/margin_tiny"-->
+        <!--android:layout_height="@dimen/margin_middle"-->
+        <!--android:layout_marginLeft="@dimen/margin_large"-->
+        <!--android:background="#CCCCCC" />-->
+
+    <RelativeLayout
+        android:id="@+id/rl_add_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_tiny"
+        android:layout_marginRight="@dimen/margin_tiny"
+        android:foreground="?android:selectableItemBackground"
+        android:background="@drawable/shape_huangli_add_note">
+
+
+
+        <TextView
+
+            android:id="@+id/tv_add_note_tiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_m"
+            android:textColor="@color/add_note_note"
+            android:text="17:53" />
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp_5"
+            android:id="@+id/tv_add_note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_toRightOf="@+id/tv_add_note_tiem"
+            android:text="添加记事"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:id="@+id/tv_add_note_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_add_note_title"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:visibility="gone"
+            android:text="添加内容"
+            android:textColor="@color/tint_gray_text"
+            android:textSize="@dimen/textSize_m" />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+
+            android:src="@drawable/tv_right" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

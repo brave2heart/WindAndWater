@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!--透明状态栏-跟侧滑返回无关-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--所有分割线统一用下面这个-->
+        <item name="android:listDivider">@drawable/shape_divider_bg</item>
+    </style>
+
+    <!--启动界面-->
+    <style name="LaunchTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/launch_bg1</item>
+    </style>
+
+    <style name="Theme.Transparent.My" parent="Theme.Transparent">
+        <item name="android:statusBarColor">@color/colorAccent</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="item_click_bg">
+        <item name="android:background">@color/white</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+    </style>
+
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    </style>
+
+    <style name="TranslucentTheme." parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+
+</resources>

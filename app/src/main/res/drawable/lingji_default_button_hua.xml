@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/lingji_default_button_hua_sel" />
+    <item android:drawable="@drawable/lingji_default_button_hua_nor" />
+</selector>

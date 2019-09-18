@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tongcheng.soothsay.widget.FreePoolView
+        android:id="@+id/freePoolView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fsc_bg">
+    </com.tongcheng.soothsay.widget.FreePoolView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fsc_heye"/>
+
+    <LinearLayout
+        android:id="@+id/headArea"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:orientation="horizontal"
+        android:background="#00ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/headBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:minWidth="48dp"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_header_back" />
+
+
+        <TextView
+            android:id="@+id/btn_free_market"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:text="@string/title_free_market"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:id="@+id/btn_free_bang"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:text="@string/free_pool_bang"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_l" />
+
+        <TextView
+            android:id="@+id/btn_free_jilu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:text="@string/free_pool_record"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_m" />
+
+        <ImageView
+            android:id="@+id/btn_free_shuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:scaleType="centerInside"
+            android:src="@drawable/fcs_ic_more"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_free_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_free_market_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fsc_sc_bg"/>
+
+        <ImageView
+            android:id="@+id/img_free_market"
+            android:layout_width="@dimen/px110dp"
+            android:layout_height="@dimen/px110dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_free_market_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_free_marker"
+        android:layout_marginTop="2dp"
+        android:text="尾蝶鱼"
+        android:textSize="@dimen/textSize_m"/>
+
+    <TextView
+        android:id="@+id/tv_free_market_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/rl_free_marker"
+        android:layout_alignBaseline="@id/tv_free_market_name"
+        android:text="$30"
+        android:textColor="@color/colorAccent"/>
+
+    <ImageView
+        android:id="@+id/img_free_market_jian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_free_market_name"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:background="@drawable/fsc_jian"/>
+    
+    <TextView
+        android:id="@+id/tv_free_market_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_free_market_jian"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:text="0"/>
+
+    <ImageView
+        android:id="@+id/img_free_market_jia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_free_market_name"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:layout_alignRight="@id/rl_free_marker"
+        android:layout_alignBottom="@id/img_free_market_jian"
+        android:background="@drawable/fsc_jia"/>
+
+</RelativeLayout>

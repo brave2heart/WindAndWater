@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px200dp"
+        android:background="@drawable/sxpd_banner"
+        />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px24dp"
+        android:layout_marginRight="@dimen/px24dp"
+        android:layout_marginTop="@dimen/px30dp"
+        android:padding="@dimen/px30dp"
+        android:text="@string/test_zodiac_pairing"
+        android:textColor="@color/middle_gray_text"
+        android:layout_below="@id/iv_banner"
+        />
+    <TextView
+        android:id="@+id/tv_boy_zodiac"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_below="@id/desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px60dp"
+        android:background="@color/shengxiao_bg_color"
+        android:gravity="center"
+        android:text="请选择男方生肖"
+        android:textColor="@color/middle_gray_text"
+        android:textSize="@dimen/textSize_l"
+        android:layout_marginLeft="@dimen/px80dp"
+        android:layout_marginRight="@dimen/px80dp"/>
+    <TextView
+        android:id="@+id/tv_girl_zodiac"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/shengxiao_bg_color"
+        android:gravity="center"
+        android:text="请选择女方生肖"
+        android:textColor="@color/middle_gray_text"
+        android:textSize="@dimen/textSize_l"
+        android:layout_below="@+id/tv_boy_zodiac"
+        android:layout_marginLeft="@dimen/px80dp"
+        android:layout_marginRight="@dimen/px80dp"
+         />
+
+
+    <Button
+        android:id="@+id/btn_cesuan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_below="@id/tv_girl_zodiac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px40dp"
+        android:background="@drawable/selector_btn_touch"
+        android:text="@string/start_cesuan"
+        android:textSize="@dimen/textSize_l"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/px80dp"
+        android:layout_marginRight="@dimen/px80dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/px30dp"
+        android:text="@string/statement"
+        android:textColor="@color/tint_gray_text"
+        android:textSize="@dimen/textSize_s" />
+
+</RelativeLayout>

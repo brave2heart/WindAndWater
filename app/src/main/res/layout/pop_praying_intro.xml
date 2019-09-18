@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_orange_fcefd7">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px20dp"
+        android:background="@drawable/shape_border_line"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/md_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px60dp"
+            android:gravity="center"
+            android:text="祈福说明"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px32dp"/>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="每天完成第一次供奉将获得积分奖励"
+            android:textColor="@color/black_light"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="祈愿每达到一个新阶段，神像会因您的诚心而有不同的效果。祈愿越诚心，时间越长，神像所发出的光芒会更加明显。"
+            android:textColor="@color/black_light"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/md_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/qifu_guide_text4"
+            android:textColor="@color/black_light"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/px20dp"
+            android:paddingLeft="@dimen/px30dp"
+            android:paddingRight="@dimen/px30dp"
+            android:text="诚心祈拜，福有悠归，心想事成。"
+            android:textColor="@color/color_text_d3995a"
+            android:textSize="@dimen/px28dp"/>
+
+
+        <Button
+            android:id="@+id/md_dialog_cancel"
+            android:layout_width="@dimen/px200dp"
+            android:layout_height="@dimen/px68dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/px40dp"
+            android:background="@drawable/selector_btn_touch"
+            android:clickable="true"
+            android:text="知道了"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px32dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

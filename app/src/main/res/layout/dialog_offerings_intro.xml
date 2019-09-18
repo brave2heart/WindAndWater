@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:padding="@dimen/px20dp"
+              android:background="@drawable/shape_white"
+              android:orientation="vertical">
+
+
+   <TextView
+       android:id="@+id/tv_offerings_intro_name"
+       android:text="水仙花"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_offerings_intro_content"
+        android:layout_marginTop="@dimen/px10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_offerings_intro_submit"
+        android:layout_marginTop="@dimen/px10dp"
+        android:layout_width="match_parent"
+        android:text="兑换（10积分）"
+        app:bootstrapBrand="warning"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

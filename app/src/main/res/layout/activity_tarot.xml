@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_tarot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tongcheng.soothsay.widget.TarotView
+        android:id="@+id/TarotView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/model_tarot_selector_card" />
+
+        <TextView
+            android:id="@+id/tv_tarot_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="过去"/>
+
+        <TextView
+            android:id="@+id/tv_tarot_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="现在"/>
+
+        <TextView
+            android:id="@+id/tv_tarot_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="未来"/>
+
+    </com.tongcheng.soothsay.widget.TarotView>
+
+</RelativeLayout>

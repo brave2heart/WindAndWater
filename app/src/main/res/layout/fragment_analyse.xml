@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_analyse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_analyse_sfsz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"></LinearLayout>
+
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/analyse_info_bg"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:paddingTop="@dimen/margin_middle">
+
+            <TextView
+                android:id="@+id/gongwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宫位"
+                android:textColor="@color/ziwei"
+                android:textSize="@dimen/textSize_m" />
+
+            <TextView
+                android:id="@+id/tv_analyse_gongwei_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_toRightOf="@id/gongwei" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/tv_analyse_gongwei_info"
+                android:layout_marginTop="@dimen/margin_middle"
+                android:background="@color/item_divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/analyse_info_bg"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:paddingTop="@dimen/margin_middle">
+
+            <TextView
+                android:id="@+id/zhuxing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主星"
+                android:textColor="@color/ziwei_topxing_red"
+                android:textSize="@dimen/textSize_m" />
+
+            <TextView
+                android:id="@+id/tv_analyse_zhuxing_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/zhuxing"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_toRightOf="@id/zhuxing" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/tv_analyse_zhuxing_info"
+                android:layout_marginTop="@dimen/margin_middle"
+                android:background="@color/item_divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/analyse_info_bg"
+            android:paddingBottom="@dimen/margin_middle"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:paddingTop="@dimen/margin_middle">
+
+            <TextView
+                android:id="@+id/xingxiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="星象"
+                android:textColor="@color/ziwei"
+                android:textSize="@dimen/textSize_m" />
+
+            <TextView
+                android:id="@+id/tv_analyse_xingxiang_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/xingxiang"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_toRightOf="@id/xingxiang" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:text="温馨提示"
+            android:textColor="@color/ziwei"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:id="@+id/tv_analyse_remindInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:background="@drawable/shape_ziwei_paipan_normal"
+            android:textSize="@dimen/textSize_m"
+            android:padding="@dimen/margin_small" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

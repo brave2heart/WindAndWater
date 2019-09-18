@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/fy_dade_box_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_8">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_dadefuyun_item_box0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:src="@drawable/fy_dade_box_status_init" />
+
+                <TextView
+                    android:id="@+id/tv_dadefuyun_item_box_name_left0"
+                    style="@style/fy_dade_text_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/iv_dadefuyun_marks0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right|top"
+                    android:src="@drawable/fy_dade_mian"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_dadefuyun_xianmain_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:src="@drawable/lingji_newyear_dade_free"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_dadefuyun_item_box1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom|center"
+                    android:src="@drawable/fy_dade_box_status_init" />
+
+                <TextView
+                    android:id="@+id/tv_dadefuyun_item_box_name_left1"
+                    style="@style/fy_dade_text_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/iv_dadefuyun_marks1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right|top"
+                    android:src="@drawable/fy_dade_mian"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_dadefuyun_xianmain_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:src="@drawable/lingji_newyear_dade_free"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_dadefuyun_item_box2"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:src="@drawable/fy_dade_box_status_init" />
+
+                <TextView
+                    android:id="@+id/tv_dadefuyun_item_box_name_left2"
+                    style="@style/fy_dade_text_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/iv_dadefuyun_marks2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right|top"
+                    android:src="@drawable/fy_dade_mian"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_dadefuyun_xianmain_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:src="@drawable/lingji_newyear_dade_free"
+                    android:visibility="invisible" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_16"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16">
+
+        <TextView
+            android:id="@+id/tv_dadefuyun_item_qing_text0"
+            android:visibility="invisible"
+            style="@style/fy_dade_text_qing" />
+
+        <TextView
+            android:id="@+id/tv_dadefuyun_item_qing_text1"
+            android:visibility="invisible"
+            style="@style/fy_dade_text_qing" />
+
+        <TextView
+            android:id="@+id/tv_dadefuyun_item_qing_text2"
+            android:visibility="invisible"
+            style="@style/fy_dade_text_qing" />
+    </LinearLayout>
+</LinearLayout>

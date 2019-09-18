@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mv_iamge"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/xuetang_item_wudao" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/mv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018全年运势生肖————龙"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_15" />
+
+        <LinearLayout
+            android:id="@+id/xuetang_zhuanlan_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mv_title"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/mv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="智慧先生"
+                android:textSize="@dimen/dp_12" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_3"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_3"
+                android:background="@color/black_light" />
+
+            <TextView
+                android:id="@+id/mv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_5"
+                android:text="时长12:09"
+                android:textSize="@dimen/dp_12" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xuetang_zhuanlan_ll"
+            android:layout_marginTop="11.5dp"
+            android:background="@drawable/shape_xuetang_mv_tv_bg"
+            android:paddingLeft="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_3"
+            android:text="试看"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/mv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xuetang_zhuanlan_ll"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/mv_label"
+            android:text="1.7万学习"
+            android:textSize="@dimen/dp_12" />
+
+        <TextView
+            android:id="@+id/mv_left_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xuetang_zhuanlan_ll"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_toLeftOf="@+id/mv_right_price"
+            android:text="￥199"
+            android:textSize="@dimen/dp_10" />
+
+        <TextView
+
+            android:id="@+id/mv_right_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/xuetang_zhuanlan_ll"
+            android:layout_marginLeft="@dimen/dp_5"
+
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_11"
+            android:text="￥79"
+            android:textColor="@color/red_light"
+            android:textSize="@dimen/dp_12" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

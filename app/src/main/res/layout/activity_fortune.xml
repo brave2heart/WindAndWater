@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.tongcheng.soothsay.widget.HeadZoomScrollView
+        android:id="@+id/scrollView_yunshi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <ImageView
+                android:id="@+id/fortune_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/fortune_bg_01" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_fortune_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:layout_marginRight="@dimen/margin_middle"
+                android:paddingBottom="@dimen/margin_larger"
+                android:fillViewport="true"
+                android:background="#99ffffff">
+
+                <RelativeLayout
+                    android:id="@+id/rl_fortune_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginBottom="-40dp"
+                    android:layout_marginTop="@dimen/margin_middle">
+
+                    <com.tongcheng.soothsay.widget.RoundImageView
+                        android:id="@+id/img_fortune_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:transitionName="shareIcon"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/default_head_icon" />
+
+                    <ImageView
+                        android:id="@+id/img_exmple_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:src="@drawable/example_icon"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_fortune_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/rl_fortune_icon"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_toRightOf="@id/rl_fortune_icon"
+                    android:layout_marginTop="@dimen/margin_tiny"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    android:text="1992年05月15日8时"/>
+
+                <TextView
+                    android:id="@+id/tv_fortune_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/rl_fortune_icon"
+                    android:layout_alignLeft="@id/tv_fortune_birthday"
+                    android:layout_above="@id/tv_fortune_birthday"
+                    android:text="空城旧梦"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_fortune_icon"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_larger"
+                    android:textColor="@color/tint_gray_text"
+                    android:textSize="@dimen/textSize_m"
+                    android:text="日期：" />
+
+                <TextView
+                    android:id="@+id/tv_fortune_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/date"
+                    android:layout_alignBaseline="@id/date"
+                    android:layout_marginLeft="@dimen/margin_tiny"
+                    android:textSize="@dimen/textSize_m"
+                    android:textColor="@color/black"
+                    android:text="2016年11月08日 星期二" />
+
+                <TextView
+                    android:id="@+id/old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date"
+                    android:layout_alignLeft="@id/date"
+                    android:textColor="@color/tint_gray_text"
+                    android:textSize="@dimen/textSize_m"
+                    android:text="农历：" />
+
+                <TextView
+                    android:id="@+id/tv_fortune_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/date"
+                    android:layout_alignBaseline="@id/old"
+                    android:layout_marginLeft="@dimen/margin_tiny"
+                    android:textSize="@dimen/textSize_m"
+                    android:textColor="@color/black"
+                    android:text="丙申年十月初十" />
+
+                <TextView
+                    android:id="@+id/ganzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/old"
+                    android:layout_alignLeft="@id/old"
+                    android:textColor="@color/tint_gray_text"
+                    android:textSize="@dimen/textSize_m"
+                    android:text="干支：" />
+
+                <TextView
+                    android:id="@+id/tv_fortune_ganzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ganzhi"
+                    android:layout_alignBaseline="@id/ganzhi"
+                    android:layout_marginLeft="@dimen/margin_tiny"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_m"
+                    android:text="丙申年 乙亥月 乙未年" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_defen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/date"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:orientation="vertical"
+                    android:background="@drawable/yunshi_score_bg"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fortune_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="71"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="50sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="运势得分"
+                        android:textSize="@dimen/textSize_l"
+                        android:textColor="@color/colorAccent"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_yi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_below="@id/ll_defen"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_l"
+                        android:textColor="@color/black"
+                        android:text="宜 : " />
+                    <TextView
+                        android:id="@+id/tv_fortune_yi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_tiny"
+                        android:textSize="@dimen/textSize_l"
+                        android:textColor="@color/black"
+                        android:text="盖屋 移徙 安床 入宅 开市 开仓 祭祀 祈福 酬神 出行 求财 见贵 订婚 嫁娶"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_below="@id/ll_yi"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_l"
+                        android:text="忌 : "
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:id="@+id/tv_fortune_ji"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_tiny"
+                        android:textSize="@dimen/textSize_l"
+                        android:textColor="@color/black"
+                        android:text="冲鸡 煞西 时冲乙酉 勾陈 天地"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/yunshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_ji"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textSize="@dimen/textSize_l"
+                    android:textColor="@color/black"
+                    android:text="今日运势 : "/>
+
+                <TextView
+                    android:id="@+id/tv_fortune_fortune"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginTop="2dp"
+                    android:layout_below="@id/yunshi"
+                    android:textColor="@color/black"
+                    android:text="有些思考的小漩涡，可能让你忽然的放空，生活中许多的细节让你感触良多，五味杂陈，常常有时候就慢动作定格，想法在某处冻结停留，陷入一阵自我对话的沉思之中，这个时候你不喜欢被打扰或询问，也不想让某些想法曝光，个性变得有些隐晦。" />
+
+                <TextView
+                    android:id="@+id/zhengchong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/ll_yi"
+                    android:layout_alignLeft="@id/ganzhi"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_l"
+                    android:text="幸运色：" />
+
+                <TextView
+                    android:id="@+id/tv_fortune_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/zhengchong"
+                    android:layout_alignBaseline="@id/zhengchong"
+                    android:layout_marginLeft="@dimen/margin_tiny"
+                    android:textSize="@dimen/textSize_l"
+                    android:textColor="@color/black"
+                    android:text="青色" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.tongcheng.soothsay.widget.HeadZoomScrollView>
+
+    <include layout="@layout/base_head" />
+
+</RelativeLayout>

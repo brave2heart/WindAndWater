@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_thin"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/px24dp"
+            android:layout_marginRight="@dimen/px24dp"
+            android:layout_marginTop="@dimen/px30dp"
+            android:background="@drawable/qimingcezi_bg"
+            android:padding="@dimen/px30dp"
+            android:text="@string/txt_license_plate_describ"
+            android:textColor="@color/grey1"/>
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/input_license"
+        android:textColor="@color/middle_gray_text"
+        android:textSize="@dimen/textSize_l"
+        android:layout_below="@id/desc"/>
+    <LinearLayout
+        android:id="@+id/ll_licence"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px30dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/px60dp"
+        android:layout_marginRight="@dimen/px60dp"
+        android:layout_below="@id/input">
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:id="@+id/et_province"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:layout_below="@id/idcard"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/backgroud_province"
+            android:text="京"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/et_testlicense"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:layout_toRightOf="@+id/et_province"
+            android:layout_marginLeft="@dimen/px10dp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_cesuan_license"
+        android:layout_height="@dimen/px80dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/px60dp"
+        android:layout_marginRight="@dimen/px60dp"
+        android:layout_marginTop="@dimen/px30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start_cesuan"
+        android:textColor="@color/white"
+        android:layout_below="@id/ll_licence"
+        android:background="@drawable/selector_btn_touch"
+        />
+
+    <TextView
+        android:id="@+id/tv_res_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px30dp"
+        android:layout_alignLeft="@id/btn_cesuan_license"
+        android:gravity="center"
+        android:text="凶吉测算"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/btn_cesuan_license"
+        android:drawableLeft="@drawable/ic_mark"
+        android:drawablePadding="@dimen/px10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_res_title"
+        android:layout_marginTop="@dimen/px30dp"
+        android:textColor="@color/cesuang_response_test_grey"
+        android:textSize="@dimen/px28dp"
+        android:layout_below="@id/tv_res_title"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="个人信息仅限测算内容，不做商业用途"
+        android:textColor="@color/tint_gray_text"
+        android:textSize="@dimen/textSize_s"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

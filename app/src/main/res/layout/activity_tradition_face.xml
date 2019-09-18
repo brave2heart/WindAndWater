@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_tradition_face"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_middle">
+
+                <ImageView
+                    android:id="@+id/chuantong_ziwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ziwei_icon"/>
+
+                <TextView
+                    android:id="@+id/btn_chuantong_open"
+                    style="@style/btn_open_style"
+                    android:text="打开"/>
+
+
+                <TextView
+                    style="@style/tv_item_open_modle_title_style"
+                    android:id="@+id/chuantong_title"
+                    android:layout_alignTop="@id/chuantong_ziwei"
+                    android:layout_marginBottom="@dimen/px2dp"
+                    android:layout_toRightOf="@id/chuantong_ziwei"
+                    android:text="@string/chuantong_ziwei_title"/>
+
+                <TextView
+                    style="@style/tv_item_open_modle_content_style"
+                    android:layout_below="@id/chuantong_title"
+                    android:layout_toLeftOf="@id/btn_chuantong_open"
+                    android:layout_toRightOf="@id/chuantong_ziwei"
+                    android:text="@string/chuantong_ziwei_content"/>
+
+            </RelativeLayout>
+            <include layout="@layout/lineview_layout"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_middle">
+
+                <ImageView
+                    android:id="@+id/img_chuantong_chengu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ziwei_icon"/>
+
+                <TextView
+                    android:id="@+id/btn_chuantong_cg_open"
+                    style="@style/btn_open_style"
+                    android:text="打开"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_chuantong_cg_title"
+                    style="@style/tv_item_open_modle_title_style"
+                    android:layout_alignTop="@id/img_chuantong_chengu"
+                    android:layout_toRightOf="@id/img_chuantong_chengu"
+                    android:text="@string/chuantong_chengu_title"/>
+
+                <TextView
+                    style="@style/tv_item_open_modle_content_style"
+                    android:layout_below="@id/tv_chuantong_cg_title"
+                    android:layout_toLeftOf="@id/btn_chuantong_cg_open"
+                    android:layout_toRightOf="@id/img_chuantong_chengu"
+                    android:text="@string/chuantong_chengu_content"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/lineview_layout"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_middle">
+
+                <ImageView
+                    android:id="@+id/img_chuantong_bazi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ziwei_icon"/>
+
+                <TextView
+                    android:id="@+id/btn_chuantong_bazi_open"
+                    style="@style/btn_open_style"
+                    android:text="打开"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_chuantong_bazi_title"
+                    style="@style/tv_item_open_modle_title_style"
+                    android:layout_alignTop="@id/img_chuantong_bazi"
+                    android:layout_toRightOf="@id/img_chuantong_bazi"
+                    android:text="@string/chuantong_bazi_title"/>
+
+                <TextView
+                    style="@style/tv_item_open_modle_content_style"
+                    android:layout_below="@id/tv_chuantong_bazi_title"
+                    android:layout_toLeftOf="@id/btn_chuantong_bazi_open"
+                    android:layout_toRightOf="@id/img_chuantong_bazi"
+                    android:text="@string/chuantong_bazi_content"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/lineview_layout"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

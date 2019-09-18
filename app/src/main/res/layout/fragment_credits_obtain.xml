@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px60dp"
+        android:background="@color/color_bg_fef9e9"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_credits_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/dsjf_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+
+            android:text="当前积分"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/dsjf_icon"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="积分充值"
+        android:textColor="#333333"
+        android:textSize="@dimen/px32dp"/>
+
+    <com.tongcheng.soothsay.widget.MultiRadioGroup
+        android:visibility="gone"
+        android:id="@+id/rg_credits_mall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_credits_mall_1"
+                android:layout_width="@dimen/px200dp"
+                android:layout_height="@dimen/px120dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_credits"
+                android:button="@null"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/px20dp"
+                android:textColor="@drawable/text_color_selector"
+                android:textSize="@dimen/px32dp"/>
+            <!--android:text=" 600积分 \n6.00元"-->
+
+            <RadioButton
+                android:id="@+id/rb_credits_mall_2"
+                android:layout_width="@dimen/px200dp"
+                android:layout_height="@dimen/px120dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_credits"
+                android:button="@null"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/px20dp"
+                android:textColor="@drawable/text_color_selector"
+                android:textSize="@dimen/px32dp"/>
+            <!--android:text="1880积分\n18.00元"-->
+
+            <RadioButton
+                android:id="@+id/rb_credits_mall_3"
+                android:layout_width="@dimen/px200dp"
+                android:layout_height="@dimen/px120dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_credits"
+                android:button="@null"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/px20dp"
+                android:textColor="@drawable/text_color_selector"
+                android:textSize="@dimen/px32dp"/>
+            <!--android:text="9688积分\n88.00元"-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp">
+
+            <RadioButton
+                android:id="@+id/rb_credits_mall_4"
+                android:layout_width="@dimen/px200dp"
+                android:layout_height="@dimen/px120dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_credits"
+                android:button="@null"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/px20dp"
+                android:textColor="@drawable/text_color_selector"
+                android:textSize="@dimen/px32dp"/>
+            <!--android:text="18800积分\n168.00元"-->
+
+            <RadioButton
+                android:id="@+id/rb_credits_mall_5"
+                android:layout_width="@dimen/px200dp"
+                android:layout_height="@dimen/px120dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_credits"
+                android:button="@null"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/px20dp"
+                android:textColor="@drawable/text_color_selector"
+                android:textSize="@dimen/px32dp"/>
+            <!--android:text="38800积分\n318.00元"-->
+
+            <RadioButton
+                android:id="@+id/rb_credits_mall_6"
+                android:layout_width="@dimen/px200dp"
+                android:layout_height="@dimen/px120dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_credits"
+                android:button="@null"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/px20dp"
+                android:textColor="@drawable/text_color_selector"
+                android:textSize="@dimen/px32dp"/>
+            <!--android:text="88800积分\n618.00元"-->
+
+
+        </LinearLayout>
+    </com.tongcheng.soothsay.widget.MultiRadioGroup>
+
+    <Button
+        android:id="@+id/rb_credits_mall_submit"
+        android:layout_width="@dimen/px600dp"
+        android:layout_height="@dimen/px80dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_btn_touch"
+        android:text="立即购买"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px32dp"
+        />
+</LinearLayout>

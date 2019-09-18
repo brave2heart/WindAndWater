@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_free_bang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/margin_middle"
+    android:paddingBottom="@dimen/margin_middle"
+    android:paddingLeft="@dimen/margin_middle"
+    android:paddingRight="@dimen/margin_middle"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:textColor="@color/fsc_gdb_text"
+    android:textSize="@dimen/textSize_m">
+
+</TextView>

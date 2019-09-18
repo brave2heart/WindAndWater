@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_thin"
+                android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/px30dp"
+        android:background="@drawable/cesuan_jianjie_bg"
+        android:padding="@dimen/px30dp"
+        android:text="网友人手一个或几个。每人都有，但每人的号码又都不同。QQ号码究竟赋予了我们什么不一样的命运,他又会带给每个号码拥有者什么样的吉凶运势呢？"
+        android:textSize="@dimen/px28dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px30dp"
+        android:text="个人信息仅限测算内容，不做商业用途"
+        android:textColor="@color/tint_gray_text"
+        android:textSize="@dimen/textSize_s"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="请输入QQ号码"
+        android:textSize="@dimen/textSize_l"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/et_testnumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/px60dp"
+        android:layout_marginRight="@dimen/px60dp"
+        android:layout_marginTop="12dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btn_testnumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/selector_btn_touch"
+        android:layout_marginRight="@dimen/px60dp"
+        android:text="开始测算"
+        android:textColor="@color/white"
+        android:layout_below="@+id/et_testnumber"
+        android:layout_alignLeft="@+id/et_testnumber"
+        android:layout_alignStart="@+id/et_testnumber"/>
+
+</RelativeLayout>

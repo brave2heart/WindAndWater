@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qifu_dialog_bg2">
+
+    <LinearLayout
+        android:layout_margin="@dimen/px20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_line"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/md_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Logo"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/md_dialog_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="登录您的账号即可祝福上香、获得积分奖励和多重好礼优惠，保障您的记录从此不再担心丢失。"
+                android:textColor="@color/black_light"
+                android:textSize="14sp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/px112dp"
+            android:layout_marginBottom="@dimen/px20dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/md_dialog_leftbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_credits_intro_btn_bg"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/md_dialog_rightbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_credits_intro_btn_bg"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

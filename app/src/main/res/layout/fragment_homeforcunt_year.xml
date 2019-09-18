@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_module"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!--星座头部-->
+        <include
+            layout="@layout/homeforcunt_constellation_head"
+            android:visibility="visible" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10">
+                <ImageView
+                    android:id="@+id/homeforcunt_month_xiaoyuandian_green"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_27"
+                    android:src="@drawable/shape_xiaoyuandian_green" />
+
+                <TextView
+                    android:id="@+id/homeforcunt_stone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_toRightOf="@+id/homeforcunt_month_xiaoyuandian_green"
+                    android:text="幸运石"
+                    android:textSize="@dimen/dp_15" />
+
+                <TextView
+                    android:id="@+id/homeforcunt_stone_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homeforcunt_stone"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="10dp"
+                    android:text="美国碧玉"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/dp_15" />
+
+                <ImageView
+
+                    android:id="@+id/homeforcunt_month_xiaoyuandian_red"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_below="@+id/homeforcunt_stone_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_37"
+                    android:src="@drawable/shape_xiaoyuandian_zonghe" />
+
+
+                <TextView
+                    android:id="@+id/homeforcunt_mima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homeforcunt_stone_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_toRightOf="@+id/homeforcunt_month_xiaoyuandian_red"
+                    android:text="年度密码"
+                    android:textSize="@dimen/dp_15" />
+
+                <TextView
+                    android:id="@+id/homeforcunt_mima_content_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homeforcunt_mima"
+                    android:layout_marginLeft="@dimen/dp_19"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:lineSpacingExtra="@dimen/dp_5"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="[整体较忙绿，调整步伐]"
+                    android:textColor="#E14D34"
+                    android:textSize="@dimen/dp_15" />
+
+                <TextView
+                    android:id="@+id/homeforcunt_mima_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homeforcunt_mima_content_head"
+                    android:layout_marginLeft="@dimen/dp_19"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:lineSpacingExtra="@dimen/dp_5"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="狮子座在2018年可能会出现一些被动的变化，需要你去适应，做好自我调节。今年的安全感相对会有所下降，自信心也随之减弱，对于很多事情都存在不确定，显得忐忑不安，有一段时间会显得很迷茫，不知该从何做起。只要调整好自己，才能继续安好地度过一年。会有不少的麻烦琐碎事，人际上也有些不愉快，但是还是能够按照自己的意愿做事，这是最值得开心的。要保持平和谦虚的姿态，减少纠纷，压力变少，自然感到轻松了。"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/dp_15" />
+
+                <ImageView
+
+                    android:id="@+id/homeforcunt_month_xiaoyuandian_blue"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_below="@+id/homeforcunt_mima_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_37"
+                    android:src="@drawable/shape_xiaoyuandian_blue" />
+
+                <TextView
+                    android:id="@+id/homeforcunt_item_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homeforcunt_mima_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_toRightOf="@+id/homeforcunt_month_xiaoyuandian_blue"
+                    android:text="事业运势"
+                    android:textSize="@dimen/dp_15" />
+
+                <TextView
+                    android:id="@+id/homeforcunt_year_work_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homeforcunt_item_work"
+                    android:layout_marginLeft="@dimen/dp_19"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:lineSpacingExtra="5dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="木星来到狮子座的家宅宫，很多狮子座在住宅房产方面能够获得一些好运。尤其利于从事房产中介、建筑设计、土地规划等方面的狮子座。另外某些狮子座也能够通过房屋买卖租赁获得一些实际利益。夏季是狮子座状态最好，才华尽显的时期。而立秋之后，职场上的进取心弱，工作生活压力大，合作关系也容易出现矛盾。要注意身体健康。家庭关系给到你一些支持，家宅方面的舒畅度提升，不过10月-11月期间，有些房产家务方面的旧事，需要谨慎应对。进入冬季，狮子座的心态愉悦开朗了很多。感情工作相对都顺利些。涉及到借贷，保险、税务等问题需要积极应对。"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/dp_15" />
+
+                <ImageView
+
+                    android:id="@+id/homeforcunt_month_xiaoyuandian_yellow"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_below="@+id/homeforcunt_year_work_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_37"
+                    android:src="@drawable/shape_xiaoyuandian_yellow" />
+
+                <TextView
+                    android:id="@+id/homeforcunt_year_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homeforcunt_year_work_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_toRightOf="@+id/homeforcunt_month_xiaoyuandian_yellow"
+                    android:text="财富运势"
+                    android:textSize="@dimen/dp_15" />
+
+                <TextView
+                    android:id="@+id/homeforcunt_year_money_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homeforcunt_year_money"
+                    android:layout_marginLeft="@dimen/dp_19"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:lineSpacingExtra="5dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="很多狮子座的情感关系，在2017年遇到冰点，而进入2018年，尤其入夏季后，会出现比较戏剧的状况。有的人会积极投入到某人怀抱，或者被催婚相亲。入秋后，又容易发生彼此的不理解甚至相互斗争。这个期间，尤其是婚姻中的狮子座，很容易与伴侣纠缠一些对错，甚至对抗。很奇怪这个期间狮子座变得时而超自信，时而超自卑，状态不稳定，找茬的节奏。另外，这个期间，狮子座在工作中压力大，身体方面也容易出现病痛，所以，自身及时调节，应该是可以度过危机。11月之后，狮子座的桃花运旺起来，感情方面也能体会到更多被关注。精气神逐渐恢复，感情运势，越来越好。"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/dp_15" />
+
+                <ImageView
+
+                    android:id="@+id/homeforcunt_month_xiaoyuandian_love"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_below="@+id/homeforcunt_year_money_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_37"
+                    android:src="@drawable/shape_xiaoyuandian_red" />
+
+                <TextView
+                    android:id="@+id/homeforcunt_year_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homeforcunt_year_money_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_toRightOf="@+id/homeforcunt_month_xiaoyuandian_love"
+                    android:text="爱情运势"
+                    android:textSize="@dimen/dp_15" />
+
+                <TextView
+                    android:id="@+id/homeforcunt_year_love_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homeforcunt_year_love"
+                    android:layout_marginLeft="@dimen/dp_19"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="首先要提醒狮子座朋友，过去一年当中遭遇到的金钱压力，在本年度有所缓解，并且有可能通过家人的支持，改善生活状态，或者通过房产租赁买卖获得一些收益。或者花钱贷款投资房产等。对于狮子座而言，每个水逆期间都不利于你的财运，具体时间提示一下：03/23-04/15，07/26-08/19，11/17-12/07。这个期间避免签订与金钱相关的合约合同，避免大额消费。另外，到了年底，你的投资意愿更强，可能会发生冒险贷款，集资借贷等行为。"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/dp_15" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--大家都在看-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingTop="@dimen/margin_small">
+
+                    <ImageView
+                        android:id="@+id/iv_right"
+                        android:layout_width="@dimen/dp_16"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:src="@drawable/shape_red_rectangles" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_middle"
+                        android:layout_toRightOf="@+id/iv_right"
+                        android:text="大家都在玩"
+                        android:textColor="#292838"
+                        android:textSize="@dimen/textSize_l" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="点击查看" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:src="@drawable/tv_right" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_10">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mingli_xingzuo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:text="星座塔罗" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_10">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mingli_qifu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:text="祈福转运" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_10">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mingli_bazi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:text="八字测算" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_10">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mingli_qiuqian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:text="求签问事" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

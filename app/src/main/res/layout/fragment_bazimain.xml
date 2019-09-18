@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ebebeb"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px170dp"
+        android:background="@color/white"
+        android:paddingTop="@dimen/margin_small">
+
+        <TextView
+            android:id="@+id/tv_bazi_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ctmx_bzmy_ic"
+            android:text="示例"
+            android:textColor="@color/white"/>
+
+        <com.tongcheng.soothsay.widget.RoundImageView
+            android:id="@+id/img_bazi_main_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px10dp"
+            android:layout_marginRight="@dimen/px10dp"
+            android:layout_toRightOf="@id/tv_bazi_icon"
+            android:src="@drawable/default_head_icon"/>
+
+        <TextView
+            android:id="@+id/tv_bazi_main_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_bazi_main_icon"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_toRightOf="@id/img_bazi_main_icon"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_bazi_main_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30dp"
+            android:layout_alignTop="@id/img_bazi_main_icon"
+            android:layout_toRightOf="@id/tv_bazi_main_name"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_bazi_main_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_bazi_main_name"
+            android:layout_below="@id/tv_bazi_main_name"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_toRightOf="@id/tv_bazi_main_name"
+            android:textColor="@color/black"/>
+
+
+        <Button
+
+            android:id="@+id/btn_switchover"
+            android:layout_width="@dimen/px122dp"
+            android:layout_height="@dimen/px62dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ctmx_bzpp_qiehuang"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/item_divider"></View>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp">
+
+            <Button
+                android:id="@+id/btn_xingge"
+                android:layout_width="@dimen/px400dp"
+                android:layout_height="@dimen/px210dp"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:background="@drawable/bzbp_xgfx"
+                android:gravity="end|center_vertical"
+                android:paddingRight="@dimen/px20dp"
+                android:textColor="@color/add_note_note"
+                android:textSize="@dimen/px28dp"/>
+
+            <Button
+                android:id="@+id/btn_shiye"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px210dp"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:layout_marginRight="@dimen/px30dp"
+                android:background="@drawable/bzbp_syfx"
+                android:gravity="end|center_vertical"
+                android:paddingRight="@dimen/px20dp"
+                android:textColor="@color/add_note_note"
+
+                android:textSize="@dimen/px28dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp">
+
+
+            <Button
+                android:id="@+id/btn_xiantianmingpan"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px210dp"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:layout_weight="1"
+                android:background="@drawable/bzbp_bzmy"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="@dimen/px20dp"
+                android:textColor="@color/add_note_note"
+                android:textSize="@dimen/px28dp"/>
+
+            <Button
+                android:id="@+id/btn_yinyuan"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px210dp"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:layout_weight="1"
+                android:background="@drawable/bzbp_hljy"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="@dimen/px20dp"
+                android:textColor="@color/add_note_note"
+                android:textSize="@dimen/px28dp"/>
+
+            <Button
+                android:id="@+id/btn_paipan"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px210dp"
+                android:layout_marginLeft="@dimen/px30dp"
+                android:layout_marginRight="@dimen/px30dp"
+                android:layout_weight="1"
+                android:background="@drawable/bzbp_xtmp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="@dimen/px20dp"
+                android:textColor="@color/add_note_note"
+                android:textSize="@dimen/px28dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

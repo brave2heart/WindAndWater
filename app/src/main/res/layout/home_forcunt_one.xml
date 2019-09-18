@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_5"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_5"
+    android:orientation="vertical">
+
+
+    <!--每日一言 -->
+    <RelativeLayout
+
+        android:id="@+id/geren_ll_xingyun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/homeforcunt_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:text="每日一言"
+            android:textSize="@dimen/dp_18" />
+
+
+        <TextView
+            android:id="@+id/homeforcunt_one_me"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/homeforcunt_one"
+
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/item_module"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/homeforcunt_one_content"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homeforcunt_one_me"
+            android:layout_marginTop="@dimen/dp_5"
+            android:padding="@dimen/dp_5"
+            android:text="今天你可能有些消沉、敏感，而另一半急躁、咄咄逼人的姿态更让你不愿意过多的展现自己，压抑着自己对娱乐活动的兴趣，朋友间的思想交流、文化沟通也许能带给你舒适的感受。"
+            android:textColor="@color/black_light" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

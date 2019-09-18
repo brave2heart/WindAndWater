@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_thin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_testnumber_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px24dp"
+        android:layout_marginRight="@dimen/px24dp"
+        android:layout_marginTop="@dimen/px30dp"
+        android:background="@drawable/qimingcezi_bg"
+        android:padding="@dimen/px30dp"
+        android:text="@string/test_phone_num" />
+
+
+    <TextView
+        android:id="@+id/tv_hintinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_testnumber_introduce"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="请输入手机号码"
+        android:textColor="@color/middle_gray_text"
+        android:textSize="@dimen/textSize_l" />
+
+
+    <!--按钮背景颜色不知道在哪里改-->
+    <!--<com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_testnumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/et_testnumber"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/et_testnumber"
+        android:text="开始测算"
+        android:textSize="@dimen/px32dp"
+        app:bootstrapBrand="warning"
+        app:roundedCorners="true" />-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="个人信息仅限测算内容，不做商业用途"
+        android:textColor="@color/tint_gray_text"
+        android:textSize="@dimen/textSize_s" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/et_testnumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_below="@+id/tv_hintinput"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/px60dp"
+        android:layout_marginRight="@dimen/px60dp"
+        android:layout_marginTop="12dp"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/tv_res_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_testnumber"
+        android:layout_alignStart="@+id/btn_testnumber"
+        android:layout_below="@+id/btn_testnumber"
+        android:layout_marginTop="@dimen/px40dp"
+        android:drawableLeft="@drawable/ic_mark"
+        android:drawablePadding="@dimen/px10dp"
+        android:gravity="center"
+        android:text="凶吉测算"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_cesuan_response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_testnumber"
+        android:layout_alignLeft="@+id/tv_res_title"
+        android:layout_alignRight="@+id/btn_testnumber"
+        android:layout_alignStart="@+id/tv_res_title"
+        android:layout_below="@+id/tv_res_title"
+        android:layout_marginTop="@dimen/px20dp"
+        android:textSize="@dimen/px28dp" />
+
+    <Button
+
+        android:id="@+id/btn_testnumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_alignLeft="@+id/et_testnumber"
+        android:layout_alignStart="@+id/et_testnumber"
+        android:layout_below="@+id/et_testnumber"
+        android:layout_marginRight="@dimen/px60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/selector_btn_touch"
+        android:gravity="center"
+        android:text="@string/start_cesuan"
+        android:textColor="@color/white" />
+</RelativeLayout>

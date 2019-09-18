@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/margin_small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_tree_dialog_bg">
+
+    <ScrollView
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:background="@drawable/xuyuanshu_dialog_bg"
+        android:padding="@dimen/margin_middle">
+
+
+        <TextView
+            android:id="@+id/tv_tree_pop_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_news_cover"
+        android:layout_width="@dimen/px250dp"
+        android:layout_height="@dimen/px196dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/px10dp"
+        android:layout_marginRight="@dimen/px24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/froum_list_iv"/>
+
+    <TextView
+        android:id="@+id/tv_news_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="2015-11-23"
+        android:textColor="@color/color_text_999"
+        android:textSize="@dimen/px20dp"
+        android:layout_alignTop="@+id/tv_news_source"
+        android:layout_alignRight="@+id/tv_news_title"
+        android:layout_alignEnd="@+id/tv_news_title"/>
+
+    <TextView
+        android:id="@+id/tv_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="要想旺财，先补财库  "
+        android:textColor="@color/color_text_333"
+        android:textSize="@dimen/px30dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignTop="@+id/img_news_cover"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/img_news_cover"
+        android:layout_toStartOf="@+id/img_news_cover"/>
+
+    <TextView
+        android:id="@+id/tv_news_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网络收集"
+        android:textColor="@color/color_text_999"
+        android:textSize="@dimen/px22dp"
+        android:layout_alignBottom="@+id/img_news_cover"
+        android:layout_alignLeft="@+id/tv_news_title"
+        android:layout_alignStart="@+id/tv_news_title"/>
+
+</RelativeLayout>

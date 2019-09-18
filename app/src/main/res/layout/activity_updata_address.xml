@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_add_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px30dp"
+            android:paddingRight="@dimen/px30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px110dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="wrap_content"
+                    android:text="收货人："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_m" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="7.5"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:background="@null"
+                    android:hint="请输入收货人的姓名"
+                    android:textSize="@dimen/textSize_m" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px110dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_m" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="7.5"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px20dp"
+                    android:background="@null"
+                    android:digits="1234567890"
+                    android:hint="请输入收货人的联系电话"
+                    android:textSize="@dimen/textSize_m" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px110dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在地区："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_m" />
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/px20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请选择所在区域"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_m" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px10dp"
+                    android:src="@drawable/ic__more" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1dp"
+                android:background="@color/gray" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px220dp"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="请填写详细地址，不少于5字"
+                android:maxLines="3"
+                android:paddingTop="@dimen/px20dp"
+                android:textSize="@dimen/textSize_m" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px1dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px110dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_set_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawablePadding="@dimen/px20dp"
+                    android:text="设置默认地址"
+                    android:textColor="@color/black" />
+
+                <Switch
+                    android:id="@+id/sw_address_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:checked="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

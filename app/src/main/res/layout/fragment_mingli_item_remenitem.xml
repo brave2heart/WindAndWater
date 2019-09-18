@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/remenirem_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_15">
+
+            <TextView
+                android:id="@+id/mingli_remen_bazi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:textColor="@color/black_text"
+                android:text="八字排盘" />
+
+            <TextView
+                android:id="@+id/mingli_remen_bazi_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mingli_remen_bazi"
+                android:layout_marginTop="@dimen/dp_3"
+                android:text="生辰命理格局新批"
+                android:textSize="@dimen/dp_12" />
+
+            <ImageView
+                android:id="@+id/mingli_remen_bazi_image"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:src="@drawable/mingli_remen_bazi" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/item_module" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/remenirem_ll"
+        android:background="@color/item_module" />
+
+
+</RelativeLayout>

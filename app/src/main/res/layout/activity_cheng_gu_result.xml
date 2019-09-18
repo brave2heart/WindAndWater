@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/margin_small">
+
+                <ImageView
+                    android:id="@+id/img_cheng"
+                    android:layout_width="@dimen/px200dp"
+                    android:layout_height="@dimen/px200dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ctmx_cglm_bg"
+                    android:layout_marginTop="@dimen/px30dp"/>
+
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_cheng"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_l"
+                    android:layout_marginTop="@dimen/px30dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px30dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/px30dp"
+                android:paddingRight="@dimen/px30dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_cg_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_mark"
+                    android:drawablePadding="@dimen/px10dp"
+                    android:gravity="center"
+                    android:text="称骨歌"
+                    android:textSize="@dimen/textSize_l"
+                    android:textColor="@color/colorAccent"
+                    />
+
+                <TextView
+                    android:id="@+id/man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_cg_song"
+                    android:layout_marginTop="@dimen/px20dp"
+                    android:text="@string/man"
+                    android:textColor="@color/middle_gray_text"
+                    android:textSize="@dimen/textSize_m"/>
+
+                <TextView
+                    android:id="@+id/tv_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/man"
+                    android:layout_below="@id/tv_cg_song"
+                    android:text="内容"
+                    android:textColor="@color/middle_gray_text"
+                    android:layout_marginTop="@dimen/px20dp"/>
+
+                <TextView
+                    android:id="@+id/femal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_man"
+                    android:layout_marginTop="@dimen/px20dp"
+                    android:text="@string/femal"
+                    android:textColor="@color/middle_gray_text"/>
+
+                <TextView
+                    android:id="@+id/tv_femal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_man"
+                    android:layout_toRightOf="@id/femal"
+                    android:text="内容"
+                    android:textColor="@color/middle_gray_text"
+                    android:layout_marginTop="@dimen/px20dp"/>
+
+                <TextView
+                    android:id="@+id/minglun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_femal"
+                    android:layout_marginTop="@dimen/px30dp"
+                    android:gravity="center"
+                    android:text="生年论命："
+                    android:textSize="@dimen/textSize_l"
+                    android:textColor="@color/colorAccent"
+                    android:drawableLeft="@drawable/ic_mark"
+                    android:drawablePadding="@dimen/px10dp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_minglun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/minglun"
+                    android:text="内容"
+                    android:textColor="@color/middle_gray_text"
+                    android:layout_marginTop="@dimen/px20dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

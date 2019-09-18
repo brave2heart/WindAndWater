@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/px24dp"
+    android:background="@color/xuyuang_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px30dp"
+        android:background="@drawable/xuyuandeng_bg_biankuang">
+
+        <ImageView
+            android:id="@+id/iv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px60dp"
+            android:src="@drawable/qmcz_snsn_nan" />
+
+        <LinearLayout
+            android:id="@+id/ll_huayu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_sex"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_des_huayu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="他的花语："
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/textSize_xl" />
+
+            <TextView
+                android:id="@+id/tv_huayu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/textSize_xl" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_huayu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/px60dp"
+            android:layout_marginTop="@dimen/px30dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_xl" />
+
+    </RelativeLayout>
+</RelativeLayout>

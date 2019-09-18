@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_module"
+    android:orientation="vertical"
+    tools:context="com.tongcheng.soothsay.ui.activity.huangli.FortuneActivity2">
+
+    <!--顶部标题栏-->
+    <include layout="@layout/base_head" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/ll_header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_module"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|snap">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/item_module"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/geren_head_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/geren_head_bg" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5">
+
+                            <!--第一部分-->
+                            <LinearLayout
+
+                                android:id="@+id/geren_quanquan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/geren_bg"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_30"
+                                    android:layout_marginTop="@dimen/dp_20"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <com.tongcheng.soothsay.widget.RoundImageView
+                                            android:id="@+id/img_fortune_icon"
+                                            android:layout_width="45dp"
+                                            android:layout_height="45dp"
+                                            android:src="@drawable/default_head_icon"
+                                            android:transitionName="shareIcon" />
+
+                                        <ImageView
+                                            android:id="@+id/img_exmple_icon"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/example_icon" />
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_fortune_name"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_10"
+                                            android:text="示例用户"
+                                            android:textColor="@color/middle_gray_text" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/tv_fortune_birthday"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/dp_10"
+                                                android:text="阳历生日：1980年1月1日" />
+
+                                            <TextView
+                                                android:id="@+id/tv_home_geren_xingzuo"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="（摩羯座）" />
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <!--com.tongcheng.soothsay.widget.CircularProgress-->
+
+                                    <com.tongcheng.soothsay.widget.CircularProgress
+                                        android:id="@+id/cp_yunshi_score"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="@dimen/dp_50"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        app:alphaColor="@color/colorAccent"
+                                        app:circularColor="@color/white"
+                                        app:proColor="@color/colorAccent"
+                                        app:proWidth="6dp"
+                                        app:radius="150dp"
+                                        app:textSize="@dimen/textSize_xxl" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="135dp"
+                                        android:text="    点我\n提升运势"
+                                        android:textColor="#FEC870" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:layout_marginRight="@dimen/dp_5"
+                            android:layout_marginTop="@dimen/dp_5">
+
+                            <LinearLayout
+                                android:id="@+id/geren_four_grade"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/dp_5">
+
+                                <!--综合运势-->
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:id="@+id/geren_xiaoyuandian_red"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginTop="@dimen/dp_3"
+                                        android:src="@drawable/shape_xiaoyuandian_red" />
+
+                                    <TextView
+                                        android:id="@+id/geren_zonghe"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dp_5"
+                                        android:layout_toRightOf="@+id/geren_xiaoyuandian_red"
+                                        android:text="综合运势"
+                                        android:textColor="@color/middle_gray_text" />
+
+                                    <TextView
+                                        android:id="@+id/ap_yunshi_all"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/geren_zonghe"
+                                        android:layout_marginLeft="@dimen/dp_20"
+                                        android:text="78"
+                                        android:textColor="@color/black"
+                                        android:textSize="30dp" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="50dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/dp_10"
+                                        android:layout_toRightOf="@+id/geren_zonghe"
+                                        android:background="#EAEAEA" />
+                                </RelativeLayout>
+
+                                <!--事业运势-->
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:id="@+id/geren_xiaoyuandian_blue"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginTop="@dimen/dp_3"
+                                        android:src="@drawable/shape_xiaoyuandian_blue" />
+
+                                    <TextView
+                                        android:id="@+id/geren_shiye"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dp_5"
+                                        android:layout_toRightOf="@+id/geren_xiaoyuandian_blue"
+                                        android:text="事业运势"
+                                        android:textColor="@color/middle_gray_text" />
+
+                                    <TextView
+                                        android:id="@+id/ap_yunshi_work"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/geren_shiye"
+                                        android:layout_marginLeft="@dimen/dp_20"
+                                        android:text="62"
+                                        android:textColor="@color/black"
+                                        android:textSize="30dp" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="50dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/dp_10"
+                                        android:layout_toRightOf="@+id/geren_shiye"
+                                        android:background="#EAEAEA" />
+                                </RelativeLayout>
+
+                                <!--财富运势-->
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:id="@+id/geren_xiaoyuandian_yellow"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginTop="@dimen/dp_3"
+                                        android:src="@drawable/shape_xiaoyuandian_yellow" />
+
+                                    <TextView
+                                        android:id="@+id/geren_caifu"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dp_5"
+                                        android:layout_toRightOf="@+id/geren_xiaoyuandian_yellow"
+                                        android:text="财富运势"
+                                        android:textColor="@color/middle_gray_text" />
+
+                                    <TextView
+                                        android:id="@+id/ap_yunshi_money"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/geren_caifu"
+                                        android:layout_marginLeft="@dimen/dp_20"
+                                        android:text="96"
+                                        android:textColor="@color/black"
+                                        android:textSize="30dp" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="50dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/dp_10"
+                                        android:layout_toRightOf="@+id/geren_caifu"
+                                        android:background="#EAEAEA" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:id="@+id/geren_xiaoyuandian_zise"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginTop="@dimen/dp_3"
+                                        android:src="@drawable/shape_xiaoyuandian_red" />
+
+                                    <TextView
+                                        android:id="@+id/geren_aiqing"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dp_5"
+                                        android:layout_toRightOf="@+id/geren_xiaoyuandian_zise"
+                                        android:text="爱情运势"
+                                        android:textColor="@color/middle_gray_text" />
+
+                                    <TextView
+                                        android:id="@+id/ap_yunshi_love"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/geren_aiqing"
+                                        android:layout_marginLeft="@dimen/dp_20"
+                                        android:text="83"
+                                        android:textColor="@color/black"
+                                        android:textSize="30dp" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!--幸运部分 -->
+                            <RelativeLayout
+                                android:id="@+id/geren_ll_xingyun"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_20">
+
+                                <ImageView
+                                    android:id="@+id/iv_icon1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/home_gerenyunshi_caiwei" />
+
+                                <TextView
+                                    android:id="@+id/tv_xingyun1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_toRightOf="@+id/iv_icon1"
+                                    android:text="幸运财位:" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_toRightOf="@+id/tv_xingyun1"
+                                    android:text="东北" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1px"
+                                    android:layout_below="@+id/tv_xingyun1"
+                                    android:layout_marginTop="@dimen/dp_10"
+                                    android:background="#EAEAEA" />
+
+                                <ImageView
+                                    android:id="@+id/iv_icon2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="@dimen/dp_40"
+                                    android:src="@drawable/home_gerenyunshi_yanseban" />
+
+                                <TextView
+                                    android:id="@+id/tv_xingyun2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_marginTop="@dimen/dp_40"
+                                    android:layout_toRightOf="@+id/iv_icon2"
+                                    android:text="幸运颜色:" />
+
+                                <TextView
+                                    android:id="@+id/tv_fortune_color"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_marginTop="@dimen/dp_40"
+                                    android:layout_toRightOf="@+id/tv_xingyun2"
+                                    android:text="蓝色" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1px"
+                                    android:layout_below="@+id/tv_xingyun2"
+                                    android:layout_marginTop="@dimen/dp_10"
+                                    android:background="#EAEAEA" />
+
+                                <ImageView
+                                    android:id="@+id/iv_icon3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="@dimen/dp_80"
+                                    android:src="@drawable/home_gerenyunshi_food" />
+
+                                <TextView
+                                    android:id="@+id/tv_xingyun3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_marginTop="@dimen/dp_80"
+                                    android:layout_toRightOf="@+id/iv_icon3"
+                                    android:text="开运食物:" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_marginTop="@dimen/dp_80"
+                                    android:layout_toRightOf="@+id/tv_xingyun3"
+                                    android:text="绿茶、橙、糯米" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1px"
+                                    android:layout_below="@+id/tv_xingyun3"
+                                    android:layout_marginTop="@dimen/dp_10"
+                                    android:background="#EAEAEA" />
+
+                                <ImageView
+                                    android:id="@+id/iv_icon4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="@dimen/dp_120"
+                                    android:src="@drawable/home_gertenyunshi_num" />
+
+                                <TextView
+                                    android:id="@+id/tv_xingyun4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_marginTop="@dimen/dp_120"
+                                    android:layout_toRightOf="@+id/iv_icon4"
+                                    android:text="幸运数字:" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_marginTop="@dimen/dp_120"
+                                    android:layout_toRightOf="@+id/tv_xingyun4"
+                                    android:text="5" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:layout_marginTop="@dimen/dp_5">
+
+
+                            <!--宜忌部分 -->
+                            <RelativeLayout
+                                android:id="@+id/geren_ll_yiji"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_20">
+
+
+                                <ImageView
+                                    android:id="@+id/iv_icon5"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/geren_yi" />
+
+                                <TextView
+                                    android:id="@+id/tv_fortune_yi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_toRightOf="@+id/iv_icon5"
+                                    android:text="纳采 纳财 开市 交易" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1px"
+                                    android:layout_below="@+id/tv_xingyun5"
+                                    android:layout_marginTop="@dimen/dp_10"
+                                    android:background="#EAEAEA"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:id="@+id/iv_icon6"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="@dimen/dp_60"
+                                    android:src="@drawable/geren_ji" />
+
+                                <TextView
+                                    android:id="@+id/tv_fortune_ji"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:layout_marginTop="@dimen/dp_60"
+                                    android:layout_toRightOf="@+id/iv_icon6"
+                                    android:text="开仓 造屋 造桥 祭祀" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <!--<com.ogaclejapan.smarttablayout.SmartTabLayout-->
+            <!--android:id="@+id/tabs"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:background="@android:color/white"-->
+            <!--app:layout_scrollFlags="scroll"-->
+            <!--app:stl_customTabTextLayoutId="@layout/custom_tab"-->
+            <!--app:stl_customTabTextViewId="@+id/custom_text"-->
+            <!--app:stl_distributeEvenly="true"-->
+            <!--app:stl_dividerColor="@color/colorPrimary"-->
+            <!--app:stl_dividerThickness="0dp"-->
+            <!--app:stl_indicatorColor="@color/colorPrimary"-->
+            <!--app:stl_indicatorCornerRadius="0dp"-->
+            <!--app:stl_indicatorGravity="bottom"-->
+            <!--app:stl_indicatorInterpolation="linear"-->
+            <!--app:stl_indicatorThickness="2.5dp"-->
+            <!--app:stl_indicatorWithoutPadding="true"-->
+            <!--app:stl_underlineColor="@android:color/transparent"-->
+            <!--app:stl_underlineThickness="0dp" />-->
+            <!---->
+            <!--app:stl_distributeEvenly="true"   均匀分散式，false 从左至右紧挨排列
+                app:stl_dividerThickness="0dp"    分隔线厚度
+                app:stl_indicatorCornerRadius="0dp"  指示器的圆角
+                app:stl_indicatorGravity="bottom"  指示器的方向
+                app:stl_indicatorInterpolation="linear"  指示器线性插入 smart剧烈
+                app:stl_indicatorThickness="2.5dp"  指示器厚度
+                app:stl_indicatorWithoutPadding="true"  指示器没有超出填充
+                app:stl_underlineColor="@android:color/transparent" 下面划线的颜色
+                 app:stl_defaultTabTextAllCaps="false"  字体大写
+
+            -->
+            <com.androidkun.xtablayout.XTabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:xTabIndicatorColor="#E14D33"
+                app:xTabIndicatorHeight="3dp"
+                app:xTabIndicatorWidth="30dp"
+                app:xTabSelectedTextColor="#E14D33"
+                app:xTabSelectedTextSize="18sp"
+                app:xTabTextColor="#989898"
+                app:xTabTextSize="15sp" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/margin_middle"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="10dp"-->
+    <!--android:layout_height="10dp"-->
+    <!--android:src="@drawable/shape_xiaoyuandian_red" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="综合运势"-->
+    <!--android:textColor="@color/middle_gray_text" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="财富运势"-->
+    <!--android:textColor="@color/middle_gray_text" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/margin_tiny"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<com.tongcheng.soothsay.widget.AnimationProgress-->
+    <!--android:id="@+id/ap_yunshi_all"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_weight="1"-->
+    <!--app:ap_Color="@color/huangli_date_color"-->
+    <!--app:ap_numColor="@color/middle_gray_text"-->
+    <!--app:ap_roundRadius="4dp"-->
+    <!--app:ap_textColor="@color/white"-->
+    <!--app:ap_textSize="@dimen/textSize_s" />-->
+
+    <!--<com.tongcheng.soothsay.widget.AnimationProgress-->
+    <!--android:id="@+id/ap_yunshi_money"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_weight="1"-->
+    <!--app:ap_Color="@color/yellow_color"-->
+    <!--app:ap_numColor="@color/middle_gray_text"-->
+    <!--app:ap_roundRadius="4dp"-->
+    <!--app:ap_textColor="@color/white"-->
+    <!--app:ap_textSize="@dimen/textSize_s" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/margin_middle"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="爱情运势"-->
+    <!--android:textColor="@color/middle_gray_text" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="事业运势"-->
+    <!--android:textColor="@color/middle_gray_text" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginTop="@dimen/margin_tiny"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<com.tongcheng.soothsay.widget.AnimationProgress-->
+    <!--android:id="@+id/ap_yunshi_love"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_weight="1"-->
+    <!--app:ap_Color="@color/pink"-->
+    <!--app:ap_numColor="@color/middle_gray_text"-->
+    <!--app:ap_roundRadius="4dp"-->
+    <!--app:ap_textColor="@color/white"-->
+    <!--app:ap_textSize="@dimen/textSize_s" />-->
+
+    <!--<com.tongcheng.soothsay.widget.AnimationProgress-->
+    <!--android:id="@+id/ap_yunshi_work"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_weight="1"-->
+    <!--app:ap_Color="@color/light_green"-->
+    <!--app:ap_numColor="@color/middle_gray_text"-->
+    <!--app:ap_roundRadius="4dp"-->
+    <!--app:ap_textColor="@color/white"-->
+    <!--app:ap_textSize="@dimen/textSize_s" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:background="@color/item_divider"></View>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/margin_small"-->
+    <!--android:drawableLeft="@drawable/more_yuncheng"-->
+    <!--android:drawablePadding="@dimen/margin_tiny"-->
+    <!--android:text="查看我的运程"-->
+    <!--android:textColor="@color/colorAccent"-->
+    <!--android:textSize="@dimen/textSize_m" />-->
+
+
+</LinearLayout>
+

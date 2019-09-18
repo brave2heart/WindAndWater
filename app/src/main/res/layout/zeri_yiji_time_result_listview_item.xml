@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/zeri_yiji_time_result_textView_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5.0dip"
+        android:text="2013-08-13 农历日期七月初七 周四"
+        android:textColor="@color/zeri_yiji_result_color"
+        android:textSize="@dimen/px32dp"/>
+    <include layout="@layout/lineview_color_gray"/>
+</LinearLayout>

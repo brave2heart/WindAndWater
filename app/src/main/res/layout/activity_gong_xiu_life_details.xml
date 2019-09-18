@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/life_details_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.living.ui.activity.GongXiuLifeDetailsActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_fit"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:background="@color/colorPrimary">
+
+
+                <ImageButton
+                    android:id="@+id/headBackButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:minWidth="48dp"
+                    android:paddingLeft="@dimen/margin_middle"
+                    android:paddingRight="@dimen/margin_middle"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_header_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+
+                <ImageButton
+                    android:id="@+id/headShareButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:minWidth="48dp"
+                    android:paddingLeft="@dimen/margin_middle"
+                    android:paddingRight="@dimen/margin_middle"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_share" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/life_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5">
+
+
+                <ImageView
+                    android:id="@+id/gongxiu_dianzan_icon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:src="@mipmap/gongxiu_dianzan_icon" />
+
+                <TextView
+                    android:id="@+id/gongxiu_dianzan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/gongxiu_dianzan_icon"
+                    android:text="87" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/dianzan_recycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_toLeftOf="@+id/life_details_right" />
+
+                <ImageView
+                    android:id="@+id/life_details_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:src="@drawable/tv_right" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#e5e5e5" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pl_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/input_comment_container"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#efefef"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:visibility="visible">
+        <!-- android:background="@drawable/life_details_edit_bg"-->
+        <!--android:background="@drawable/bg_input_comment"-->
+        <EditText
+            android:id="@+id/input_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_comment"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="评论..."
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+        <!--<EditText-->
+        <!--android:id="@+id/et_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@null"-->
+        <!--android:gravity="top|left"-->
+        <!--android:hint="评论"-->
+        <!--android:layout_weight="1"-->
+        <!--android:padding="8dp"-->
+        <!--android:textColor="?android:editTextColor"/>-->
+
+        <TextView
+            android:id="@+id/btn_publish_comment"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="发表"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <ch.ielse.view.imagewatcher.ImageWatcher
+        android:id="@+id/v_image_watcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
+

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_tianqi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_module"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/model_divider"
+        android:layout_marginRight="@dimen/model_divider"
+        android:layout_marginTop="@dimen/dp_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#244880"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:padding="@dimen/dp_5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="预报"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="7天预报"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="10天预报"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="15天预报"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divide_line" />
+
+
+            <LinearLayout
+                android:padding="@dimen/dp_5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:textColor="@color/white" />
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/weather_8" />
+
+                <TextView
+                    android:id="@+id/tv_tianqi_status"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="小雨"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_tianqi_fanwei"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="9°/13°"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_tianqi_wind"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="东北风2级"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/shape_weather_text_bg_rectangle1"
+                    android:gravity="center"
+                    android:text="35优"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divide_line" />
+
+            <LinearLayout
+                android:padding="@dimen/dp_5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_tianqi_tomorrow0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="明天"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/weather_2" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="多云"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_tianqi_fanwei0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="9°/13°"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="东北风2级"
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/shape_weather_text_bg_rectangle2"
+                    android:gravity="center"
+                    android:text="51良"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divide_line" />
+
+            <LinearLayout
+
+                android:padding="@dimen/dp_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="后天"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/weather_2" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="多云"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_tianqi_fanwei1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="9°/13°"
+                    android:textColor="@color/white" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="东北风2级"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/shape_weather_text_bg_rectangle2"
+                    android:gravity="center"
+                    android:text="67良"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_middle"
+                android:paddingTop="@dimen/margin_middle"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_tianqi_icon"
+                    android:layout_width="@dimen/px100dp"
+                    android:layout_height="@dimen/px100dp"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:layout_marginRight="@dimen/margin_middle"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_tianqi_loca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_tianqi_icon"
+                    android:drawablePadding="@dimen/margin_tiny"
+                    android:drawableRight="@drawable/gryc_dingwei"
+                    android:textColor="@color/tint_gray_text"
+                    android:visibility="invisible"
+                    tools:text="广州"
+                    tools:visibility="visible" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_tianqi_status"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignLeft="@id/tv_tianqi_loca"-->
+                <!--android:layout_below="@id/tv_tianqi_loca"-->
+                <!--android:layout_marginTop="@dimen/margin_tiny"-->
+                <!--android:textColor="@color/tint_gray_text"-->
+                <!--tools:text="多云" />-->
+
+                <ImageView
+                    android:id="@+id/img_tianqi_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_middle"
+                    tools:src="@drawable/tv_right" />
+
+                <TextView
+                    android:id="@+id/tv_tianqi_wendu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/img_tianqi_right"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:text="27" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_tianqi_fanwei"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignLeft="@id/tv_tianqi_wendu"-->
+                <!--android:layout_below="@id/tv_tianqi_wendu"-->
+                <!--android:textColor="@color/color_text_999"-->
+                <!--android:textSize="@dimen/textSize_s"-->
+                <!--tools:text="30~24" />-->
+
+
+                <TextView
+                    android:id="@+id/tv_tianqi_ziwai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="@dimen/margin_medium"
+
+                    android:textColor="#A97BBB"
+                    android:textSize="@dimen/textSize_s"
+                    tools:text="紫外线：最弱" />
+
+
+                <TextView
+                    android:id="@+id/tv_tianqi_shidu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_tianqi_ziwai"
+                    android:layout_marginBottom="@dimen/margin_middle"
+                    android:layout_marginRight="@dimen/margin_medium"
+
+                    android:textColor="#5DACF3"
+                    android:textSize="@dimen/textSize_s"
+                    tools:text="温度：79%" />
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_tianqi_wind"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/margin_tiny"-->
+                <!--android:layout_marginLeft="@dimen/margin_middle"-->
+                <!--android:layout_below="@id/img_tianqi_icon"-->
+                <!--android:textColor="#EA8856"-->
+                <!--android:textSize="@dimen/textSize_s"-->
+                <!--tools:text="东北风2级" />-->
+
+
+                <TextView
+                    android:id="@+id/tv_tianqi_reLoca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_toRightOf="@id/img_tianqi_icon"
+                    android:text="定位城市失败，点击重试"
+                    android:textColor="@color/tint_gray_text"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <!--<View-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/divide_line" />-->
+
+            <LinearLayout
+                android:id="@+id/ll_huangli_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_middle"
+                android:paddingTop="@dimen/margin_middle"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+
+                        <!-- android:src="@drawable/weather_01"-->
+                        <ImageView
+                            android:id="@+id/img_tianqi_0"
+                            android:layout_width="@dimen/px60dp"
+                            android:layout_height="@dimen/px60dp" />
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/tv_tianqi_tomorrow0"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="@dimen/margin_tiny"-->
+                        <!--android:layout_toRightOf="@id/img_tianqi_0"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="@dimen/textSize_m"-->
+                        <!--tools:text="明天" />-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/tv_tianqi_fanwei0"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignLeft="@id/tv_tianqi_tomorrow0"-->
+                        <!--android:layout_below="@id/tv_tianqi_tomorrow0"-->
+                        <!--android:layout_marginTop="@dimen/margin_tiny"-->
+                        <!--android:textColor="@color/color_text_999"-->
+                        <!--android:textSize="@dimen/textSize_s"-->
+                        <!--tools:text="18~13" />-->
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_tianqi_1"
+                            android:layout_width="@dimen/px60dp"
+                            android:layout_height="@dimen/px60dp"
+                            tools:src="@drawable/weather_1" />
+
+                        <TextView
+                            android:id="@+id/tv_tianqi_tomorrow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_tiny"
+                            android:layout_toRightOf="@id/img_tianqi_1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_m"
+                            tools:text="后天" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginTop="@dimen/margin_tiny"
+                            android:textColor="@color/color_text_999"
+                            android:textSize="@dimen/textSize_s"
+                            tools:text="18~13" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_tianqi_2"
+                            android:layout_width="@dimen/px60dp"
+                            android:layout_height="@dimen/px60dp"
+                            tools:src="@drawable/weather_1" />
+
+                        <TextView
+                            android:id="@+id/tv_tianqi_tomorrow2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_tiny"
+                            android:layout_toRightOf="@id/img_tianqi_2"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize_m"
+                            tools:text="明天" />
+
+                        <TextView
+                            android:id="@+id/tv_tianqi_fanwei2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/tv_tianqi_tomorrow2"
+                            android:layout_below="@id/tv_tianqi_tomorrow2"
+                            android:layout_marginTop="@dimen/margin_tiny"
+                            android:textColor="@color/color_text_999"
+                            android:textSize="@dimen/textSize_s"
+                            tools:text="18~13" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_free_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/fsc_bg"
+    android:paddingTop="@dimen/margin_large"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/img_fsc_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/fsc_gdb_bg"/>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lv_free_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_fsc_bg"
+            android:layout_alignBottom="@+id/img_fsc_bg"
+            android:layout_marginLeft="@dimen/margin_larger"
+            android:layout_marginRight="@dimen/margin_larger"
+            android:layout_marginTop="@dimen/px196dp"
+            android:layout_marginBottom="@dimen/px230dp"
+            android:divider="#00ffffff"
+            android:dividerHeight="@dimen/dp_1"
+            android:layout_centerInParent="true"
+            android:scrollbars="none"
+            ptr:ptrMode="disabled" />
+
+        <TextView
+            android:id="@+id/tv_free_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/lv_free_list"
+            android:layout_marginTop="-30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/fsc_gdb_text"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

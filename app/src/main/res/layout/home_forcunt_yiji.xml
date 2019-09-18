@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_5"
+    android:layout_marginTop="5dp">
+
+
+    <!--宜忌部分 -->
+    <RelativeLayout
+        android:id="@+id/geren_ll_yiji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_5">
+
+
+        <ImageView
+            android:id="@+id/iv_icon5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@drawable/ic_yi" />
+
+        <TextView
+            android:id="@+id/tv_fortune_yi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_icon5"
+            android:text="纳采 纳财 开市 交易" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_xingyun5"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#EAEAEA"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@+id/tv_fortune_yi"
+            android:id="@+id/iv_icon6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@drawable/ic_ji" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@+id/tv_fortune_yi"
+            android:id="@+id/tv_fortune_ji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_icon6"
+            android:text="开仓 造屋 造桥 祭祀" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

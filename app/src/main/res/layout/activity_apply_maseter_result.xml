@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px60dp"
+        android:background="#EFEFEF"
+        android:gravity="center"
+        android:padding="@dimen/px14dp"
+        android:textColor="@color/middle_gray_text"
+        android:text="*请您如实准确填写本人信息，否则驳回认证"
+        android:textSize="@dimen/px28sp" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px24dp"
+            android:layout_marginRight="@dimen/px24dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                    <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/px8dp"
+                    android:text="*姓名"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/sp_15" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_master_name"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"
+                    android:background="@color/transparent"
+                    android:drawablePadding="20dp"
+                    android:hint="请填写身份证上的姓名"
+                    android:maxLength="13"
+                    android:padding="3dp"
+                    android:textCursorDrawable="@drawable/selector_edittext_cursor"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/horizontalDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/px8dp"
+                    android:text="*称号"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/sp_15"
+                    android:id="@+id/textView17" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_master_chenghao"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"
+                    android:background="@color/transparent"
+                    android:drawablePadding="20dp"
+                    android:hint="请填写个人称号"
+                    android:maxLength="13"
+                    android:padding="3dp"
+                    android:textCursorDrawable="@drawable/selector_edittext_cursor"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/horizontalDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/px8dp"
+                    android:text="*简介"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/sp_15" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_master_jianjie"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"
+                    android:background="@color/transparent"
+                    android:drawablePadding="20dp"
+                    android:hint="请填写个人简介"
+                    android:maxLength="13"
+                    android:padding="3dp"
+                    android:textCursorDrawable="@drawable/selector_edittext_cursor"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/horizontalDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/px8dp"
+                    android:text="*擅长"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/sp_15" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_master_shanchang"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"
+                    android:background="@color/transparent"
+                    android:drawablePadding="20dp"
+                    android:hint="请填写个人擅长项目 如占卜、紫薇等"
+                    android:maxLength="13"
+                    android:padding="3dp"
+                    android:textCursorDrawable="@drawable/selector_edittext_cursor"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/horizontalDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px20dp"
+                        android:drawablePadding="@dimen/px8dp"
+                        android:text="*上传头像"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/px10dp"
+                        android:layout_marginTop="@dimen/px30dp"
+                        android:text="*请上传含本人头像的照片，审核成功后风生水平台将用此头像进行宣传"
+                        android:textColor="@color/tint_gray_text"
+                        android:textSize="@dimen/sp_12" />
+                </LinearLayout>
+
+                <com.tongcheng.soothsay.widget.BigRoundImageView
+                    android:id="@+id/briv_master_touxiang"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/px240dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/px20dp"
+                    android:src="@drawable/sqds_tx"
+                    app:imgborderRadius="@dimen/px10dp"
+                    app:imgtype="round" />
+            </LinearLayout>
+
+            <View
+                style="@style/horizontalDivider"
+                android:layout_marginTop="@dimen/px10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px30dp"
+                    android:drawablePadding="@dimen/px8dp"
+                    android:text="*上传身份证"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px10dp"
+                    android:layout_marginTop="@dimen/px30dp"
+                    android:text="*要求照片清晰可辨，信息完整无缺失，且身份照片真实，严禁经过PS处理"
+                    android:textColor="@color/tint_gray_text"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20dp"
+                android:orientation="horizontal">
+
+                <com.tongcheng.soothsay.widget.BigRoundImageView
+                    android:id="@+id/briv_master_shenfenzheng_zheng"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/px200dp"
+                    android:layout_marginRight="@dimen/px14dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/sqds_sfz_zm"
+                    app:imgborderRadius="@dimen/px10dp"
+                    android:scaleType="fitXY"
+                    app:imgtype="round" />
+
+                <com.tongcheng.soothsay.widget.BigRoundImageView
+                    android:id="@+id/briv_master_shenfenzheng_fan"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/px200dp"
+                    android:layout_marginLeft="@dimen/px14dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sqds_sfz_fm"
+                    app:imgborderRadius="@dimen/px10dp"
+                    app:imgtype="round" />
+            </LinearLayout>
+
+            <View
+                style="@style/horizontalDivider"
+                android:layout_marginTop="@dimen/px10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px20dp"
+                        android:drawableLeft="@drawable/tuoyuan"
+                        android:drawablePadding="@dimen/px8dp"
+                        android:text="上传证书"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/px10dp"
+                        android:layout_marginTop="@dimen/px30dp"
+                        android:text="*上传个人获奖证书，此项目可提高审核通过的概率，请确保个人证书是真实可靠的(没有可不上传)"
+                        android:textColor="@color/tint_gray_text"
+                        android:textSize="@dimen/sp_12" />
+                </LinearLayout>
+
+                <com.tongcheng.soothsay.widget.BigRoundImageView
+                    android:id="@+id/briv_master_zhengshu1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="2"
+                    android:layout_marginTop="@dimen/px20dp"
+                    android:src="@drawable/sqds_zhengshu"
+                    app:imgborderRadius="@dimen/px10dp"
+                    android:scaleType="fitXY"
+                    app:imgtype="round" />
+            </LinearLayout>
+            <!--1期只要求1张证书上传，。下面四张的估计二期才用-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/px30dp"-->
+                    <!--android:drawableLeft="@drawable/tuoyuan"-->
+                    <!--android:drawablePadding="@dimen/px8dp"-->
+                    <!--android:text="上传证书"-->
+                    <!--android:textColor="@color/black_text"-->
+                    <!--android:textSize="@dimen/sp_15" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="@dimen/px10dp"-->
+                    <!--android:layout_marginTop="@dimen/px30dp"-->
+                    <!--android:text="*上传个人获奖证书，此项目可提高审核通过的概率，请确保个人证书是真实可靠的(没有可不上传)"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="@dimen/sp_12" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/px10dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<com.tongcheng.soothsay.widget.BigRoundImageView-->
+                    <!--android:id="@+id/briv_master_zhengshu1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:layout_marginRight="@dimen/px10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:src="@mipmap/ic_launcher"-->
+                    <!--app:imgborderRadius="@dimen/px10dp"-->
+                    <!--app:imgtype="round" />-->
+
+                <!--<com.tongcheng.soothsay.widget.BigRoundImageView-->
+                    <!--android:id="@+id/briv_master_zhengshu2"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:layout_marginLeft="@dimen/px10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:src="@mipmap/ic_launcher"-->
+                    <!--app:imgborderRadius="@dimen/px10dp"-->
+                    <!--app:imgtype="round" />-->
+
+            <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/px10dp"-->
+            <!--android:orientation="horizontal">-->
+            <!--<com.tongcheng.soothsay.widget.BigRoundImageView-->
+                <!--android:id="@+id/briv_master_zhengshu3"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginRight="@dimen/px10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@mipmap/ic_launcher"-->
+                <!--app:imgborderRadius="@dimen/px10dp"-->
+                <!--app:imgtype="round" />-->
+
+            <!--<com.tongcheng.soothsay.widget.BigRoundImageView-->
+                <!--android:id="@+id/briv_master_zhengshu4"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginLeft="@dimen/px10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@mipmap/ic_launcher"-->
+                <!--app:imgborderRadius="@dimen/px10dp"-->
+                <!--app:imgtype="round" />-->
+            <!--</LinearLayout>-->
+            <View
+                style="@style/horizontalDivider"
+                android:layout_marginTop="@dimen/px10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px30dp"
+                    android:drawableLeft="@drawable/tuoyuan"
+                    android:drawablePadding="@dimen/px8dp"
+                    android:text="上传日常图片"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px10dp"
+                    android:layout_marginTop="@dimen/px30dp"
+                    android:text="*请上传个人日常生活的图片(没有可不传)，审核通过风生水平台推广时可能会使用您的生活图片进行宣传"
+                    android:textColor="@color/tint_gray_text"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20dp"
+                android:layout_marginBottom="@dimen/px20dp"
+                android:orientation="horizontal">
+
+                <com.tongcheng.soothsay.widget.BigRoundImageView
+                    android:id="@+id/briv_master_richang1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/px200dp"
+                    android:layout_marginRight="@dimen/px14dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/sqds_richangzhao_1"
+                    android:scaleType="fitXY"
+                    app:imgborderRadius="@dimen/px10dp"
+                    app:imgtype="round" />
+
+                <com.tongcheng.soothsay.widget.BigRoundImageView
+                    android:id="@+id/briv_master_richang2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/px200dp"
+                    android:layout_marginLeft="@dimen/px14dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sqds_richangzhao_2"
+                    app:imgborderRadius="@dimen/px10dp"
+                    app:imgtype="round" />
+            </LinearLayout>
+
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/btn_master_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/px40dp"
+                android:text="提交"
+                android:textSize="@dimen/textSize_xl"
+                app:bootstrapBrand="warning"
+                app:roundedCorners="false" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px10dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/px30dp"
+                android:text="*提交成功之后，风生水平台将进行审核"
+                android:textColor="@color/tint_gray_text"
+                android:textSize="@dimen/px28sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

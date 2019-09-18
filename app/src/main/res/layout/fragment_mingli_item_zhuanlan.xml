@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/xuetang_zhuanlan_iamge"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/xuetang_item_wudao" />
+
+    <TextView
+        android:id="@+id/xuetang_zhuanlan_title"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:lines="2"
+        android:lineSpacingExtra="@dimen/dp_2"
+        android:lineSpacingMultiplier="1.2"
+        android:text="物道：用精致装点美好生活（已完结）"
+        android:textSize="@dimen/dp_13" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:id="@+id/xuetang_zhuanlan_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/xuetang_zhuanlan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智慧先生"
+            android:textSize="@dimen/dp_10" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_3"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@color/black_light" />
+
+        <TextView
+            android:id="@+id/xuetang_zhuanlan_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_5"
+            android:text="时长12:09"
+            android:textSize="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/xuetang_zhuanlan_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_mingli_dashi_tv_bg"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:text="专栏"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/xuetang_zhuanlan_price_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="￥19.9"
+            android:textColor="@color/red_light"
+            android:textSize="@dimen/dp_12" />
+
+        <TextView
+            android:id="@+id/xuetang_zhuanlan_price_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_5"
+
+            android:text="￥29.9"
+            android:textSize="@dimen/dp_12"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</LinearLayout>

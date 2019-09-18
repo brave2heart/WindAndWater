@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/zeri_corners_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/zeri_yiji_radioGroup_chaxun_shixiang"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/zeri_yi_radioButton_chaxun_shixiang"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@drawable/lingji_default_checkbox"
+                android:checked="true"
+                android:text="@string/zeri_yi"
+                android:textColor="@color/zeri_yiji_text_color"
+                android:textSize="@dimen/px18sp"/>
+
+            <RadioButton
+                android:id="@+id/zeri_ji_radioButton_chaxun_shixiang"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@drawable/lingji_default_checkbox"
+                android:text="@string/zeri_ji"
+                android:textColor="@color/zeri_yiji_text_color"
+                android:textSize="@dimen/px18sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/zeri_shixiang_listView_chaxun_shixiang"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/lingji_subject_dialog_bg"
+        android:divider="@color/transparent"
+        android:listSelector="#00000000"/>
+</LinearLayout>

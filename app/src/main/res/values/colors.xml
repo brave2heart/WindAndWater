@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e14d33</color>
+    <color name="colorPrimaryDark">#e14d33</color>
+
+    <!--首页fragment底色-->
+    <color name="bg_color">#f1f1f1</color>
+
+    <!--控件主色-->
+    <color name="colorAccent">#e14d33</color>
+    <color name="color_danse_bg">#FEF8E2</color>
+    <color name="background_tab_pressed">#dddddd</color>
+    <color name="btn_press_bg">#D1B16F</color>
+    <color name="btn_unpress_bg">#ffc773</color>
+
+    <color name="white">#ffffff</color>
+    <color name="common_background">#F7F7F7</color>
+
+    <color name="divide_line">#dddddd</color>
+    <color name="grey1">#999999</color>
+    <color name="black1">#4D4D4D</color>
+    <color name="black">#000</color>
+
+    <!--公共部分的颜色-->
+    <!--背景颜色-->
+    <color name="dialog_bg">#66000000</color>
+    <!--背景颜色-->
+    <color name="background_color">#EBEBEB</color>
+    <color name="background_color_fcefd7">#fcefd7</color>
+    <!--深灰 用于标题、列表、主要内容-->
+    <color name="black_text">#333333</color>
+    <!--中灰 用于文章详情、大段内容-->
+    <color name="middle_gray_text">#666666</color>
+    <!--浅灰 用于说明文字、不重要的辅助内容-->
+    <color name="tint_gray_text">#999999</color>
+
+    <!--分割线（固定1px）-->
+    <color name="item_divider">#e5e5e5</color>
+    <!--模块间隔 20px(=10dp)-->
+    <color name="item_module">#efeff4</color>
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+
+    <!--姜黄色文字-->
+    <color name="yellow_text">#ffc773</color>
+    <!--红色文字-->
+    <color name="red_text">#fe6666</color>
+    <color name="page_bg">#f9f9f9</color>
+    <color name="bottom_statment">#cdc1b4</color>
+    <color name="choose_date_time_bg">#ede8e2</color>
+
+    <!--黄历进度条-->
+    <color name="huangli_date_color">#98B8E9</color>
+    <color name="yellow_color">#FDA639</color>
+    <color name="pink">#EBBBBA</color>
+    <color name="light_green">#C3D8D8</color>
+    <!--命里推算-三级菜单顶部文字背景-->
+    <color name="calulation_recycle">#FAB5C8</color>
+    <!--命里推算-三级菜单顶部文字-->
+    <color name="calulation_recycle_text">#D66463</color>
+    <!--命理推算-大德符运请符-->
+    <color name="fy_dade_qing">#ffa53623</color>
+    <color name="fy_dade_box">#ffd6c513</color>
+
+
+    <!--五行颜色  暂定-->
+    <!--金-->
+    <color name="color_gold">#faa201</color>
+    <!--木-->
+    <color name="color_wood">#008000</color>
+    <!--水-->
+    <color name="color_water">#1E90FF</color>
+    <!--火-->
+    <color name="color_fire">#FF0000</color>
+    <!--土-->
+    <color name="color_soil">#8B4513</color>
+
+    <!--文本颜色-->
+    <color name="color_text_333">#333</color>
+    <color name="color_text_666">#666</color>
+    <color name="color_text_999">#999</color>
+    <color name="color_text_d3995a">#d3995a</color>
+
+
+
+    <color name="color_bg_fde9b3">#fde9b3</color>
+    <color name="color_bg_fef9e9">#fef9e9</color>
+    <color name="color_bg_fbf7f0">#fbf7f0</color>
+
+<!--择日-->
+    <color name="zeri_biaoti_lan_color">#ff5c342c</color>
+    <color name="zeri_input_message_color">#ff6b4020</color>
+    <color name="zeri_yiji_result_color">#ffc6000f</color>
+    <color name="zeri_yiji_shuoming_color">#ff6b4020</color>
+    <color name="zeri_yiji_text_color">#ff973b09</color>
+
+
+
+
+
+    <!--周公解梦-->
+
+
+    <!--淡色背景-->
+    <color name="bg_thin">#F4F2EF</color>
+
+    <color name="green_light">#649F5A</color>
+    <color name="red_light">#EE2525</color>
+    <color name="address_botton_bg">#FF5ABA5A</color>
+    
+    <!--天气污染指标-->
+    <color name="wuran_you">#38C735</color>
+    <color name="wuran_liang">#98B8E9</color>
+    <color name="wuran_cha">#fe6666</color>
+
+    <!--黄历－提醒or记事文字颜色-->
+    <color name="add_note_warn">#fe6666</color>
+    <color name="add_note_note">#ffc773</color>
+
+    <!--紫微命盘-->
+    <color name="ziwei_topxing_red">#F24E5D</color>
+    <color name="ziwei_topxing_gray">#000000</color>
+    <color name="ziwei_zuozhongxing">#2C44B1</color>
+    <color name="ziwei_youzhongxing">#378224</color>
+    <color name="ziwei_minggong">#378224</color>
+    <color name="ziwei">#911EB9</color>
+    <color name="ziwei_bg_press">#F6EEC3</color>
+
+    <color name="tarot_btn">#F8D7A6</color>
+
+    <!--紫微详情-->
+    <color name="analyse_info_bg">#FCF9EF</color>
+
+    <!--DialogUtil-->
+    <color name="dialog_DividerColor">#DCDCDC</color>
+    <color name="dialog_ContentItemPressedColor">#DCDCDC</color>
+
+    <color name="item_transparent">#00000000</color>
+
+    <!--edittext光标-->
+    <color name="recharge_mobile_input_text">#333333</color>
+    <!--协议说明-->
+    <color name="shuoming">#04b402</color>
+    <!--个人中心-->
+    <color name="mine_txt">#333333</color>
+
+
+
+    <!--手机测算的按钮的背景颜色-->
+    <color name="cesuang_buttom_yellow">#d3995a</color>
+    <!--测算结果文字颜色-->
+    <color name="cesuang_response_test_grey">#333333</color>
+
+    <color name="gray_transparent">#bb000000</color>
+
+    <color name="qifu_common_bg">#fff4f2ef</color>
+    <color name="qifu_d2a771">#ffd2a771</color>
+    <color name="qifu_dialog_bg2">#fffefbf7</color>
+    <color name="qifu_dialog_text1">#ffd2a871</color>
+    <color name="qifu_dialog_text2">#ffdf4628</color>
+    <color name="qifu_god_intro_add">#ffd2a871</color>
+    <color name="qifu_god_intro_added">#ffbfbfbf</color>
+    <color name="qifu_god_intro_text">#ffb0854c</color>
+    <color name="qifu_god_intro_text_gray">#ffb3b3b3</color>
+    <color name="qifu_god_item_1">#ff000000</color>
+    <color name="qifu_god_item_2">#fff0edc7</color>
+    <color name="qifu_gongping_text1">#fff3ecdc</color>
+    <color name="qifu_gongping_text2">#ffe9cb7b</color>
+    <color name="qifu_huanyuan">#ffd2a771</color>
+    <color name="qifu_line_e5e5e5">#ffe5e5e5</color>
+    <color name="qifu_text_404040">#ff404040</color>
+    <color name="qifu_text_52b068">#ff52b068</color>
+    <color name="qifu_text_7b7b7b">#ff7b7b7b</color>
+    <color name="qifu_text_808080">#ff808080</color>
+    <color name="qifu_text_818181">#ff818181</color>
+    <color name="qifu_text_a3a3a3">#ffa3a3a3</color>
+    <color name="qifu_text_b1b0b0">#ffb1b0b0</color>
+    <color name="qifu_text_d2a771">#ffd2a771</color>
+    <color name="qifu_xinyuan_progress_line">#ffd2a771</color>
+    <color name="qifu_xuyuan_bg_fef6e1">#fffef6e1</color>
+    <color name="qifu_xuyuan_button_bg1">#fff3f3f3</color>
+    <color name="qifu_xuyuan_button_bg2">#fff8f1e8</color>
+    <color name="qifu_xuyuan_text1">#ff494949</color>
+    <color name="qifu_xuyuan_text2">#ff403f3e</color>
+    <color name="qifu_yihuanyuan">#ff808080</color>
+    <color name="oms_mmc_white">#ffffffff</color>
+    <color name="oms_mmc_black">#ff000000</color>
+
+    <!--还愿灯背景-->
+
+
+    <color name="eightcharacters_caiyun_color_bg">#ff9574cd</color>
+    <color name="eightcharacters_color_backgroud">#fff5f5f5</color>
+    <color name="eightcharacters_color_bg_yunshi">#ffefede7</color>
+    <color name="eightcharacters_color_buy">#ffffa726</color>
+    <color name="eightcharacters_color_example">#ff6ab0f1</color>
+    <color name="eightcharacters_color_line">#ffeda94c</color>
+    <color name="eightcharacters_color_notbuy">#ffcbcbcb</color>
+    <color name="eightcharacters_color_orange">#ff856a4c</color>
+    <color name="eightcharacters_color_setting_line">#55c8c8c8</color>
+    <color name="eightcharacters_color_shangdeng">#ffff9829</color>
+    <color name="eightcharacters_color_shangshangdeng">#ffff8400</color>
+    <color name="eightcharacters_color_text_yunshi">#ff973b09</color>
+    <color name="eightcharacters_color_title_main">#ffeda94c</color>
+    <color name="eightcharacters_color_title_main_shou_ye">#ff3a3a3a</color>
+    <color name="eightcharacters_color_title_tv_bg">#fffcf0d3</color>
+    <color name="eightcharacters_color_top_title_backgroud">#ffffb532</color>
+    <color name="eightcharacters_color_xiadeng">#ffffdcb8</color>
+    <color name="eightcharacters_color_xiaxiadeng">#fffff4e8</color>
+    <color name="eightcharacters_color_yellow_deep">#fffff200</color>
+    <color name="eightcharacters_color_yellow_light">#ffe4a704</color>
+    <color name="eightcharacters_color_yunshi_score">#ffffea66</color>
+    <color name="eightcharacters_color_yunshi_text_white">#ffefede7</color>
+    <color name="eightcharacters_color_zhongdeng">#ffffac54</color>
+    <color name="eightcharacters_color_zhongxiadeng">#ffffcc95</color>
+    <color name="eightcharacters_dayun_color_bg">#ff5fafd9</color>
+    <color name="eightcharacters_frag_card_view_bg">#fffafafa</color>
+    <color name="eightcharacters_frag_item_content_text_color">#ff5a5a5a</color>
+    <color name="eightcharacters_frag_item_title_text_color">#fffebf5b</color>
+    <color name="eightcharacters_header_bottom_btn_bg_color">#ff765c37</color>
+    <color name="eightcharacters_hunlian_color_bg">#ffe97aa9</color>
+    <color name="eightcharacters_item_five">#ff673ab7</color>
+    <color name="eightcharacters_item_four">#ffff9700</color>
+    <color name="eightcharacters_item_one">#ff00bcd5</color>
+    <color name="eightcharacters_item_six">#fff44336</color>
+    <color name="eightcharacters_item_three">#fffec107</color>
+    <color name="eightcharacters_item_two">#ff8bc24a</color>
+    <color name="eightcharacters_item_zero">#ffcecece</color>
+    <color name="eightcharacters_jiangkang_color_bg">#ff62bcc4</color>
+    <color name="eightcharacters_jinri_color_bg">#fffaefe1</color>
+    <color name="eightcharacters_jinri_color_text1">#ff5b4a43</color>
+    <color name="eightcharacters_jinri_color_text2">#ff765c37</color>
+    <color name="eightcharacters_jinri_color_text3">#ff424242</color>
+    <color name="eightcharacters_jinri_color_text4">#ffd2a771</color>
+    <color name="eightcharacters_jinri_color_text5">#cc484848</color>
+    <color name="eightcharacters_jinri_color_text6">#ff5e5a54</color>
+    <color name="eightcharacters_liunian_color_bg">#ffff8a65</color>
+    <color name="eightcharacters_main_bottom_change_user_button_bg">#fff2f2f2</color>
+    <color name="eightcharacters_main_bottom_change_user_text_color">#fffebb45</color>
+    <color name="eightcharacters_main_color_bg">#fff4f2ef</color>
+    <color name="eightcharacters_mingpan_color_bg">#ff8ca3ac</color>
+    <color name="eightcharacters_mingpan_color_text1">#ffeeaa4d</color>
+    <color name="eightcharacters_mingyun_color_bg">#fff0c260</color>
+    <color name="eightcharacters_notify_bg">#fff2f2f2</color>
+    <color name="eightcharacters_pressed_color">#ffebb047</color>
+    <color name="eightcharacters_shiye_color_bg">#ff7d9fec</color>
+    <color name="eightcharacters_tool_bar_text_color">#ffffffff</color>
+    <color name="eightcharacters_wuxing_color_earth">#ff7d3b01</color>
+    <color name="eightcharacters_wuxing_color_fire">#ffe80000</color>
+    <color name="eightcharacters_wuxing_color_gold">#fffba300</color>
+    <color name="eightcharacters_wuxing_color_water">#ff0371f9</color>
+    <color name="eightcharacters_wuxing_color_wood">#ff3dae00</color>
+    <color name="eightcharacters_xingge_color_bg">#ffff8a65</color>
+    <color name="eightcharacters_yunshi_color_bg">#ff62bcc4</color>
+    <color name="eightcharacters_yunshi_gray">#ff999999</color>
+    <color name="eightcharacters_yunshi_red">#ffc6000f</color>
+
+    <!--还愿等底下背景-->
+    <color name="huanyuan_bottom_bg">#fbeedd</color>
+    <color name="huanyuan_square_bg">#fbf6f0</color>
+    <color name="xuyuandeng_ben_bg">#fe3c3c</color>
+    <color name="xuyuang_bg">#fbf6f0</color>
+    <color name="lingji_login_button2">#f9a200</color>
+    <color name="brown">#b96b4d</color>
+
+    <!--放生池-->
+    <color name="fsc_gdb_text">#AD6833</color>
+
+    <!--商品订单-->
+    <color name="goods_confirm_green">#04b402</color>
+
+    <!--我的订单-->
+    <color name="buy_now_color">#f8e6d5</color>
+    <color name="del_detail_color">#fbf7f0</color>
+
+    <!--按下的颜色-->
+    <color name="touch_press_color">#D9D9D9</color>
+
+    <!--生肖配对-->
+    <color name="shengxiao_bg_color">#eeeeee </color>
+
+    <!--我的-->
+    <!--透明色-->
+    <color name="lucency">#33000000</color>
+
+    <color name="color_true">#d7dbe4</color>
+    <color name="layout_bg">#dfdfdf</color>
+    <color name="bar_grey">#393a3e</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="blue">#7D7DFF</color>
+    <color name="color_fa">#fafafa</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="color_c51">#f94c51</color>
+    <color name="color_green">#43c117</color>
+    <color name="butten_green">#1AAC19</color>
+    <color name="check_butten_green">#19ad19</color>
+    <color name="title1">#4a4a4a</color>
+    <color name="title2">#a2a2a2</color>
+    <color name="line">#d1d1d1</color>
+</resources>

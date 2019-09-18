@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!--透明状态栏-跟侧滑返回无关-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!--所有分割线统一用下面这个-->
+        <item name="android:listDivider">@drawable/shape_divider_bg</item>
+    </style>
+
+    <!--启动界面-->
+    <style name="LaunchTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/launch_bg1</item>
+    </style>
+
+    <style name="item_click_bg">
+        <item name="android:background">@drawable/selector_touch</item>
+    </style>
+
+    <!--沉浸式-->
+    <style name="TranslucentTheme." parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="zeri_chaxun_zhouqi">
+        <item>一星期内</item>
+        <item>两星期内</item>
+        <item>三星期内</item>
+        <item>一个月内</item>
+        <item>两个月内</item>
+        <item>三个月内</item>
+    </string-array>
+    <string-array name="zeri_weekday">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <!--<string-array name="zeri_yi_ji_table">-->
+        <!--<item>会友 交易 出行 祭祀 装修 祈福 嫁娶 治病 移徙 开市</item>-->
+        <!--<item>开仓 作灶 修厨 开井 动土 行丧 远行 诉讼 安床 开渠</item>-->
+        <!--<item>订婚 会友 上梁 出行 祭祀 装修 祈福 嫁娶 治病 扫舍</item>-->
+        <!--<item>栽种 开池 结网 远行 成服 修厨 作灶 塞穴 补垣 诉讼</item>-->
+        <!--<item>订婚 理发 酬神 祈福 嫁娶 开市 修造 安门 作灶 竖柱</item>-->
+        <!--<item>动土 应聘 开池 除服 上任 纳采 移徙 栽种 安葬 开井</item>-->
+        <!--<item>装修 祭祀 出行 嫁娶 扫舍 修造 万事皆吉</item>-->
+        <!--<item></item>-->
+        <!--<item>祈福 求嗣 上任 订婚 纳采 嫁娶 交易 作灶 上梁 入宅</item>-->
+        <!--<item>动土 除服 理发 开仓 出游 诉讼 开池 求医 治病 置业</item>-->
+        <!--<item>捕猎 扫舍 安葬 栽种 理发 上梁 作灶 祭祀 治病 纳畜</item>-->
+        <!--<item>成服 动土 开仓 出财 移徙 出游 结网 远行 开业 交易</item>-->
+        <!--<item>求医 治病 破屋 坏垣</item>-->
+        <!--<item>诸事不利</item>-->
+        <!--<item></item>-->
+        <!--<item>万事皆凶</item>-->
+        <!--<item>祈福 酬神 入学 出行 嫁娶 移徙 上任 婚礼 开业 求医</item>-->
+        <!--<item>诉讼</item>-->
+        <!--<item>修造 捕捉 结网 嫁娶 理发 沐浴 纳财 造仓 祭祀 扫舍</item>-->
+        <!--<item>作灶 置产 开仓 诉讼 栽种 出游 安葬 开井 出财 动土</item>-->
+        <!--<item>相亲 祈福 入学 求嗣 出行 嫁娶 开市 修造 上梁 置产</item>-->
+        <!--<item>破土 安葬 捕捉 伐木 塞穴 诉讼 成服 结网 开池 理发</item>-->
+        <!--<item>安葬 祭祀 补垣 塞穴 筑堤 成服 安床 裁衣 修造 出行</item>-->
+        <!--<item>诸事皆凶</item>-->
+    <!--</string-array>-->
+
+    <string-array name="zeri_ji_table">
+        <item> 开仓</item>
+        <item>作灶</item>
+        <item>修厨</item>
+        <item>开井</item>
+        <item>动土</item>
+        <item>行丧</item>
+        <item>远行</item>
+        <item>诉讼</item>
+        <item>安床</item>
+        <item>开渠</item>
+        <item>栽种</item>
+        <item>开池</item>
+        <item>结网</item>
+        <item>成服</item>
+        <item>塞穴</item>
+        <item>补垣</item>
+        <item>应聘</item>
+        <item>除服</item>
+        <item>上任</item>
+        <item>纳采</item>
+        <item>移徙</item>
+        <item>安葬</item>
+        <item>理发</item>
+        <item>出游</item>
+        <item>求医</item>
+        <item>治病</item>
+        <item>置业</item>
+        <item>出财</item>
+        <item>开业</item>
+        <item>交易</item>
+        <item>置产</item>
+        <item>破土</item>
+        <item>捕捉</item>
+        <item>伐木</item>
+    </string-array>
+    <string-array name="zeri_yi_table">
+
+        <item>会友</item>
+        <item>交易</item>
+        <item>出行</item>
+        <item>祭祀</item>
+        <item>装修</item>
+        <item>祈福</item>
+        <item>嫁娶</item>
+        <item>治病</item>
+        <item>移徙</item>
+        <item>开市</item>
+        <item>订婚</item>
+        <item>上梁</item>
+        <item>扫舍</item>
+        <item>理发</item>
+        <item>酬神</item>
+        <item>修造</item>
+        <item>安门</item>
+        <item>作灶</item>
+        <item>竖柱</item>
+        <item>求嗣</item>
+        <item>上任</item>
+        <item>纳采</item>
+        <item>入宅</item>
+        <item>捕猎</item>
+        <item>安葬</item>
+        <item>栽种</item>
+        <item>纳畜</item>
+        <item>求医</item>
+        <item>破屋</item>
+        <item>坏垣</item>
+        <item>入学</item>
+        <item>婚礼</item>
+        <item>开业</item>
+        <item>捕捉</item>
+        <item>结网</item>
+        <item>沐浴</item>
+        <item>纳财</item>
+        <item>造仓</item>
+        <item>相亲</item>
+        <item>置产</item>
+        <item>补垣</item>
+        <item>塞穴</item>
+        <item>筑堤</item>
+        <item>成服</item>
+        <item>安床</item>
+        <item>裁衣</item>
+    </string-array>
+
+
+
+
+
+    <string-array name="zeri_yiji_analysis">
+        <item>聚集朋友，与好友相会。</item>
+        <item>互相交易买卖。</item>
+        <item>指外出旅行、观光游览。</item>
+        <item>指祠堂之祭祀、即拜祭祖先或庙寺的祭拜、拜神明等事。</item>
+        <item>装修墙屋。</item>
+        <item>祈求神明降福或设醮还愿之事。</item>
+        <item>男娶女嫁，举行结婚大典。</item>
+        <item>指治疗身体疾病。</item>
+        <item>指搬家迁移入住所(含非新宅)之意。</item>
+        <item>开业之意。商店行号开张做生意。</item>
+        <item>同结婚姻，受授聘金，也就是下聘礼。</item>
+        <item>装上建筑物屋顶的梁木，同架马。</item>
+        <item>指冲洗宅舍、解除灾厄。</item>
+        <item>指修剪毛发。</item>
+        <item>还愿，答谢神恩。</item>
+        <item>指阳宅的修造与修理。</item>
+        <item>房屋装设门户等工事。</item>
+        <item>指安修厨灶、厨炉移位。</item>
+        <item>架马俗称起工架马；指建筑场所之鹰架。</item>
+        <item>向神明祈求后嗣(子孙)之意。</item>
+        <item>走马上任。当官的好日子。</item>
+        <item>同结婚姻，受授聘金，也就是下聘礼。</item>
+        <item>即迁入新宅、所谓“新居落成典礼”也。</item>
+        <item>打猎或捕捉禽兽。</item>
+        <item>举行埋葬等仪式。</item>
+        <item>种植物。</item>
+        <item>买入家畜饲养之事。</item>
+        <item>仅指求医治疗慢性痼疾或动手术。</item>
+        <item>指拆除房屋。</item>
+        <item>指拆除房屋的墙壁或围墙。</item>
+        <item>指学生入学，拜师接受教育。</item>
+        <item>指沐浴斋戒。</item>
+        <item>举行结婚典礼。</item>
+        <item>商店行号开张做生意。</item>
+        <item>扑灭农作物害虫或生物。</item>
+        <item>指的是伏羲氏结网罟、定嫁娶、创八卦。后泛指织鱼网。</item>
+        <item>指已属于自己的财富基础上购置产业、进货、收帐、收租、讨债、贷款、五谷入仓等。</item>
+        <item>建筑仓库或修理仓库。</item>
+        <item>由媒人介绍，男女相互见面议亲。</item>
+        <item>买房屋田地，置办产业。</item>
+        <item>修补房屋或者围墙。</item>
+        <item>指堵塞洞穴或蚁穴。</item>
+        <item>修筑或加固河堤或海堤。</item>
+        <item>穿上丧服。</item>
+        <item>指安置、移动、拆装睡床卧铺之意。</item>
+        <item>裁制新娘衣服或制作寿衣。</item>
+        <item>出货财、商家之出货、销货、放债。</item>
+        <item>修理厨灶、厨炉移位。</item>
+        <item>开凿水井。</item>
+        <item>系指阳宅建筑开始动工。</item>
+        <item>指到丧家慰问遗族。</item>
+        <item>外出远处旅行、观光游览。</item>
+        <item>官非讼事等法律行动。</item>
+        <item>开凿沟渠。</item>
+        <item>开凿池塘。</item>
+        <item>指接受聘问，接受聘请。</item>
+        <item>脱下丧服。</item>
+        <item>外出游览、旅行。</item>
+        <item>指买卖土地、房屋等产业。</item>
+        <item>指借钱给别人。</item>
+        <item>仅指埋葬用的破土、与一般建筑房屋的动土不同，破土属阴宅，动土属阳宅也。</item>
+        <item>砍伐树木。</item>
+    </string-array>
+    <string-array name="zeri_yiji_list">
+        <item>会友</item>
+        <item>交易</item>
+        <item>出行</item>
+        <item>祭祀</item>
+        <item>装修</item>
+        <item>祈福</item>
+        <item>嫁娶</item>
+        <item>治病</item>
+        <item>移徙</item>
+        <item>开市</item>
+        <item>订婚</item>
+        <item>上梁</item>
+        <item>扫舍</item>
+        <item>理发</item>
+        <item>酬神</item>
+        <item>修造</item>
+        <item>安门</item>
+        <item>作灶</item>
+        <item>竖柱</item>
+        <item>求嗣</item>
+        <item>上任</item>
+        <item>纳采</item>
+        <item>入宅</item>
+        <item>捕猎</item>
+        <item>安葬</item>
+        <item>栽种</item>
+        <item>纳畜</item>
+        <item>求医</item>
+        <item>破屋</item>
+        <item>坏垣</item>
+        <item>入学</item>
+        <item>沐浴</item>
+        <item>婚礼</item>
+        <item>开业</item>
+        <item>捕捉</item>
+        <item>结网</item>
+        <item>纳财</item>
+        <item>造仓</item>
+        <item>相亲</item>
+        <item>置产</item>
+        <item>补垣</item>
+        <item>塞穴</item>
+        <item>筑堤</item>
+        <item>成服</item>
+        <item>安床</item>
+        <item>裁衣</item>
+        <item>开仓</item>
+        <item>修厨</item>
+        <item>开井</item>
+        <item>动土</item>
+        <item>行丧</item>
+        <item>远行</item>
+        <item>诉讼</item>
+        <item>开渠</item>
+        <item>开池</item>
+        <item>应聘</item>
+        <item>除服</item>
+        <item>出游</item>
+        <item>置业</item>
+        <item>出财</item>
+        <item>破土</item>
+        <item>伐木</item>
+    </string-array>
+</resources>

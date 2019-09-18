@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hour_yiji"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tongcheng.soothsay.ui.activity.huangli.almanac.HourYijiActivity">
+
+    <ListView
+        android:id="@+id/lv_hour_yiji"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1px"
+        android:divider="@color/item_divider"
+        ></ListView>
+
+</RelativeLayout>

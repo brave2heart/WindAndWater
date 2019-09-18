@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.living.ui.activity.HomeFortuneActivity">
+    <!--顶部标题栏-->
+    <include layout="@layout/base_head" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item_module">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|snap">
+
+
+                <ImageView
+                    android:id="@+id/geren_head_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/geren_head_bg"
+                    android:visibility="gone" />
+                <!--个人运势得分-->
+                <include layout="@layout/home_forcunt_grade" />
+                <!--4个运势得分-->
+                <include layout="@layout/home_forcunt_four_grade" />
+                <!--幸运-->
+                <include layout="@layout/home_forcunt_luck" />
+                <!--宜忌-->
+                <include layout="@layout/home_forcunt_yiji" />
+
+
+            </LinearLayout>
+
+            <!--XTabLayout-->
+
+
+            <include
+                layout="@layout/home_forcunt_xtablayout"
+                android:visibility="visible" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
+

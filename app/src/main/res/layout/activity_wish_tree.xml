@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_wish_tree"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tongcheng.soothsay.widget.WishTreeView
+        android:id="@+id/wishTreeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wish_tree">
+    </com.tongcheng.soothsay.widget.WishTreeView>
+
+    <RelativeLayout
+        android:id="@+id/headArea"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="#00ffffff">
+
+        <ImageButton
+            android:id="@+id/headBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:minWidth="48dp"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_header_back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:text="@string/title_wish_tree"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_l" />
+
+        <ImageView
+            android:id="@+id/btn_free_shuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:scaleType="centerInside"
+            android:background="?android:selectableItemBackground"
+            android:foreground="?android:selectableItemBackground"
+            android:src="@drawable/fcs_ic_more"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textColor="@color/add_note_note"
+            android:text="今天还可\n查看几条"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/tv_seenumber"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

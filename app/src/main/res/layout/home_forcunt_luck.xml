@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_5"
+    android:orientation="vertical">
+
+
+    <!--幸运部分 -->
+    <RelativeLayout
+        android:id="@+id/geren_ll_xingyun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_5">
+
+        <ImageView
+            android:id="@+id/iv_icon1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@drawable/home_gerenyunshi_caiwei" />
+
+        <TextView
+            android:id="@+id/tv_xingyun1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_icon1"
+            android:text="幸运财位：" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_toRightOf="@+id/tv_xingyun1"
+            android:text="东北" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_xingyun1"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#EAEAEA" />
+
+        <ImageView
+            android:id="@+id/iv_icon2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_40"
+            android:src="@drawable/home_gerenyunshi_yanseban" />
+
+        <TextView
+            android:id="@+id/tv_xingyun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_toRightOf="@+id/iv_icon2"
+            android:text="幸运颜色：" />
+
+        <TextView
+            android:id="@+id/tv_fortune_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_toRightOf="@+id/tv_xingyun2"
+            android:text="蓝色" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_xingyun2"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#EAEAEA" />
+
+        <ImageView
+            android:id="@+id/iv_icon3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_80"
+            android:src="@drawable/home_gerenyunshi_food" />
+
+        <TextView
+            android:id="@+id/tv_xingyun3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_80"
+            android:layout_toRightOf="@+id/iv_icon3"
+            android:text="开运食物：" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_80"
+            android:layout_toRightOf="@+id/tv_xingyun3"
+            android:text="绿茶、橙、糯米" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_xingyun3"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#EAEAEA" />
+
+        <ImageView
+            android:id="@+id/iv_icon4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_120"
+            android:src="@drawable/home_gertenyunshi_num" />
+
+        <TextView
+            android:id="@+id/tv_xingyun4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_120"
+            android:layout_toRightOf="@+id/iv_icon4"
+            android:text="幸运数字：" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_120"
+            android:layout_toRightOf="@+id/tv_xingyun4"
+            android:text="5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_xingyun4"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#EAEAEA" />
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_icon5"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginLeft="@dimen/dp_5"-->
+            <!--android:layout_marginTop="@dimen/dp_160"-->
+            <!--android:src="@drawable/homeforcunt_xingzuo_icon" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_xingyun5"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/dp_10"-->
+            <!--android:layout_marginTop="@dimen/dp_160"-->
+            <!--android:layout_toRightOf="@+id/iv_icon5"-->
+            <!--android:text="幸运星座：" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/homeforcunt_luck_stars_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/dp_5"-->
+            <!--android:layout_marginTop="@dimen/dp_160"-->
+            <!--android:layout_toRightOf="@+id/tv_xingyun5"-->
+            <!--android:text="处女座" />-->
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

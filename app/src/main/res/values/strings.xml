@@ -1,0 +1,471 @@
+<resources>
+    <string name="app_name">风生水</string>
+    <!--tab text-->
+    <string name="app_home">首页</string>
+    <string name="life">命理</string>
+    <string name="study">学堂</string>
+    <string name="me">我的</string>
+    <string name="shop">商城</string>
+    <string name="test1">测试</string>
+
+    <!--老黄历-->
+    <string name="txt_weather_chuanyi">穿衣</string>
+    <string name="txt_weather_chenlian">晨练</string>
+    <string name="txt_weather_xiche">洗车</string>
+    <string name="txt_weather_ganmao">旅游</string>
+    <string name="txt_weather_wuran">空调</string>
+    <string name="txt_weather_ziwaixian">紫外线</string>
+    <string name="txt_alarm_look">打开风生水</string>
+    <string name="txt_alarm_cancel">朕知道了</string>
+    <string name="txt_no_fortune">该星座今日暂无运势</string>
+    <string name="home_pinglun">全部评论</string>
+
+    <!--择日-->
+    <string name="zeri_app_introduction">传统黄历择日，选择适合您做事的吉祥日子，做事必定事事顺利。</string>
+    <string name="zeri_app_name">择日</string>
+    <string name="zeri_chaxun_shixiang">查询事项：</string>
+    <string name="zeri_chaxun_shixiang_yiji">宜忌：</string>
+    <string name="zeri_chaxun_shixiang_message">请您选择查询的事项</string>
+    <string name="zeri_chaxun_zhouqi">查询周期：</string>
+    <string name="zeri_chaxun_zhouqi_message">请您选择查询的周期</string>
+    <string name="zeri_duichong">对冲：</string>
+    <string name="zeri_gongli">公历：</string>
+    <string name="zeri_ji">忌</string>
+    <string name="zeri_jihui">忌讳：</string>
+    <string name="zeri_jiri_chaxun">吉日查詢</string>
+    <string name="zeri_kaishi_chaxun">开始查询</string>
+    <string name="zeri_kaishi_riqi">开始日期：</string>
+    <string name="zeri_kaishi_riqi_message">请您选择开始的日期</string>
+    <string name="zeri_nongli">农历：</string>
+    <string name="zeri_shiyi">适宜：</string>
+    <string name="zeri_taishen">胎神：</string>
+    <string name="zeri_tishi_of_input">亲，您尚未输入输入完毕！</string>
+    <string name="zeri_yi">宜</string>
+
+    <!--命理推算-->
+    <string name="txt_hot_mearure">热门测算</string>
+    <string name="txt_tuijian_mearure">推荐测算</string>
+    <string name="txt_recommend">大师推荐</string>
+    <string name="txt_release">放生池</string>
+    <string name="txt_more">更多</string>
+    <!--个人中心-->
+    <string name="txt_user_name">某某</string>
+    <string name="txt_shenqing_dashi">申请成为大师</string>
+    <string name="txt_mine_dingdan">我的订单</string>
+    <string name="txt_mine_jifen">积分活动</string>
+    <string name="txt_mine_xiaoxi">我的消息</string>
+    <string name="txt_mine_jiangpin">奖品与优惠券</string>
+    <string name="txt_mine_kaiyun">开运商城</string>
+    <string name="txt_mine_cart">购物车</string>
+    <string name="txt_mine_kefu">联系客服</string>
+    <string name="txt_mine_setting">设置</string>
+    <string name="txt_feed_back">欢迎你反馈使用产品的感受和建议</string>
+    <string name="txt_submit">提交</string>
+    <string name="txt_share_msg">专业风水命理测算：日历、黄历、紫薇命盘、八字算命、起名、风水、放生、供奉、许愿，大师测算。</string>
+    <string name="txt_share_bzpp">我的八字排盘出来了，分析得很准确，大家快来测测.....</string>
+    <string name="txt_share_zwmp">我的紫微命盘出来了，分析得很准确，大家快来测测.....</string>
+
+    <!--跳到登录界面的提示-->
+    <string name="txt_qifutai_gotologin">登录你的账号即可祈福上香、获得积分奖励和多重好礼优惠，保障你的记录不再丢失。</string>
+    <string name="txt_qifutai_gotologinv2">获取大仙数据出问题 请重新登录</string>
+    <!--我的资料-->
+    <string name="txt_head">头像</string>
+    <string name="txt_nickname">我的昵称</string>
+    <string name="txt_binding_phone">绑定电话</string>
+    <string name="txt_birthday">我的生日</string>
+    <string name="txt_gender">我的性别</string>
+    <string name="txt_working_condition">工作状况</string>
+    <string name="txt_marital_status">婚姻状况</string>
+    <string name="txt_exit">退出登录</string>
+
+    <!--学堂用到的文字-->
+    <string name="txt_classroom_specia">专栏推荐</string>
+    <string name="txt_classroom_course">课程推荐</string>
+    <string name="txt_classroom_zhouyi">周易知识</string>
+    <string name="txt_classroom_circle">共修圈子</string>
+    <string name="txt_classroom_master">大师亲算</string>
+    <string name="txt_classroom_fengshui">风水推荐</string>
+    <string name="txt_classroom_more">更多</string>
+    <string name="txt_classroom_shop">商城</string>
+    <string name="txt_classroom_newmsg">最新资讯</string>
+
+
+    <!--学堂-->
+    <string name="news_title">最新资讯</string>
+    <string name="zhouyi_title">周易知识</string>
+    <!--祈福台用到的文字-->
+    <string name="txt_master">供奉大仙</string>
+    <string name="txt_course">祈福历程</string>
+    <string name="txt_shopping_mall">祈福商城</string>
+    <string name="txt_flower">花代表因，代表修德。供花是给人们自己看的，提醒人们平时一定要注意修德。花开了以后，才会结果，花开得好，果才能结得好。因此，只有常修善因，将来才能够得到好的果报。</string>
+    <string name="txt_fruit">表示成果。果不是供给诸天上圣吃的，是教我们看到果时，就能想起“希望得到什么样的果报，就应该要修什么样的因”。万事有因才有果，果代表圆满，是圆满功德之果。</string>
+    <string name="txt_deng">灯代表光明，凡是光明都表示智慧，所以我们看见一切光明的时候，就要想到应向智慧的路上走。</string>
+    <string name="txt_xiang">香代表信香，是一种信号，用来跟诸天上圣传递信息、感应的。经书有云：仙境难通以香为信。古时候，信息不发达，用烽火来传递消息，信香也是取这个意思。玄门上香文讲：妙洞真香、灵宝慧香超三界香，三柱真香腾空供养，上界云府高真,中界岳渎威灵,下界水府仙官等三界诸神，香云达信。当我们看到香烟、闻到香味，就应想 到自己要修道、养德、定慧。</string>
+    <string name="txt_water">水代表心境。水很纯凈，代表心要清凈。水不起波浪是平的，代表平等。所以供养这杯清水，看到它就想到我们的心也要像水一样清凈、平等。这是供具里面最最重要的，你甚至可以不烧香、不点蜡烛，也没有鲜花和水果，但是不能不供养一杯清水，看到水就要想到自己在一切境缘当中，世界的各种环境中，要知道修清凈心、平等心。</string>
+    <string name="txt_table">供桌，祭祀时摆放供品的桌子。常见于大型的祭祀活动，庙宇、祠堂、家宅、公司等摆放祖宗牌位，佛道神灵的地方，用来放置香烛贡品之用，不管在日常的普通祭祀中，还是在大型的公祭，族祭中，都是神圣不可侵犯之处。</string>
+    <string name="txt_screen">屏风在三千年前的周就以天子专用器具出现，是名位和权力的象征，与风水中一直强调的“后有靠”是一致的。就风水的角度而言，屏风具有挡煞，纳福，聚气，隐蔽、靠山等作用，而屏风上吉祥的图案还可以提升主人的运势和素养等。</string>
+    <string name="txt_wish">祈福许愿需心诚方灵，许愿内容应填写自己的真实所求，以呈递神明，如有反国家、反社会或其他不端正的言论，请述无法为您祈福</string>
+
+
+    <string name="qifu_gongping_guidedialog_text1">正确的供奉顺序:</string>
+    <string name="qifu_gongping_guidedialog_text2">摆放供奉仙像的花。花代表因，代表修德。</string>
+    <string name="qifu_gongping_guidedialog_text3">摆放供奉仙像的果。果表示成果，万事有因才有果。</string>
+    <string name="qifu_gongping_guidedialog_text4">上香。香代表信香，是一种信号，用来跟诸天上圣传递信息、感应的。</string>
+    <string name="qifu_gongping_guidedialog_text5">供奉鲜花</string>
+    <string name="qifu_gongping_guidedialog_text6">供奉水果</string>
+
+
+    <!--命里推算-生活指南-->
+    <string name="txt_life">本栏目主要对家居风水、喜事择日和生活中围绕身边的事物进行凶吉预测</string>
+    <!--命里推算-祈福转运-->
+    <string name="txt_qfzy">本栏目是大师推荐的开运方法，如果您对自身的运势不满意，可以通过下列的方法来提升自身运势</string>
+    <!--命里推算-->
+    <string name="txt_marrage_love">本栏目主要分析感情婚姻方面的问题，了解哪类异性适合自己，婚后生活情况等</string>
+    <string name="txt_divination">本栏目收集各种传统签补，想要知道事情的吉凶结果，求签卜卦是最快捷的方法</string>
+    <string name="txt_nametest">本栏目是分析名字对自身的影响，可以为自己或宝宝起一个吉祥的名字来改善命运</string>
+    <!--命里推算-祈福转运-请仙-->
+    <!--<string name="txt_qx_null">您还没有填写愿望内容，是先供奉神明，之后再许愿吗？</string>-->
+    <string name="txt_qx_null">您还没有填写愿望内容，请先填写愿望内容！</string>
+    <string name="txt_qx_sure">请确认您的真实心愿内容，向神明祈福也不可以当儿戏！</string>
+
+    <!--命理推算-大德符运-->
+    <string name="fy_dade_qing">请符</string>
+    <string name="lf_dasi">\t\t风生水所有大德圣品均在佛教圣地虔诚开光加持，瞻礼、礼敬、供养、赞叹、诵经。经过佛教圣地正规开光加持的圣品，诸邪魔皆不敢接近，并有极强的灵性，可帮助敬奉佩戴者修慧修福，清净内心，开运改运，镇妖避邪，逢凶化吉，从而获得帮助改善生活、事业、财运、爱情、精神等一系列善果。</string>
+    <string name="txt_skip">跳过</string>
+    <string name="txt_to_login">老用户登录</string>
+    <string name="txt_register">马上注册</string>
+    <string name="txt_login">确定登录</string>
+    <string name="txt_sure_register">确定注册</string>
+    <string name="txt_phonenumber">手机号</string>
+    <string name="txt_pwd">密码</string>
+    <string name="txt_kaiguagn">开光又叫点眼和入神，它的意义在于使符咒具有更好的灵力，开光能进一步强化符咒的灵力，加强符与请符人的联结，效果更加明显。没有开光的符咒就像被蒙上了一层隔膜，难与请符人有太大的感应。所以符咒开光以后更能使得缘主的虔诚愿望得以早日实现。</string>
+    <string name="txt_jiachi">随著时间的流逝，符的灵力也会慢慢消退，这时候通过加持符咒可以再次为符咒注入灵力。即使没有经过时间的沉淀也可以加持符咒，这样不仅能使符咒的灵力更加显著，也能使缘主与符咒的连结加深。</string>
+    <string name="txt_qianming_notice">我们采用高级加密技术，并遵守隐私法例，保证您的隐私资料不被泄露。在符咒上写上用符者的姓名、生庚、地址可加强人与符的连结，符咒灵力更加强劲。您也可以选择不填写任何资料，或者只填写其中的一项。</string>
+    <string name="txt_qianming_notice_2">填写个人资料是为了让符咒与您的结合更加紧密，从而使得符咒能发挥它的最大功效，帮助您解决问题。请问您是否确定要取消填写资料？</string>
+    <string name="txt_qianming_notice_3">确定后不能再修改，请确保输入的资讯是准确的</string>
+    <string name="txt_qianming_username">用符者&#160;</string>
+    <string name="txt_qianming_shenggeng">生庚&#160;</string>
+    <string name="txt_qianming_address">地址&#160;</string>
+    <string name="txt_dade_login">登录您的账号即可求符保平安,并获得积分奖励和多重好礼优惠,保障您请的符从此不再丢失。</string>
+
+    <!--传统命相-->
+    <string name="chuantong_ziwei_title">紫微斗数</string>
+    <string name="chuantong_ziwei_content">2016财运分析、爱情事业</string>
+    <string name="chuantong_ziwei_fenxi">查看分析</string>
+
+    <!--称骨论命-->
+    <string name="chuantong_chengu_title">称骨论命</string>
+    <string name="chuantong_chengu_content">唐代著名的星象预测家袁天罡</string>
+    <string name="start_cesuan">开始测算</string>
+    <string name="chengu_describ">\t\t\t称骨算命是唐代著名的星象预测家袁天罡称骨的预测方法，和生辰八字算命、紫微斗数算命异曲同工，略有不同，虽然都是用出生的时间算命，但比较而言，称骨算命将命运的比较粗略，只是把命运分为五十一种，故对命运的考察不细致，不太准确，可以供求测者参考。</string>
+    <string name="man">男：</string>
+    <string name="femal">女：</string>
+
+
+    <!--八字排盘-->
+    <string name="chuantong_bazi_title">八字排盘</string>
+    <string name="chuantong_bazi_content">你的八字中干支分布如何，五行分布均匀吗？去看看吧！</string>
+
+    <!--生活指南-身份证-->
+    <string name="txt_idcard_describ">\t\t\t万物皆有理数，号码者，数也。省份证号码其实暗藏出生地域及生日信息，自然包括很多命运密码。现在我们就身份证来测算你的性格、爱情、事业与未来，测试结果仅供娱乐参考！</string>
+    <string name="input_idcard">请输入身份证号码</string>
+    <!--生活指南-车牌号码-->
+    <string name="txt_license_plate_describ">\t\t\t汽车车牌号是否吉利，要通过周易数理来进行测算吉凶，与风水姓名一样影响主人的运势。周易万物类象，车牌号码中的英文字母亦有其数理！2017年新版汽车吉凶测试，特邀顶尖周易大师指导，结合81数理及传统周易绝学，讲车牌号吉凶测算的内容改进，打造权威车牌号吉凶测试！</string>
+    <string name="input_license">请输入车牌号码</string>
+
+    <!--星座罗塔-->
+    <string name="txt_contellation">本栏目是星座罗塔等西方的测算，用占星术了解运势好坏，用塔罗占卜事情吉凶</string>
+    <string name="txt_tarot_intro">塔罗牌是一种针对人、事、物进行分析、
+预测和提供建议的工具。该定义准确、直接，受到塔罗界广泛认可。
+塔罗牌可以针对爱情、人际关系、工作（学业）等不同需求来做分析，预测和提供建议。尤其在不知应采取何种行动的时候，它是一种非常好的提示路标，具有一定的心理暗示功能，由于过于神秘，归于神秘学范畴。</string>
+    <string name="txt_dealcard_intro">现在将要开始进行洗牌，集中精神，开始顺从自己的意志，倾听你内在的声音，在此同时，默念自己的问题，并将它通过你的精神传递给每一张牌。</string>
+    <string name="tarot_xipai">现在将要开始进行洗牌，集中精神，开始顺从自己的意志，倾听你内在的声音，在此同时，默念自己的问题，并将它通过你的精神传递给每一张牌。</string>
+    <string name="tarot_choupai">牌已经洗好了，现在我门需要你静下心来，排除心中的杂念，用你的心灵最深处的意念与每一张牌的牌灵进行沟通，并在牌灵给你的感觉选出每一张牌。</string>
+
+
+    <!--放生池-->
+    <string name="free_pool_bang">功德榜</string>
+    <string name="free_pool_record">放生记录</string>
+    <string name="txt_free_market_pay">立即购买</string>
+    <string name="txt_free_market_pay1">立即放生</string>
+    <string name="txt_btn_query">查询</string>
+    <string name="free_pay_finish">放生成功，施主功德无量</string>
+    <!--许愿点灯-->
+    <string name="txt_lighe_lable">点灯招好运，许愿保平安</string>
+    <string name="txt_light_type">许愿灯类别：</string>
+    <string name="txt_input_message">请输入信息</string>
+    <string name="txt_light_name">点灯者</string>
+    <string name="txt_input_name">请输入姓名</string>
+    <string name="txt_sex">性别</string>
+    <string name="txt_man">男</string>
+    <string name="txt_woman">女</string>
+    <string name="txt_date">出生日期</string>
+    <string name="txt_input_date">请选择出生日期</string>
+    <string name="txt_input_wish">请输入心中愿望(140字左右)</string>
+    <string name="txt_ispublic">选择是否公开：</string>
+    <string name="txt_public">公开</string>
+    <string name="txt_not_public">不公开</string>
+    <string name="txt_public_desc">公开显示后将显示愿望至许愿灯广场，让更多有缘人为您祈福</string>
+    <string name="txt_light_deadline">请选择点灯期限：</string>
+    <string name="txt_light_confirm">确定点灯</string>
+    <string name="txt_90_day">90天—¥30.0</string>
+    <string name="txt_180_day">180天—¥48.00</string>
+    <string name="txt_pary_for_him">为他祈福</string>
+    <string name="txt_light">点亮许愿灯</string>
+    <string name="txt_remind">贴心提醒：除了帮自己点灯，也别忘了帮亲朋好友一起点灯</string>
+    <string name="txt_login_first">登录您的账号即可查询订单和点灯,并获得积分奖励和多重好礼优惠,保障您请的订单从此不再丢失。</string>
+    <string name="light_pay_finish">购买成功</string>
+
+    <!--妈祖签-->
+    <string name="mazu_desc">妈祖，又称天妃、天上圣母、盘古长女，夫为三清之一，继承之帝王。让玉第二代天帝，弟玄武大帝，有十女：观音、大世至（阿西娜）、文殊(大日)、西王母、珠娘、白娘、青娘、碧霞元君、仙女圣母及九天玄女。\n道教封号：辅兜昭孝纯正灵应孚济护国庇民秒灵昭应弘仁铺济天妃。是历代船工、海员、旅客、商人和渔民共同信奉的神袛，许多沿海地区均建有妈祖庙。相传妈祖的真名为林默，小名默娘，故又称林默娘，诞生于莆田湄洲岛，在宋建隆元年（960年）农历三月二十三日。宋太宗雍熙四年（987）九月初九逝世。\t\t\t默娘生前与民为善，升化后，被沿海人民尊为海上女神，立庙祭祀。后屡显灵应于海上，渡海者皆祷之，被尊为“通灵神女”，庙宇遍海甸。妈祖信仰从产生至今，经历了一千多年，作为民间信仰。它延续之久，传播之广，影响之深，都是其它民间崇拜所不曾有过的。\t历代皇帝的崇拜和褒封，使妈祖由民间神提升为官方的航海保护神，而且神格越来越高，传播的面越来越广。由莆邑一带走向五湖四海，达到无人不知，无神能替代的程度。\t\t\t天后娘娘专保海上平安，凡问出行平安者最灵。\n抽灵签前要专心一致，秉除杂念，先双手合十默念，救苦救难，天后圣母。然后默念自己姓名，出生年月日和居住地址。接着请求指点心中所闻即可。</string>
+    <string name="txt_start_divination">开始求签</string>
+    <string name="txt_mazu_shake">左右摇动手机进行抽签！</string>
+    <!--观音灵签-->
+    <string name="gylq_app_name">观音灵签</string>
+    <string name="gylq_describe">观音菩萨助人消灾解难，一签便能预知现在未来，解答您的疑问。</string>
+    <string name="gylq_enter_measure">进庙求签</string>
+    <string name="gylq_guanyin">观音</string>
+    <string name="gylq_guanyin_intro">"\u0009观世音菩萨，也称观自在菩萨，是“南无大慈大悲救苦救难广大灵感观世音菩萨摩诃萨”的简称，又作南无观世音、师子无畏音、大慈柔软音、大梵清净音、大光普照音、 天人丈夫音、能施众生乐、济度生死岸等。因观世音菩萨曾经发愿，任何人在遇到无论任何灾难时，只要一心虔诚念诵观世音菩萨的圣号时，即会得到观世音菩萨的救度——“观其音声，皆得解脱”，因此，名为“观世音菩萨”。 　　“家家弥陀佛、户户观世音”。慈悲即观音，在中国妇孺皆知。
+\u0009观世音菩萨象征泛在的真理，无形而无所不在，在国际上有“人类的仁慈保护者”之称。菩萨行无缘大慈，运同体大悲，大慈与人乐，大悲拔人苦，在智、悲、行、愿之中，观音菩萨在娑婆人间救苦救难的品格，使其成为慈悲的化身。“天有不测风云，人有旦夕祸福，”在自然界的灾变与人间社会祸难不可能消除的情况下，观世音菩萨就是人们心中永远的信仰希冀。 　
+\u0009　观音灵签是民间各寺庙尤其是观音庙，所采用的为信众卜问休咎和解决疑难的缄言签本，向来以灵验著称。只要诚心祈求，自有应验，心存善念，常行善行。即可得观音救苦。 　　抽签前双手合十，默念[救苦救难观音菩萨]三遍。默念自己姓名，出生时辰，年龄，地址。请求指点，如婚姻、事业、财运等。"</string>
+    <string name="gylq_jie_yue">解曰：</string>
+    <string name="gylq_ling_piont">灵仙指点：</string>
+    <string name="gylq_newyear_confirm">前往请符</string>
+    <!--<string name="gylq_newyear_confirm2">登录</string>-->
+    <!--<string name="gylq_newyear_message">新年乐翻天活动，今日观音灵签首次摇签，获得 %1$s 限免请符功能。请在今天内完成请符，逾期不再享受优惠!</string>-->
+    <!--<string name="gylq_newyear_message2">新年乐翻天活动，今日观音灵签首次摇签，免费获取请符功能。请先登录妙算参与活动。</string>-->
+    <string name="gylq_poem_analysis">诗意：</string>
+    <string name="gylq_qian_background">签文背景：</string>
+    <string name="gylq_qian_yue">灵签之曰：</string>
+
+    <!--黄大仙灵签-->
+
+    <string name="hdxlq_app_name">黄大仙灵签</string>
+    <string name="hdxlq_describe">黄大仙指点世人迷津，顺着签文指导走，困难疑惑都将不会有。</string>
+    <string name="hdxlq_di">第</string>
+    <string name="hdxlq_huangdaxian">黄大仙</string>
+    <string name="hdxlq_huangdaxian_intro">"\u0009黄大仙，又名赤松仙子，俗名黄初平，晋朝丹溪人（今浙江义乌市赤岸镇），以行医济世为怀而广为人知。 　　十五岁时得赤松子指点得道而隐居赤松山。十八岁开始修道，得道后易名赤初平，号黄大仙，故号称“赤松仙子”。
+\u0009民间流传其法力高强，能够点石成金。传说因为炼丹得道、羽化登天，而且以“药方”度人成仙，得到人们的信仰和崇祀。 　　
+\u0009据说黄大仙的签文十分灵验，有口皆碑，所以许多善信都远道而来一求指点迷津。若问前程，趋吉避凶，到大仙庙上头炷香，会是不错的选择。每逢年三十晚，很多名善信带着香烛祭品，你挤我拥，到黄大仙庙霸头位，争上头炷香，取其好意头，来年可以事事顺境，得心应手，衰运也转为好运。
+\u0009在每年农历年底及正月初一至十五日，有大量善信前往黄大仙祠，为过去一年酬谢神恩及为未来一年求神庇佑。"</string>
+    <string name="hdxlq_newyear_confirm">前往请符</string>
+    <!--<string name="hdxlq_newyear_confirm2">登录</string>-->
+    <!--<string name="hdxlq_newyear_message">新年乐翻天活动，今日黄大仙首次摇签，获得 %1$s 限免请符功能。请在今天内完成请符，逾期不再享受优惠!</string>-->
+    <!--<string name="hdxlq_newyear_message2">新年乐翻天活动，今日黄大仙首次摇签，免费获取请符功能。请先登录妙算参与活动。</string>-->
+    <string name="hdxlq_qian_bei_jing">签文背景：</string>
+    <string name="hdxlq_tag_zhi_dian">灵仙指点：</string>
+    <!-- title -->
+    <string name="title_fortune">个人运势</string>
+    <string name="title_hour_yiji">时辰宜忌</string>
+    <string name="title_alarm">风生水提醒您</string>
+    <string name="title_ziwei_input">紫微斗数</string>
+    <string name="title_ziwei_mingpan">紫微命盘</string>
+    <string name="title_ziwei_analyse">运势分析</string>
+    <string name="title_chengu_input">称骨论命</string>
+    <string name="title_chengu_inputv2">称骨解析</string>
+    <string name="title_marriage_love">合婚恋爱</string>
+    <string name="title_ben_ming">本命卦合婚</string>
+    <string name="title_benming_gua">本命卦象</string>
+    <string name="title_lv_cai">吕才合婚</string>
+    <string name="title_lv_cai_gua">吕才卦象</string>
+    <string name="title_test_license">车牌号测算</string>
+    <string name="title_test_idcard">身份证号测算</string>
+    <string name="title_contellation">星座塔罗</string>
+    <string name="title_horoscope">星座运程</string>
+    <string name="title_mbti">MBTI心理测试</string>
+    <string name="title_zhangbu">圣叁角占卜</string>
+    <string name="title_birthday">生日密码</string>
+    <string name="title_past_life">前世命里</string>
+    <string name="title_boold_type">血型密码</string>
+    <string name="title_bazi_input">八字排盘</string>
+    <string name="title_free_pool">功德放生</string>
+    <string name="title_free_market">放生商城</string>
+    <string name="title_zodiac_pairing">生肖配对</string>
+    <string name="title_blood_group_matching">血型配对</string>
+    <string name="title_pay">支付订单</string>
+    <string name="title_wish_tree">许愿树</string>
+    <string name="title_divination">求签问事</string>
+    <string name="title_nametest">起名测名</string>
+    <string name="title_boys_or_girls">生男生女</string>
+    <string name="title_wishing_light">许愿点灯</string>
+    <string name="title_wishing_square">许愿广场</string>
+    <string name="title_my_wishing">我的许愿灯</string>
+    <string name="title_tarot">塔罗占卜</string>
+    <string name="title_detial">详情</string>
+    <string name="title_mazusign">妈祖签</string>
+    <string name="title_feedback">意见反馈</string>
+    <string name="title_free_record">放生列表</string>
+    <string name="title_free_list">功德榜</string>
+    <string name="title_free_intro">关于放生池</string>
+    <string name="title_goods_confirm">确认订单</string>
+    <string name="title_add_address">添加地址</string>
+    <string name="title_updata_address">修改地址</string>
+    <string name="title_select_address">选择地址</string>
+    <string name="title_order_detail">订单详情</string>
+    <string name="title_my_message">我的消息</string>
+    <string name="title_xuetang_jingxuan">精选</string>
+    <string name="title_xuetang_remen">热门</string>
+    <string name="title_xuetang_tejia">特价</string>
+    <string name="title_xuetang_haoping">好评</string>
+    <string name="title_xuetang_zhuanlan">专栏推荐</string>
+    <string name="title_xuetang_kecheng">课程推荐</string>
+
+
+    <!--common-->
+    <string name="cancel">我再想想</string>
+    <string name="sure">是的</string>
+    <string name="showNeterr">暂时没有网络，请检查手机网络</string>
+    <string name="showReload">暂时没有网络，请检查手机网络</string>
+    <string name="statement">个人信息仅限测试内容，不做商业用途</string>
+    <string name="server_error">服务器开小差了</string>
+    <string name="login_error">您的账号在多台设备登录，请重新登录。</string>
+    <string name="token_overdue">验证过期，请重新登录。</string>
+    <string name="token_stale">您长时间未登录风生水平台，请重新登录</string>
+    <string name="net_error">网络连接错误，请检查您的网络连接..</string>
+    <string name="login_now">请重新登录</string>
+    <string name="touch_again">点击重试</string>
+
+    <!--测算-->
+    <string name="test_id_introduce">一个人的姓名，体现了其家庭流传及特定的精涵大师算命结合五行笔划数理等进行系统研究，使姓名学发展为一派重要的预测学术，风行海内，成为人们化灾改运的必务之法。中华预测学源远流长，玄奥幽深，分析和测算起来极为繁复，令我等凡夫俗子望而生畏，不知从何着手。如今有了『风生水』，占卜命运就轻而易举了，您不用翻书求人，很容易就能全方位姓名测算！</string>
+    <string name="test_carid_introduce">汽车车牌号码是否吉利，要通过周易数理来进行测算吉凶，与风水姓名一样影响主人的运势。周易万物类象，车牌号码中的英文字母亦有其数理！ 2016年新版汽车牌吉凶测试，算命大师特邀顶尖周易大师指导，结合81数理及传统周易绝学，将车牌号吉凶测算的内容改进，打造权威车牌号码吉凶测试！</string>
+    <string name="test_qq_introduce">有些人会问，QQ号码为什么会影响一个人的运势？其实这就像风水、阳宅会影响运势命运的意义是一样的。虽然这只是一个号码，但是它与您的生活息息相关，也是您与很多人沟通的桥梁！所以『吉』与『凶』可能会有一定的影响，不可轻视！</string>
+    <string name="test_qq_introduce2">有些人会问，QQ号码为什么会影响一个人的运势？其实这就像风水、阳宅会影响运势命运的意义是一样的。虽然这只是一个号码，但是它与您的生活息息相关，也是您与很多人沟通的桥梁！所以『吉』与『凶』可能会有一定的影响，不可轻视！</string>
+    <string name="test_zodiac_pairing">\t\t\t十二生肖拥有十二种性格，不同的生肖聚在一起，必然会产生不同的化学反应。你与他（她）的配对会如何？会是只羡鸳鸯不羡仙，还是欢喜冤家，还是如何的一对组合呢？让风生水的爱情配对帮助你们分析一下。不可以此作为恋爱的依据哦，本生肖配对仅供参考。</string>
+    <string name="test_blood_type">\t\t\t不同的血型不同的性格，聚在一起，必然会产生不同的化学反应。你与他（她）的配对会如何？会是只羡鸳鸯不羡仙，还是欢喜冤家，还是如何的一对组合呢？让风生水的爱情配对帮助你们分析一下。不可以此作为恋爱的依据哦，那样也许会错失一生的幸福。本结果配对仅供参考。</string>
+    <string name="test_phone_num">手机号码对一个人的运势是有影响的就好比姓名、风水、相学一样都隐藏着影响命运运势的特殊意义。虽然只是一个号码，但如果想让事业顺风顺水、财源滚滚，就不要忽视身边一切能影响你运势的小细节。</string>
+    <string name="test_boys_or_girl">\t\t\t软件是从清宫时期流传下来的预测生男生女表来测算的。它根源是周易，依照阴阳、五行、八卦的公式推算而生，大致有三百多年的历史，由各朝大内宦官，供王亲国戚使用，后来慢慢流落民间。（本结果仅供参考）</string>
+
+
+    <string name="qifu_pray_complete">验证邮箱</string>
+    <string name="qifu_heart_get">获得</string>
+    <string name="lingji_score_task_score">积分</string>
+    <string name="qifu_per_day_times">0/1</string>
+    <string name="qifu_had_prayed">去完成</string>
+
+
+    <!--祈福商城供品类-->
+    <string name="gp_sort_flower">1</string>
+    <string name="gp_sort_fruit">2</string>
+    <string name="gp_sort_incense">3</string>
+    <string name="gp_sort_oil">4</string>
+    <string name="gp_sort_cup">5</string>
+    <string name="gp_sort_table">6</string>
+    <string name="gp_sort_screen">7</string>
+
+
+    <!--祈福使用介绍-->
+    <string name="qifu_guide_text1">祈愿每到达一个新阶段，神像会因您的诚心而有不同的效果。祈愿越诚心时间越长神像所发出光芒会越明显。</string>
+    <string name="qifu_guide_text2">诚心祈愿49天后荷花种子便会生长成代表着您的诚心的亭亭玉立的荷花。</string>
+    <string name="qifu_guide_text3">首次进入或是连续进入祈福台时，长明灯和蜡烛均为长明状态，若连续3天没有进入祈福台祈拜长明灯和蜡烛便会熄灭。诚心祈拜，福有攸归，心想事成。</string>
+    <string name="qifu_guide_text4">贡品会在当天23点59分59秒后送给天神，届时请重新上贡品。</string>
+
+
+    <!--祈福 修改愿望的提示-->
+    <string name="qifu_wish_text21">愿望还没有达成，现在修改愿望会扣取这位大仙所有诚心值，等于重新开始祈福，您确定重新许愿吗？</string>
+
+
+    <!--送仙提示-->
+    <string name="qifu_back_text1">一旦送仙回天将意味着您不再向此仙祈愿供奉，祈福历程和数据将会清零。请问您是否确认要送AASS回天？</string>
+
+
+    <string name="qifu_gongfeng_dialog_text1">"恭祝大德\u0009\u0009事事顺心
+幸福安康\u0009\u0009心想事成"</string>
+    <string name="qifu_gongfeng_dialog_text10">"坚持祈福\u0009\u0009事事顺心
+幸福安康\u0009\u0009心想事成"</string>
+    <string name="qifu_gongfeng_dialog_text11">登录您的账号即可祈福上香、获得积分奖励和多重好礼优惠，保障您的记录从此不再担心丢失。</string>
+    <string name="qifu_gongfeng_dialog_text2" formatted="false">恭喜，您已连续祈拜%s%s%d天，再%s%d天您的祈愿就能到达另外一个新的 阶段。为此我们为您赠送%s%d分。</string>
+    <string name="qifu_gongfeng_dialog_text2_0">仙</string>
+    <string name="qifu_gongfeng_dialog_text2_1">坚持</string>
+    <string name="qifu_gongfeng_dialog_text2_2">积分</string>
+    <string name="qifu_gongfeng_dialog_text3">预测前程仕途，消除迷惘，可以到观音灵签摇签解疑，愿您能仕途顺利步步高升。</string>
+    <string name="qifu_gongfeng_dialog_text4">移步求签</string>
+    <string name="qifu_gongfeng_dialog_text5" formatted="false">恭喜，您已连续祈拜%s%s%d天，您的祈福历程已经踏进了一个新的里程碑，离愿望达成更近了一步。为此我们为您赠送%s%d分。</string>
+    <string name="qifu_gongfeng_dialog_text6">登录风生水后，会记录您的祈福记录，日后更换手机或重装应用后也能保持您的祈福记录。</string>
+    <string name="qifu_gongfeng_dialog_text7">请神必须连续供奉三天，如无法坚持要送仙回天，否则会视为对神明不敬，诚心祈求才能实现愿望。</string>
+    <string name="qifu_gongfeng_dialog_text8">"坚持供奉就能提升运势
+愿望自然就能更快实现"</string>
+    <string name="qifu_gongfeng_dialog_text9">"诚心供奉自得神明庇佑
+积累福德愿望早日达成"</string>
+
+
+    <string name="qifu_peace_content">"第一步：你可以闭上眼睛，不受周围环境的干扰。（出外注意保重财物）
+
+ 第二步：以舒服的姿势坐好(站好、躺好)，双脚分开与肩同宽，双手掌心微向上放在双腿上，做自己认为舒服自然的姿势即可。
+
+ 第三步：用鼻子自然的吸气，用嘴巴慢慢的吐气，吐气的时候把注意力放在双肩上，让双肩这种下沉的、放松的感觉漫延到身体的更多部位。
+
+ 第四步：接下来每一次吸气、吐气都比上一次多一点点，慢慢加深自己的呼吸，让身体充分的吸收氧气，再排出二氧化碳等废气。
+
+ 第五步：以五次呼吸为一组，连续做四、五组即可。"</string>
+
+
+    <!--商品订单名字-->
+    <string name="goods_fsc_name">放生池-生灵</string>
+    <string name="goods_lf_name">灵符</string>
+    <string name="goods_xyd">祈福明灯</string>
+    <string name="jifen_text_title1">什么是大师积分</string>
+    <string name="jifen_text_content1">每一位使用风生水的粉丝，只要登陆平台，就能成功加入风生水的积分系统啦！每天登陆会给你增加积分哦！</string>
+    <string name="jifen_text_title2">积分的使用</string>
+    <string name="jifen_text_content2">积分可用于兑换祈福台贡品、积分商城的商品、以及参与风生水平台活动</string>
+    <string name="jifen_text_title3">积分的使用</string>
+    <string name="jifen_text_content3">风生水平台将对恶意刷大师积分的用户做如下处理: 第一次作弊: 没收所有大师积分,并将用户列入重点监控名单 第二次作弊: 没收所有大师积分,并永久封号,不接收任何形式的申诉</string>
+
+
+    <!--支付-->
+    <string name="pay_result_success">支付成功</string>
+    <string name="pay_result_cancel">取消支付</string>
+    <string name="pay_result_failure">支付失败</string>
+
+
+    <!--放生池说明-->
+    <string name="free_pool_intro1">
+        一、放生就是救命，放生就是救护那些被擒、被抓、将被宰杀、命在垂危的众生的命，而众生最宝贵的就是自己的生命得以重拾生机，救他们的命，他们感激最深，所以功德至大！
+        \n\n二、放生就是还债，人们今生及累劫以来所造的杀业早已无量无边，放生就是出钱、出力来救赎众生的性命，以偿还以前人们所积欠无数的杀债。
+        \n\n三、放生就是救急，放生与其他的功德不一样，是救命在旦夕，随时将被宰杀的生命得以重拾生机，是千钩一发、刻不容缓的行动，就好像是医院的急诊急救一般，一个刹那、一全行动便可挽救成千上万无数的生命，所以功德至深。
+    </string>
+
+    <string name="free_pool_intro2">
+        \n\n四、放生就是慈悲，佛心就是大慈悲心，慈悲心是学佛的根本，而放生则是为了解除众生的苦难，起慈悲心予以救赎的一种行为。放生可以长养我们的慈悲心，在放生的过程中，慈悲心获得最大的培养。常常放生，慈悲心常常滋长，与佛心更相契，与佛更容易感应道交，学佛道业更容易成就。
+        \n\n五、放生就是觉悟，任何一个众生的佛性与我相比毫无或缺，无二无别，因而每一个生命都是平等珍贵的。在放生中让我们觉悟到众生皆知贪生怕死，皆知趋吉避凶，皆有喜怒哀乐，与我相比，完全相同；众生更皆具备真如佛性，一旦业尽情空，未来皆能成佛，所以救一众生如同救一佛子，更等于救一未来佛。
+        \n\n六、放生就是实践，与其空口说得万言，不如老实行得一字，学佛最重要的就是实践。在放生真实的行动中，真正去培养慈悲，真正去解救生命，真正去为众生皈依、念佛、忏悔、回向，真正去体会众生平等一如、皆具佛性、皆能成佛的道理，真正做到自利利他，这样的修行才能真正得到利益。
+        \n\n七、放生就是积极，吃素与放生是学佛人行持上极重要的二件事。但吃素只是止恶。是消极地不再造杀业，不再积欠新的杀债；而放生却是扬善，是积极地救赎生命，偿还以前所欠的杀债。吃素而不放生，以前欠的杀业还是有果报的；放生而不吃素，所修得的功德又因为吃肉杀生都赔光了。所以吃素放生是一体的二面，需要相辅相成的，同时并行，效果才会显著。
+    </string>
+
+    <string name="free_pool_intro3">
+        \n\n八、放生就是方便，当天放生，当天无数身陷牢笼的众生马上获得了自由，无数濒临死亡的生命马上重拾了生机，无限的功德当天马上可以获得。并且不管一人多人、钱少钱多、任何时间、任何地点，只要发慈悲心，任何人都可以进行放生。放生不像其他功德，不需要等待机缘，自己可以主动进行；不需要依赖别人，自己可以独立完成；千千万万人一生中做不到的功德，我们可以经由放生短短的时间内独自一人完全成就，若更能以此广为提倡，功德更加不可思议，所以放生功德最为第一，非其他小善所能比！
+        \n\n九、放生就是改命，今生的命运遭遇是因为多生以来所造就无数的善恶因缘所呈现的一个结果，造善因就得善果，造恶因就得恶果。但未来的命运却完全掌握在人们自己的手中。通过积福行善，诚心忏悔，人们的命运可以完全改变过来。而放生的功德最大，既直接又快速，改变命运的力量最为显著。
+        \n\n十、放生就是解冤，每一个众生在多生累劫以来，都曾经与人们结过冤仇，冤仇既结，怀恨在心，必当伺机报复。而放生正可以解冤释结，化敌为友，避免彼此的冤冤相报！
+    </string>
+
+    <string name="free_pool_intro4">
+        \n\n十一、放生就是消灾，灾难不幸之所以发生，都是源于人们以前所结的冤业、所造的杀业而来。放生解救众生的命，免除了众生的死难，也同时消除了我们的宿业，免除了未来原本应该偿受不幸的业报，这是因果必然的道理。
+        \n\n十二、放生就是治病，其实疾病绝症之所以发生，就是因为以前我们杀生所感召的杀业而来。既造杀因必结杀果，既造成杀业必受杀报，解决之道就是放生，偿还杀债，消除了疾病根本的杀因，病苦自然好转。
+        \n\n十三、放生就是救亲，每一个众生在无始的轮回中，都曾与我们互为父母、子女、手足、亲眷，只因彼此业缘不同，今朝我幸而为人，彼不幸沦为畜牲，放生就是救拔我们累世以来的亲友眷属，使其重拾生机，安享天年！
+    </string>
+
+    <string name="free_pool_intro5">
+        \n\n十四、放生就是延寿，每个人都希望长寿，放生救赎生命，延长了无数众生的生命。也必然同时延长了自己的寿命，这是因果永恒不变的真理。
+        \n\n十五、放生就是福善，救人一命胜造七级浮屠，而每一条生命都是平等珍贵的，所以救一众生，功德已无量无边，更何况救众多生命！放生就是积最大的福！放生就是行最大的善；积福行善，所有功德，莫过放生！
+        \n\n十六、放生能助生西，放生三施俱全，财布施、法布施、无畏布施，放生一举尽得。修行人以念佛（念佛—忆念觉悟的意思）为主，放生为辅，如此修行，如顺风之帆、顺水之舟，用力少而成效多，以此无上殊胜的功德回向往生西方极乐世界，往生大业必能稳操胜券，高登西方九品莲台必是指日可待。
+    </string>
+
+    <string name="add_address_name_tip">收货人姓名不能为空</string>
+    <string name="add_address_phone_tip">联系电话不能为空</string>
+    <string name="add_address_province_tip">请选择所在省份</string>
+    <string name="add_address_city_tip">请选择所在城市</string>
+    <string name="add_address_intro_tip">详细地址不能为空</string>
+    <string name="add_address_length_tip">详细地址不能少于5个字</string>
+    <string name="uodata_address_content">确定要删除该地址吗？</string>
+
+    <string name="goods_no_select">请选择要放生动物</string>
+
+    <string name="pre_location_msg">开启定位功能需要您的位置权限</string>
+    <string name="test_1">今日运势</string>
+    <string name="test_2">明日运势</string>
+    <string name="test_3">本周运势</string>
+    <string name="test_4">本月运势</string>
+    <string name="qq_emoji">QQ表情</string>
+    <string name="emoji">Emoji表情</string>
+
+
+</resources>

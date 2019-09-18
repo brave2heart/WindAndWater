@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_medium">
+
+    <ImageView
+        android:id="@+id/iv_qingfu"
+        style="@style/fy_base_widget"
+        android:layout_marginBottom="@dimen/margin_tiny"
+        android:visibility="gone"
+        android:src="@drawable/fy_lingfu_qing" />
+
+    <ImageView
+        android:id="@+id/iv_kaiguang"
+        style="@style/fy_base_widget"
+        android:layout_marginBottom="@dimen/margin_tiny"
+        android:src="@drawable/fy_lingfu_kai"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_jiachi"
+        style="@style/fy_base_widget"
+        android:layout_marginBottom="@dimen/margin_tiny"
+        android:src="@drawable/fy_lingfu_jia"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_fu_name"
+        style="@style/fy_base_fonttext_style"
+        android:layout_height="wrap_content"
+        android:text="长命百岁符"
+        android:textColor="@color/fy_dade_box"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qqws_mz_bg"
+    android:id="@+id/drawerlayout_main"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/px40dp"
+        android:background="@drawable/qqws_mz_tc"
+        android:layout_marginLeft="@dimen/px50dp"
+        android:layout_marginRight="@dimen/px50dp"
+        >
+        <ScrollView
+            android:id="@+id/sroll_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px300dp"
+            >
+                <TextView
+                    android:id="@+id/tv_mazu_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px300dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textColor="@color/black_text"
+                    android:text="@string/mazu_desc"
+                    android:ellipsize="end"
+                    />
+        </ScrollView>
+        <Button
+            android:id="@+id/btn_divination"
+            android:layout_width="@dimen/px300dp"
+            android:layout_height="@dimen/px70dp"
+            android:text="@string/txt_start_divination"
+            android:textColor="@color/white"
+            android:background="@drawable/qqws_mazu_button"
+            android:layout_below="@id/sroll_txt"
+            android:layout_marginTop="@dimen/px20dp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

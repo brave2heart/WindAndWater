@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fy_lingfu_dialog_bck"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="用符者"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center|right" />
+
+        <EditText
+            android:id="@+id/et_linfu_use_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0"
+            android:background="@drawable/fy_lingfu_input_back"
+            android:gravity="center_vertical"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textColor="@color/white"
+            android:text="生庚"
+            android:gravity="center|right" />
+
+        <TextView
+            android:id="@+id/tv_lingfu_user_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0"
+            android:background="@drawable/fy_lingfu_input_back"
+            android:gravity="center_vertical"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="地址"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center|right" />
+
+        <EditText
+            android:id="@+id/et_lingfu_user_addr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0"
+            android:background="@drawable/fy_lingfu_input_back"
+            android:gravity="center_vertical"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:textColor="@color/white"
+        android:text="@string/txt_qianming_notice" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60.0dip"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_lingfu_dialog_cancel"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:background="@drawable/fy_lingfu_btn_cancel"
+            android:gravity="center"
+            android:textSize="@dimen/sp_13"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/btn_lingfu_dialog_sure"
+            android:background="@drawable/fy_lingfu_btn_pay"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:gravity="center"
+            android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="250dp"
+    android:background="@drawable/triangle_card_foundation"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_testname_item_wg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_tiny"
+        android:text="人格"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@color/black_text" />
+
+
+    <TextView
+        android:id="@+id/tv_testname_item_wx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_tiny"
+        android:text="五行"
+        android:textSize="@dimen/sp_15" />
+
+    <TextView
+        android:id="@+id/tv_testname_item_jx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_tiny"
+        android:text="吉凶"
+        android:textSize="@dimen/sp_15" />
+
+    <TextView
+        android:id="@+id/tv_testname_item_fz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_tiny"
+        android:text="分值"
+        android:textSize="@dimen/sp_15" />
+
+    <TextView
+        android:id="@+id/tv_testname_item_jiex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_tiny"
+        android:text="解析"
+        android:textSize="@dimen/sp_15" />
+</LinearLayout>

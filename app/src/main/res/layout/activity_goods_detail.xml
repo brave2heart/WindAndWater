@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_goods_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/ctl_model_shop"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="#f7f7f7"
+            tl:tl_iconHeight="23dp"
+            tl:tl_iconWidth="23dp"
+            tl:tl_indicator_color="#00bb9c"
+            tl:tl_indicator_height="0dp"
+            tl:tl_textSelectColor="#00bb9c"
+            tl:tl_textUnselectColor="#66000000"
+            tl:tl_textsize="11sp"
+            tl:tl_underline_color="#DDDDDD"
+            tl:tl_underline_height="1dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btn_cart"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="加入购物车"
+            app:bootstrapBrand="warning"
+            app:roundedCorners="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btn_buy"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="立即请购"
+            app:bootstrapBrand="danger"
+            app:roundedCorners="false" />
+    </LinearLayout>
+
+    <ren.yale.android.cachewebviewlib.CacheWebView
+        android:id="@+id/wv_goods_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_goods_bottom"></ren.yale.android.cachewebviewlib.CacheWebView>
+</RelativeLayout>

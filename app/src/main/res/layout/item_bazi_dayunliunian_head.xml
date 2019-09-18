@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_liunian_tenyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:text="乙亥运（1987-1996年）"
+        android:textColor="@color/add_note_note"/>
+
+    <TextView
+        android:id="@+id/tv_liunian_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_liunian_tenyear"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:text="1987年"
+        android:textColor="@color/color_text_333"/>
+
+    <TextView
+        android:id="@+id/tv_liunian_ganzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_liunian_year"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/tv_liunian_year"
+        android:layout_toRightOf="@+id/tv_liunian_year"
+        android:text="戊子"
+        android:textColor="@color/color_text_333"/>
+
+    <TextView
+        android:id="@+id/tv_liunian_23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_liunian_year"
+        android:layout_alignStart="@+id/tv_liunian_year"
+        android:layout_below="@+id/tv_liunian_year"
+        android:layout_marginBottom="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:text="神煞："
+        android:textColor="@color/add_note_note"/>
+
+    <TextView
+        android:id="@+id/tv_liunian_shensha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_liunian_23"
+        android:layout_marginLeft="@dimen/px10dp"
+        android:layout_toEndOf="@+id/tv_liunian_23"
+        android:layout_toRightOf="@+id/tv_liunian_23"
+        android:text="文昌 将星 咸池 披麻"
+        android:textColor="@color/color_text_333"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px24dp"
+        app:srcCompat="@drawable/icon_more_right"/>
+
+
+</RelativeLayout>

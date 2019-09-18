@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_module"
+    android:baselineAligned="false"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+    <!--顶部标题栏-->
+    <include layout="@layout/home_top_toobar" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_huangli_head"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <!--          app:layout_behavior="com.living.utils.TestBehavior"-->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item_module"
+
+            android:theme="@style/MainAppBar">
+
+            <LinearLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll">
+                <!--星期几-->
+                <include
+                    android:id="@+id/top_week"
+                    layout="@layout/top_week_title" />
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/item_module"
+                    android:layout_height="1dp"/>
+                <!--日历控件-->
+                <com.tongcheng.soothsay.widget.MonthView
+                    android:id="@+id/month_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+                <!--添加记事-->
+                <include layout="@layout/model_huangli_add_note" />
+                <!--黄历+个人运势-->
+                <include layout="@layout/home_huangli_fortune" />
+                <!--个人运势 老板要去掉，留条后路-->
+                <include
+                    layout="@layout/model_huangli_yunshi"
+                    android:visibility="gone" />
+
+
+                <!--天气-->
+                <include
+                    layout="@layout/model_huangli_weather2"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <!--XTabLayout新闻条目-->
+            <include layout="@layout/home_xtabalyout" />
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_oldhuangli"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

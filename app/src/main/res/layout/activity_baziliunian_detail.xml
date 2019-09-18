@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bazi_liunian_detail_text1_title"
+        style="@style/baziLiunianDetail_text1_style"
+        android:text="贵人"/>
+
+    <TextView
+        android:id="@+id/bazi_liunian_detail_text1_content"
+        android:text="　甲乙生人子午中， 丙丁鸡兔定亨通，戊己两干临四季， 庚辛寅亥禄丰隆，壬癸巳申偏喜美，
+值此应当福气钟，更须贵格来相扶， 候封万户到三公。"
+        style="@style/baziLiunianDetail_text2_style"/>
+
+    <TextView
+        android:id="@+id/bazi_liunian_detail_text2_title"
+        style="@style/baziLiunianDetail_text1_style"
+        android:text="贵人"/>
+
+    <TextView
+        android:id="@+id/bazi_liunian_detail_text2_content"
+android:text="　甲乙生人子午中， 丙丁鸡兔定亨通，戊己两干临四季， 庚辛寅亥禄丰隆，壬癸巳申偏喜美，
+值此应当福气钟，更须贵格来相扶， 候封万户到三公。"
+        style="@style/baziLiunianDetail_text2_style"/>
+
+
+</LinearLayout>

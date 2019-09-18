@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_module"
+    android:baselineAligned="false"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/rl_huangli_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_small">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_huangli_year1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="2016.10.19"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_huangli_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="丙申猴年二月三"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_s" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/top_week"
+        layout="@layout/top_week_title" />
+
+
+    <com.tongcheng.soothsay.widget.MonthScrollView
+        android:id="@+id/huangli_monthScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/top_week"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:longClickable="false"
+            android:orientation="vertical">
+
+            <com.tongcheng.soothsay.widget.MonthView
+                android:id="@+id/month_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <!--<View-->
+            <!--android:layout_width="@dimen/margin_tiny"-->
+            <!--android:layout_height="@dimen/margin_middle"-->
+            <!--android:layout_marginLeft="@dimen/margin_large"-->
+            <!--android:background="#CCCCCC" />-->
+            <!--<View-->
+            <!--android:layout_width="@dimen/margin_tiny"-->
+            <!--android:layout_height="@dimen/margin_middle"-->
+            <!--android:layout_marginLeft="@dimen/margin_large"-->
+            <!--android:background="#CCCCCC" />-->
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/model_divider"
+                android:layout_marginRight="@dimen/model_divider"
+                android:layout_marginTop="@dimen/dp_5"
+                android:foreground="?android:selectableItemBackground"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="@dimen/cardView_radiu"
+                card_view:cardElevation="@dimen/cardView_shadow"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="@dimen/dp_2">
+
+                <!--个人运程-->
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_almanac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/text_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_5"
+                        android:text="23"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/dp_50" />
+
+                    <TextView
+                        android:id="@+id/tv_yunshi_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/text_data"
+                        android:textColor="@color/black"
+                        tools:text="二月十七" />
+
+                    <TextView
+                        android:id="@+id/tv_yunshi_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/tv_yunshi_date"
+                        android:text="星期" />
+
+                    <TextView
+                        android:id="@+id/tv_yunshi_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_yunshi_date"
+                        android:layout_alignStart="@+id/tv_yunshi_date"
+                        android:layout_below="@+id/tv_yunshi_date"
+                        android:textColor="@color/tint_gray_text"
+                        android:textSize="@dimen/textSize_s"
+                        tools:text="农历动物年" />
+
+
+                    <TextView
+                        android:id="@+id/tv_my_yunshi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_yunshi_week"
+                        android:layout_alignBottom="@+id/tv_yunshi_week"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="33dp"
+                        android:layout_marginRight="33dp"
+                        android:text="查看我的运程"
+                        android:textColor="@color/tint_gray_text"
+                        android:textSize="@dimen/textSize_m" />
+
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:layout_below="@id/tv_my_yunshi"-->
+                    <!--android:background="@color/divide_line"/>-->
+
+                    <ImageView
+                        android:id="@+id/img_yunshi_right"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/tv_my_yunshi"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:src="@drawable/tv_right" />
+
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_my_yunshi"
+                        android:layout_marginRight="@dimen/dp_100"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:src="@drawable/shape_xiaoyuandian" />
+
+                    <TextView
+                        android:id="@+id/home_tv_ganenjie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_my_yunshi"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_50"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="感恩节" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/home_tv_ganenjie"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@color/divide_line" />
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_yunshi_yi"-->
+                    <!--android:layout_width="14dp"-->
+                    <!--android:layout_height="14dp"-->
+                    <!--android:background="@drawable/ic_yi"-->
+                    <!--android:gravity="center" />-->
+                    <ImageView
+
+                        android:id="@+id/tv_yunshi_yi"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_80"
+                        android:src="@drawable/ic_yi" />
+
+                    <TextView
+                        android:id="@+id/tv_yunshi_suit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:layout_toRightOf="@+id/tv_yunshi_yi"
+                        android:maxLines="1"
+                        android:textColor="@color/tint_gray_text"
+                        android:textSize="@dimen/textSize_s"
+                        tools:text="测试测试测试测试" />
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@color/divide_line" />
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_yunshi_ji"-->
+                    <!--android:layout_width="14dp"-->
+                    <!--android:layout_height="14dp"-->
+                    <!--android:gravity="center" />-->
+                    <ImageView
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="@dimen/dp_80"
+                        android:layout_marginRight="@dimen/dp_100"
+                        android:src="@drawable/ic_ji" />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/tv_yunshi_ban"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:maxLines="1"
+                        android:textColor="@color/tint_gray_text"
+                        android:textSize="@dimen/textSize_s"
+                        tools:text="测试测试测试测试" />
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView><!--<View--><!--android:layout_width="@dimen/margin_tiny"--><!--android:layout_height="@dimen/margin_middle"--><!--android:layout_marginLeft="@dimen/margin_large"--><!--android:background="#CCCCCC" />-->
+
+
+            <LinearLayout
+
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/item_divider"></View>-->
+
+
+                <!--<View-->
+                <!--android:layout_width="@dimen/margin_tiny"-->
+                <!--android:layout_height="@dimen/margin_middle"-->
+                <!--android:layout_marginLeft="@dimen/margin_large"-->
+
+
+                <!--添加记事-->
+                <include layout="@layout/model_huangli_add_note" />
+
+                <!--android:background="#CCCCCC" />-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/item_divider"></View>-->
+
+                <!--天气-->
+                <include
+                    layout="@layout/model_huangli_weather"
+                    android:visibility="visible" />
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:layout_marginBottom="@dimen/model_divider"-->
+                <!--android:background="@color/item_divider"></View>-->
+
+                <!--个人运势 老板要去掉，留条后路-->
+                <include
+                    layout="@layout/model_huangli_yunshi"
+                    android:visibility="gone" />
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:layout_marginTop="@dimen/model_divider"-->
+                <!--android:background="@color/item_divider"></View>-->
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="@dimen/model_divider"
+                    android:background="@color/item_divider"
+                    android:visibility="gone" />
+
+            </LinearLayout><!--<View--><!--android:layout_width="@dimen/margin_tiny"--><!--android:layout_height="@dimen/margin_middle"--><!--android:layout_marginLeft="@dimen/margin_large"--><!--android:background="#CCCCCC" />-->
+
+
+            <!--热门资讯-->
+            <com.tongcheng.soothsay.widget.ListViewForScrollView
+                android:id="@+id/lv_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <!--TabLayout+ViewPager更多条目-->
+            <LinearLayout
+                android:id="@+id/home_ll_tab_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/home_ll_tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/home_tablayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        card_view:tabMode="scrollable"
+                        card_view:tabSelectedTextColor="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:src="@drawable/home_tablayout_right" />
+
+                </LinearLayout>
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/home_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.tongcheng.soothsay.widget.MonthScrollView>
+
+    <com.tongcheng.soothsay.widget.WeekView
+        android:id="@+id/week_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_week"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

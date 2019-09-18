@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/bazi_shiye_zhiye_title"
+            android:layout_marginTop="@dimen/px30dp"
+            android:layout_marginLeft="@dimen/px40dp"
+            android:textSize="@dimen/px32dp"
+            android:textColor="@color/add_note_note"
+            android:text="适合职业： "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/bazi_shiye_zhiye_content"
+
+            android:layout_marginLeft="@dimen/px40dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="咖啡館"
+            android:textSize="@dimen/px28dp"
+            android:textColor="@color/color_text_333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/bazi_shiye_fangwei_title"
+
+        android:layout_marginTop="@dimen/px40dp"
+        android:layout_marginLeft="@dimen/px40dp"
+        android:textSize="@dimen/px32dp"
+        android:textColor="@color/add_note_note"
+        android:text="事业方向： "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/bazi_shiye_fangwei_content"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.5"
+        android:textColor="@color/color_text_333"
+        android:layout_marginTop="@dimen/px20dp"
+        android:text="性格分析内容"
+        android:textSize="@dimen/px28dp"
+        android:layout_marginLeft="@dimen/px40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

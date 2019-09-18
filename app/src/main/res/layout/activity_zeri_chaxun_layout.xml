@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:orientation="horizontal"
+        android:paddingTop="5.0dip">
+
+        <TextView
+            style="@style/text_zeri_chaxun_style1"
+            android:text="@string/zeri_kaishi_riqi"/>
+
+        <Button
+
+            android:id="@+id/zeri_kaishi_riqi_button_zeri"
+            style="@style/btn_zeri_chaxun_style1"
+            android:hint="@string/zeri_kaishi_riqi_message"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10.0dip"-->
+    <!--android:layout_marginRight="10.0dip"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingTop="5.0dip">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0.0dip"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.0"-->
+    <!--android:gravity="right"-->
+    <!--android:text="@string/zeri_chaxun_zhouqi"-->
+    <!--android:textColor="@color/zeri_input_message_color"-->
+    <!--android:textSize="@dimen/px18sp"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/zeri_chaxun_zhouqi_button_zeri"-->
+    <!--android:layout_width="0.0dip"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="2.0"-->
+    <!--android:background="@drawable/lingji_default_edittext"-->
+    <!--android:hint="@string/zeri_chaxun_zhouqi_message"-->
+    <!--android:textSize="@dimen/px18sp"/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:orientation="horizontal"
+        android:paddingTop="5.0dip">
+
+        <TextView
+            style="@style/text_zeri_chaxun_style1"
+            android:text="@string/zeri_chaxun_shixiang"
+            />
+
+        <Button
+            android:id="@+id/zeri_chaxun_shixiang_button_zeri"
+            style="@style/btn_zeri_chaxun_style1"
+            android:hint="@string/zeri_chaxun_shixiang_message"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:orientation="horizontal"
+        android:paddingTop="5.0dip">
+
+        <TextView
+            style="@style/text_zeri_chaxun_style1"
+            android:text="@string/zeri_chaxun_shixiang_yiji"
+            />
+
+        <Button
+            android:id="@+id/zeri_chaxun_shixiang_yiji_button_zeri"
+            style="@style/btn_zeri_chaxun_style1"
+            android:hint="宜"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px50dp"
+        android:layout_marginTop="10dp"
+        android:text="点击下面 查看详细信息"
+        android:textColor="@color/color_text_999"
+        android:textSize="@dimen/px28dp"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="@dimen/px30dp"
+        android:layout_marginLeft="@dimen/px30dp"
+        android:layout_marginRight="@dimen/px30dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/shape_fbf7f0"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="5.0dip">
+
+        <ListView
+            android:id="@+id/zeri_yiji_time_result_listView_zeri"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/yunshi_score_bg"
+            android:divider="@color/transparent"
+            android:scrollIndicators="none"/>
+
+        <ViewStub
+            android:id="@+id/view_stub_base_loadingv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/px30dp"
+            android:layout="@layout/base_loading"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="5.0dip">
+
+        <!--android:background="@drawable/selector_btn_touch"-->
+
+
+        <Button
+            android:id="@+id/zeri_kaishi_chaxun_button_zeri"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px80dp"
+            android:layout_marginLeft="@dimen/px60dp"
+            android:layout_marginRight="@dimen/px60dp"
+            android:background="@drawable/selector_btn_touch"
+            android:gravity="center"
+            android:text="@string/zeri_kaishi_chaxun"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px30dp"/>
+    </LinearLayout>
+</LinearLayout>

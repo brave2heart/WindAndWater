@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/px24dp"
+    android:layout_marginRight="@dimen/px24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp"
+            android:text="欢迎进入大师实名认证"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_15" />
+
+        <View
+            style="@style/horizontalDivider"
+            android:layout_marginTop="@dimen/px20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp"
+            android:drawableLeft="@drawable/tuoyuan"
+            android:drawablePadding="@dimen/px10dp"
+            android:text="实名认证是大师申请中最重要的一步，为确保您顺利通过认证，请准确填写个人信息，谢谢配合。"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px30dp"
+            android:text="存在以下情形(不仅限)中任意一种，无法完成认证"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_15" />
+
+        <View
+            style="@style/horizontalDivider"
+            android:layout_marginTop="@dimen/px20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp"
+            android:drawableLeft="@drawable/tuoyuan"
+            android:drawablePadding="@dimen/px10dp"
+            android:text="申请人不满18周岁"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp"
+            android:drawableLeft="@drawable/tuoyuan"
+            android:drawablePadding="@dimen/px10dp"
+            android:text="申请被风生水平台限制认证"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp"
+            android:drawableLeft="@drawable/tuoyuan"
+            android:drawablePadding="@dimen/px10dp"
+            android:text="实名资料被其他大师账号占用"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20dp"
+            android:drawableLeft="@drawable/tuoyuan"
+            android:drawablePadding="@dimen/px10dp"
+            android:text="现有认证仅限大陆地区用户，非大陆地区用户，请联系人工客服申请，QQ群：XXXX"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_13" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px40dp"
+            android:background="@drawable/shape_apply_master"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px20dp"
+                android:drawablePadding="@dimen/px10dp"
+                android:drawableRight="@drawable/sqds_jinggao"
+                android:text="特别警告"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_15" />
+
+            <View
+                style="@style/horizontalDivider"
+                android:layout_marginTop="@dimen/px20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px30dp"
+                android:layout_marginLeft="@dimen/px10dp"
+                android:layout_marginRight="@dimen/px10dp"
+                android:layout_marginTop="@dimen/px20dp"
+                android:drawablePadding="@dimen/px10dp"
+                android:text="审核通过后此账号不得以任何形式转让或售卖给他人！若发现账号有违规违法行为，或者其他形式的恶劣情节，我们将配合警方予以实名备案，产生后果将由您自行承担！"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/sp_13" />
+        </LinearLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btn_apply_master"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/px40dp"
+            android:text="已阅读"
+            app:bootstrapBrand="warning"
+            app:roundedCorners="false" />
+
+
+    </LinearLayout>
+</ScrollView>

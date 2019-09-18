@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fff4f2ef"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card:cardBackgroundColor="#ffffffff"
+        card:cardCornerRadius="2.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="20.0dip"
+                android:paddingTop="15.0dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/qifu_item_xinyuantiao"/>
+
+                <TextView
+                    android:id="@+id/qifu_wish_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:gravity="top"
+                    android:text=""
+                    android:textColor="#404040"
+                    android:textSize="18.0sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center|right"
+                android:paddingBottom="6.0dip"
+                android:paddingRight="20.0dip"
+                android:paddingTop="6.0dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@drawable/qifu_line_end_circle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="许愿于"
+                    android:textColor="#818181"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/qifu_wish_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#818181"
+                    android:textSize="16.0sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="15.0dip"
+                android:paddingTop="8.0dip"
+                android:weightSum="3.0">
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0.0dip"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1.0"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/qifu_days_last"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="0天"-->
+                        <!--android:textColor="#ff94b654"-->
+                        <!--android:textSize="22.0sp"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="连续祈福"-->
+                        <!--android:textColor="#808080"-->
+                        <!--android:textSize="16.0sp"/>-->
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/qifu_wish_totaltimes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0天"
+                        android:textColor="#ff4f7fbf"
+                        android:textSize="22.0sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="累计祈福"
+                        android:textColor="@color/qifu_text_808080"
+                        android:textSize="16.0sp"/>
+                </LinearLayout>
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/qifu_with_cxz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#ffe35353"
+                        android:textSize="22.0sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="诚心值"
+                        android:textColor="#808080"
+                        android:textSize="16.0sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#e5e5e5"/>
+
+            <LinearLayout
+                android:id="@+id/qifu_xinyuan_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="56.0dip"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/qifu_xinyuan_back"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/qifu_huanyuan_btn"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="还愿"
+                        android:textColor="#818181"
+                        android:textSize="18.0sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="8.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:background="#e5e5e5"/>
+
+                <LinearLayout
+                    android:id="@+id/qifu_xinyuan_change"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:clickable="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/qifu_edit_btn"/>
+
+                    <TextView
+                        android:id="@+id/btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="修改愿望"
+                        android:textColor="#818181"
+                        android:textSize="18.0sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/layout_stable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <!--android:visibility="invisible"-->
+        <FrameLayout
+            android:id="@+id/qifu_xinyuan_year"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/qifu_xinyuan_year_line"
+                android:layout_width="1.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginLeft="53.5dip"
+                android:layout_marginTop="38.0dip"
+                android:background="#ffd2a771"/>
+
+            <ImageView
+                android:id="@+id/qifu_xinyuan_year_text"
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_marginLeft="40.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/qifu_record_icon_lotus"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:text="祈福心愿历程"
+                android:textColor="#ffd2a771"
+                android:textSize="@dimen/textSize_xxl"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

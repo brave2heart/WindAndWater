@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+
+    >
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dp"
+        android:src="@drawable/lingji_qifutai_table"
+        android:layout_alignBottom="@+id/ll_offering"
+       />
+    <LinearLayout
+        android:id="@id/ll_offering"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="@dimen/px0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:clickable="true"-->
+                <!--android:id="@+id/iv_offerings1_img"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/lingji_qifutai_flower1">-->
+            <!--</ImageView>-->
+
+            <!--<TextView-->
+                <!--android:textSize="11sp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:id="@+id/tv_offerings1_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="水仙花"/>-->
+
+            <!--<TextView-->
+                <!--android:textSize="11sp"-->
+
+                <!--android:id="@+id/tv_offerings1_price"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="10积分\10个"-->
+                <!--android:textColor="@color/colorPrimaryDark"/>-->
+        <!--</RelativeLayout>-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:id="@+id/iv_offerings1_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qfzy_qifutai_gp67">
+            </ImageView>
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tv_offerings1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="水仙花"/>
+
+            <TextView
+                android:textSize="11sp"
+                android:id="@+id/tv_offerings1_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10积分\10个"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

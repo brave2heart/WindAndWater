@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_5"
+    android:orientation="vertical">
+
+    <!--第一部分-->
+    <LinearLayout
+        android:id="@+id/geren_quanquan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/geren_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.tongcheng.soothsay.widget.RoundImageView
+                    android:id="@+id/img_fortune_icon"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/default_head_icon"
+                    android:transitionName="shareIcon" />
+
+                <ImageView
+                    android:id="@+id/img_exmple_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/example_icon" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_fortune_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="示例用户"
+                    android:textColor="@color/middle_gray_text" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_fortune_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="阳历生日：1980年1月1日" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:id="@+id/homeforcunt_tv_geren_constellation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="（摩羯座）" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--com.tongcheng.soothsay.widget.CircularProgress-->
+
+            <com.tongcheng.soothsay.widget.CircularProgress
+                android:id="@+id/homeforcunt_cp_yunshi_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dp_20"
+                app:alphaColor="@color/colorAccent"
+                app:circularColor="@color/white"
+                app:proColor="@color/colorAccent"
+                app:proWidth="3dp"
+                app:radius="130dp"
+                app:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/homeforcunt_tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:text="    点我\n提升运势"
+                android:textColor="#FEC870"
+                android:textSize="@dimen/dp_12" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

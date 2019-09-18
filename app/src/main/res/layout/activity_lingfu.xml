@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fy_dade_background">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/lf_top"
+            layout="@layout/lf_layout_top" />
+
+        <RelativeLayout
+            android:id="@+id/rl_lingfu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lf_top">
+
+            <ImageView
+                android:id="@+id/iv_lingfu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_60"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:scaleType="fitXY"
+                android:src="@drawable/fy_lingfu_box" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:src="@drawable/fy_lingfu_edge" />
+
+            <RelativeLayout
+                android:id="@+id/rl_lingfu_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/tv_yz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="缘主:"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp_18" />
+
+                <ImageView
+                    android:id="@+id/iv_qianming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_toRightOf="@id/tv_yz"
+                    android:src="@drawable/fy_lingfu_qianming" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_lingfu_scale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_lingfu_fu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_115"
+                    android:layout_marginLeft="@dimen/dp_78"
+                    android:layout_marginRight="@dimen/dp_78"
+                    android:layout_marginTop="@dimen/dp_65"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fy_lingfu_default" />
+
+                <TextView
+                    android:id="@+id/tv_lingfu_box_use_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_83"
+                    android:layout_marginTop="@dimen/dp_70"
+                    android:ems="1"
+
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/tv_lingfu_box_use_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_103"
+                    android:layout_marginTop="@dimen/dp_70"
+                    android:ems="1"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/tv_lingfu_box_use_addre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_70"
+                    android:ems="1"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/sp_15" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_open"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_lingfu_light_open"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/dp_20"-->
+                <!--android:src="@drawable/fy_lingfu_light_open"-->
+                <!--android:visibility="gone" />-->
+
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_lingfu_light_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:src="@drawable/fy_lingfu_light_open"
+                android:visibility="gone"
+               />
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_75"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:layout_marginRight="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_90"
+                android:scaleType="fitXY"
+                android:src="@drawable/fy_lingfu_cover" />
+        </RelativeLayout>
+
+        <include layout="@layout/lf_layout_bottom" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

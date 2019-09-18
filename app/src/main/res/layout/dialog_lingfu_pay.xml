@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fy_lingfu_dialog_bck"
+    android:orientation="vertical">
+
+    <ImageView
+        style="@style/fy_base_widget"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/fy_head_notie" />
+
+    <TextView
+        android:id="@+id/tv_lf_dialog_title"
+        style="@style/fy_base_widget"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_lf_dialog_msg"
+        style="@style/fy_base_widget"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/fy_dade_box" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fy_lingfu_divider" />
+
+    <TextView
+        style="@style/fy_base_widget"
+        android:text="@string/lf_dasi"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_lf_cancel"
+            android:layout_width="114dp"
+            android:layout_height="30dp"
+            android:background="@drawable/fy_lingfu_btn_cancel"
+            android:gravity="center"
+            android:textSize="@dimen/sp_13"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/btn_lf_pay"
+           android:background="@drawable/fy_lingfu_btn_pay"
+            android:layout_width="114dp"
+            android:layout_height="30dp"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:gravity="center"
+            android:text="立即支付" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/zeri_title_textView_chaxun_zhouqi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/zeri_chaxun_zhouqi"
+        android:textColor="@color/oms_mmc_white"
+        android:textSize="@dimen/px18sp"/>
+
+    <ListView
+        android:id="@+id/zeri_zhouqi_listView_chaxun_zhouqi"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/lingji_subject_dialog_bg"
+        android:divider="@color/transparent"
+        android:listSelector="#00000000"/>
+</LinearLayout>

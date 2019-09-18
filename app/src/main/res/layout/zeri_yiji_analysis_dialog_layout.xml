@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/transparent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeri_gongli"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+
+        <TextView
+            android:id="@+id/zeri_gongli_textView_zeri_analysis"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="2013-8-21"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeri_nongli"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+
+        <TextView
+            android:id="@+id/zeri_nongli_textView_zeri_analysis"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="农历日期"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeri_shiyi"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+
+        <TextView
+            android:id="@+id/zeri_yi_textView_zeri_analysis"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="开光 交易 婚嫁"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeri_jihui"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+
+        <TextView
+            android:id="@+id/zeri_ji_textView_zeri_analysis"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="动土 破土 理发 出行"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeri_taishen"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+
+        <TextView
+            android:id="@+id/zeri_taishen_textView_zeri_analysis"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="仓库床外正东"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeri_duichong"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+
+        <TextView
+            android:id="@+id/zeri_duichong_textView_zeri_analysis"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="冲猪"
+            android:textColor="@color/oms_mmc_white"
+            android:textSize="@dimen/px18sp"/>
+    </LinearLayout>
+</LinearLayout>

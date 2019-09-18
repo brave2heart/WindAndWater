@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/bg_thin"
+android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px24dp"
+        android:layout_marginRight="@dimen/px24dp"
+        android:layout_marginTop="@dimen/px30dp"
+        android:background="@drawable/qimingcezi_bg"
+        android:padding="@dimen/px30dp"
+        android:text="@string/txt_idcard_describ"
+     />
+
+<TextView
+    android:id="@+id/idcard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_20"
+    android:gravity="center"
+    android:text="@string/input_idcard"
+    android:textColor="@color/middle_gray_text"
+    android:textSize="@dimen/textSize_l"
+    android:layout_below="@id/desc"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/et_testidcard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_marginLeft="@dimen/px60dp"
+        android:layout_marginRight="@dimen/px60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px30dp"
+        android:paddingLeft="@dimen/px10dp"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:layout_below="@id/idcard"
+        />
+
+
+    <Button
+        android:id="@+id/btn_cesuan_idcard"
+        android:text="@string/start_cesuan"
+        android:layout_below="@id/et_testidcard"
+        style="@style/button_submit_style1"/>
+
+<TextView
+    android:id="@+id/tv_res_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/px30dp"
+    android:layout_alignLeft="@id/btn_cesuan_idcard"
+    android:gravity="center"
+    android:text="凶吉测算"
+    android:textColor="@color/colorAccent"
+    android:layout_below="@id/btn_cesuan_idcard"
+    android:drawableLeft="@drawable/ic_mark"
+    android:drawablePadding="@dimen/px10dp"
+    />
+
+<TextView
+    android:id="@+id/tv_cesuan_response"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@id/tv_res_title"
+    android:layout_alignRight="@id/btn_cesuan_idcard"
+    android:layout_marginTop="@dimen/px30dp"
+    android:textSize="@dimen/px28dp"
+    android:layout_below="@id/tv_res_title"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="个人信息仅限测算内容，不做商业用途"
+        android:textColor="@color/tint_gray_text"
+        android:textSize="@dimen/textSize_s"
+        android:layout_marginBottom="16dp"/>
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_huangli_yunshi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/model_divider"
+    android:layout_marginRight="@dimen/model_divider"
+    android:foreground="?android:selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="@dimen/cardView_radiu"
+    card_view:cardElevation="@dimen/cardView_shadow"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="@dimen/dp_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_small">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.tongcheng.soothsay.widget.RoundImageView
+                    android:id="@+id/img_yunshi_icon"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/default_head_icon"
+                    android:transitionName="shareIcon" />
+
+                <ImageView
+                    android:id="@+id/img_exmple_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/example_icon" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_yunshi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_middle"
+                android:textColor="@color/middle_gray_text" />
+        </LinearLayout>
+
+        <com.tongcheng.soothsay.widget.CircularProgress
+            android:id="@+id/cp_yunshi_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:alphaColor="@color/colorAccent"
+            app:circularColor="@color/white"
+            app:proColor="@color/colorAccent"
+            app:proWidth="@dimen/margin_tiny"
+            app:radius="110dp"
+            app:textSize="@dimen/textSize_xxl" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="综合运势"
+                android:textColor="@color/middle_gray_text" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="财富运势"
+                android:textColor="@color/middle_gray_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.tongcheng.soothsay.widget.AnimationProgress
+                android:id="@+id/ap_yunshi_all"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                app:ap_Color="@color/huangli_date_color"
+                app:ap_numColor="@color/middle_gray_text"
+                app:ap_roundRadius="4dp"
+                app:ap_textColor="@color/white"
+                app:ap_textSize="@dimen/textSize_s" />
+
+            <com.tongcheng.soothsay.widget.AnimationProgress
+                android:id="@+id/ap_yunshi_money"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                app:ap_Color="@color/yellow_color"
+                app:ap_numColor="@color/middle_gray_text"
+                app:ap_roundRadius="4dp"
+                app:ap_textColor="@color/white"
+                app:ap_textSize="@dimen/textSize_s" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_middle"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="爱情运势"
+                android:textColor="@color/middle_gray_text" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="事业运势"
+                android:textColor="@color/middle_gray_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.tongcheng.soothsay.widget.AnimationProgress
+                android:id="@+id/ap_yunshi_love"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                app:ap_Color="@color/pink"
+                app:ap_numColor="@color/middle_gray_text"
+                app:ap_roundRadius="4dp"
+                app:ap_textColor="@color/white"
+                app:ap_textSize="@dimen/textSize_s" />
+
+            <com.tongcheng.soothsay.widget.AnimationProgress
+                android:id="@+id/ap_yunshi_work"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                app:ap_Color="@color/light_green"
+                app:ap_numColor="@color/middle_gray_text"
+                app:ap_roundRadius="4dp"
+                app:ap_textColor="@color/white"
+                app:ap_textSize="@dimen/textSize_s" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/item_divider"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:drawableLeft="@drawable/more_yuncheng"
+            android:drawablePadding="@dimen/margin_tiny"
+            android:text="查看我的运程"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_m" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

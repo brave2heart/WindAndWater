@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tongcheng.soothsay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 以下是友盟需要的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- 地图SDK（包含其搜索功能）需要的基础权限 -->
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/TranslucentTheme"
+        tools:replace="icon,theme,label">
+
+        <!-- 融云 -->
+        <!-- 此部分代码需要移植到您的 app 下的 manifest，并且 authorities 指定您的包名。例如：com.android.FileProvider -->
+        <!-- 否则使用拍照功能时，会崩溃 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.tongcheng.soothsay.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- 融云会话界面 -->
+        <activity
+            android:name=".ui.activity.RongIm.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="com.tongcheng.soothsay"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 高德地图定位 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="aaa8f781ea511f79702bb09f9d50de0c" />
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!-- 百度定位 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="tAmmiswj6jqijEp2nfad7IqGyibvv2RO" />
+
+        <!-- 腾讯Bugly 渠道 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="APP_Channel" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- 以下是第三方登录的activity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <!-- 添加友盟appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="583beafcbbea830f710014b9" />
+
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <!-- 腾讯bugly -->
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- 程序主界面 -->
+        <activity
+            android:name="com.living.ui.MainActivity"
+            android:theme="@style/TranslucentTheme" />
+        <!-- 闪屏页 -->
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:theme="@style/LaunchTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 欢迎页面 -->
+        <activity android:name=".ui.activity.WelcomeActivity" />
+        <!-- 闪屏页webview -->
+        <activity android:name=".ui.activity.common.LaunchWebViewActivity" />
+        <!-- webView界面 -->
+        <activity android:name=".ui.activity.common.WebViewActivity" />
+
+        <!-- 老黄历-添加记事 -->
+        <activity android:name=".ui.activity.huangli.AddNoteActivity" />
+        <!-- 老黄历-修改记事 -->
+        <activity android:name=".ui.activity.huangli.UpdataNoteActivity" />
+        <!-- 老黄历-个人运势 -->
+        <activity android:name="com.living.ui.activity.HomeFortuneActivity" />
+        <activity android:name=".ui.activity.huangli.FortuneActivity" />
+
+        <!-- 老黄历-天气预报 -->
+        <activity android:name=".ui.activity.huangli.weather.WeatherActivity" />
+        <!-- 老黄历-详情 -->
+        <activity android:name=".ui.activity.huangli.almanac.AlmanacActivity" />
+        <!-- 老黄历-时辰宜忌 -->
+        <activity android:name=".ui.activity.huangli.almanac.HourYijiActivity" />
+        <!-- 老黄历-闹钟提醒 -->
+        <activity android:name=".ui.activity.huangli.AlarmActivity" />
+        <!-- 老黄历-传统命相 -->
+        <activity android:name=".ui.activity.calculate.chuantong.TraditionFaceActivity" />
+        <activity android:name=".ui.activity.huangli.weather.SelecterCityActivity" />
+
+        <!-- 命里推算-大德符运 -->
+        <activity
+            android:name=".ui.activity.calculate.zhuanyun.VirtueTransferActivity"
+            android:theme="@style/LaunchTheme" />
+        <!-- 命里推算-大德符运-请符 -->
+        <activity
+            android:name=".ui.activity.calculate.zhuanyun.LingfuActivity"
+            android:theme="@style/DialogStyleTheme" />
+        <!-- 命里推算-祈福转运 -->
+        <activity android:name=".ui.activity.calculate.zhuanyun.CliffordActivity" />
+        <!-- 命里推算-祈福台 -->
+        <activity android:name=".ui.activity.calculate.zhuanyun.PrayingStationActivity" />
+        <activity
+            android:name=".ui.activity.calculate.zhuanyun.PrayingMallActivity"
+            android:theme="@style/Theme.Transparent.My" />
+
+        <!-- 命里推算-祈福台-请仙 -->
+        <activity android:name=".ui.activity.calculate.zhuanyun.RequestImmortalActivity" />
+        <!-- 命里推算-祈福台-请仙-大仙二级界面 -->
+        <activity android:name=".ui.activity.calculate.zhuanyun.ImmortalDetailsActivity" />
+        <!-- 命里推算-祈福台-请仙-大仙二级界面-大仙三级界面 -->
+        <activity android:name=".ui.activity.calculate.zhuanyun.MyWishActivity" />
+
+        <!-- 祈福历程 -->
+        <activity android:name=".ui.activity.calculate.zhuanyun.PrayingCourseActivity" />
+
+        <!-- 祈福历程-祈福详情 -->
+        <activity android:name=".ui.activity.calculate.zhuanyun.DxDetailActivity" />
+
+        <!-- 命里推算-生活指南 -->
+        <activity android:name=".ui.activity.calculate.life.LifeGuideActivity" />
+        <!-- 命里推算-生活指南-许愿点灯 -->
+        <activity android:name=".ui.activity.calculate.life.WishingLightActivity" />
+        <activity android:name=".ui.activity.calculate.life.WishingSquareActivity" />
+        <activity
+            android:name=".ui.activity.calculate.life.MyWishingActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.calculate.life.MakeAWishActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!-- 命里推算-生活指南-手机号测算 -->
+        <activity
+            android:name=".ui.activity.calculate.life.TestPhoneNumberActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!-- 命里推算-生活指南-qq号测算 -->
+        <activity
+            android:name=".ui.activity.calculate.life.TestQQActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!-- 命里推算-生活指南-姓名测算 -->
+        <activity
+            android:name=".ui.activity.calculate.life.TestNameActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!-- 命里推算-生活指南-车牌号测算 -->
+        <activity
+            android:name=".ui.activity.calculate.life.TestLicensePlateNumberActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!-- 命里推算-生活指南-身份证测算 -->
+        <activity
+            android:name=".ui.activity.calculate.life.TestIDCardActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!-- 命里推算-生活指南-择日 -->
+        <activity android:name=".ui.fragment.calculation.life.zeri.ZeriInputViewActivity" />
+        <activity android:name=".ui.fragment.calculation.life.zeri.ZeriDetailsActivity" />
+
+        <!-- 命里推算-称骨论命输入数据 -->
+        <activity android:name=".ui.activity.calculate.chuantong.ChenGuActivity" />
+        <!-- 命里推算-称骨论命详情页 -->
+        <activity android:name=".ui.activity.calculate.chuantong.ChengGuResultActivity" />
+        <!-- 命里推算-婚姻爱恋 -->
+        <activity android:name=".ui.activity.calculate.love.MarriageLoveActivity" />
+        <!-- 命里推算-婚姻爱恋-本命挂合婚 -->
+        <activity android:name=".ui.activity.calculate.love.BenMingMarriageActivity" />
+        <!-- 命里推算-婚姻爱恋-吕才合婚 -->
+        <activity android:name=".ui.activity.calculate.love.LvCaiMarriageActivity" />
+        <!-- 命里推算-婚姻爱恋-本命测算结果 -->
+        <activity android:name=".ui.activity.calculate.love.TestBenMingActivity" />
+        <!-- 命里推算-婚姻爱恋-生肖配对 -->
+        <activity android:name=".ui.activity.calculate.love.ZodiacPairingActivity" />
+        <activity android:name=".ui.activity.calculate.love.ZodiacPairingResultActivity" />
+        <!-- 命里推算-婚姻爱恋-血型配对 -->
+        <activity android:name=".ui.activity.calculate.love.BloodTypeActivity" />
+        <activity android:name=".ui.activity.calculate.love.TestBloodTypeActivity" />
+        <!-- 命理推算-紫微斗数输入数据 -->
+        <activity android:name=".ui.activity.calculate.chuantong.ziwei.ZiweiInputActivity" />
+        <!-- 命理推算-紫微命盘 -->
+        <activity android:name=".ui.activity.calculate.chuantong.ziwei.ZiweiPPActivity" />
+        <!-- 命理推算－紫微命盘分析 -->
+        <activity android:name=".ui.activity.calculate.chuantong.ziwei.ZiweiAnalyseActivity" />
+        <!-- 命里推算-热门测算-八字排盘 -->
+        <activity android:name=".ui.activity.calculate.zhuanyun.BaziPaipanActivity" />
+        <activity android:name=".ui.activity.calculate.zhuanyun.BaziPaipan.BaziPaipanInputActivity" />
+        <activity android:name=".ui.activity.calculate.zhuanyun.bazi.BaziLiuNianActivity" />
+        <activity android:name=".ui.activity.calculate.zhuanyun.bazi.BaziLiuNianDetailActivity" />
+        <!-- 八字 主界面 -->
+        <activity android:name=".ui.activity.calculate.zhuanyun.bazi.BaziMainActivity" />
+
+        <!-- 命晨推算-周公解梦 -->
+        <activity
+            android:name=".ui.activity.calculate.divination.OneiromancyActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- 放生池 相关 -->
+        <activity android:name=".ui.activity.calculate.freepool.FreePoolActivity" />
+        <activity android:name=".ui.activity.calculate.freepool.FreeRecordActivity" />
+        <activity android:name=".ui.activity.calculate.freepool.FreeListActivity" />
+        <activity android:name=".ui.activity.calculate.freepool.FreeIntroActivity" />
+        <!-- 放生池 商城 -->
+        <activity android:name=".ui.activity.calculate.freepool.FreeMarketActivity" />
+        <!-- 命里推算-星座罗塔 -->
+        <activity android:name=".ui.activity.calculate.constellation.ConstellationActivity" />
+        <activity android:name=".ui.activity.calculate.constellation.HoroscopeActivity" />
+        <!-- 星座塔罗 塔罗占卜 -->
+        <activity android:name=".ui.activity.calculate.constellation.Tarot.TarotActivity" />
+        <!-- 塔罗牌简介 -->
+        <activity android:name=".ui.activity.calculate.constellation.Tarot.TarotIntroActivity" />
+        <!-- 命里推算-求签问事 -->
+        <activity android:name=".ui.activity.calculate.divination.DivinationActivity" />
+        <!-- 命里推算-求签问事-妈祖 -->
+        <activity android:name=".ui.activity.calculate.divination.MazuSignActivity" />
+        <activity android:name=".ui.activity.calculate.divination.MazuSignStartActivity" />
+        <activity android:name=".ui.activity.calculate.divination.MazuJieQianActivity" />
+        <!-- 命里推算-求签问事-观音 -->
+        <activity android:name=".ui.activity.calculate.divination.GuanYinSignActivity" />
+        <activity android:name=".ui.activity.calculate.divination.GuanYinSignStartActivity" />
+        <activity android:name=".ui.activity.calculate.divination.GuanYinJieQianActivity" />
+        <!-- 命里推算-求签问事-黄大仙 -->
+        <activity android:name=".ui.activity.calculate.divination.HuangDaXianSignActivity" />
+        <activity android:name=".ui.activity.calculate.divination.HuangDaXianSignStartActivity" />
+        <activity android:name=".ui.activity.calculate.divination.HuangDaXianJieQianActivity" />
+        <!-- 命里推算-起名测试 -->
+        <activity android:name=".ui.activity.calculate.nametest.NameTestNameActivity" />
+        <activity android:name=".ui.activity.calculate.nametest.BornBoyOrGirlActivity" />
+        <activity android:name=".ui.activity.calculate.nametest.BornBoyOrResultGirlActivity" />
+
+        <!-- 学堂-资讯 -->
+        <activity
+            android:name=".ui.activity.classroom.NewsActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity android:name=".ui.fragment.classroom.CircleListActivity" />
+        <!-- 学堂-资讯 -->
+
+
+        <!-- 商城首页 -->
+        <activity android:name=".ui.activity.classroom.ShoppingHomeActivity" />
+        <!-- 购物车 -->
+        <activity android:name=".ui.activity.classroom.ShopCartActivity" />
+
+        <!-- 商品详情 -->
+        <activity android:name=".ui.activity.classroom.GoodsDetailsActivity" />
+        <!-- 更多大师 -->
+        <activity android:name=".ui.activity.classroom.MoreMasterActivity" />
+        <!-- 商品分类列表 -->
+        <activity android:name=".ui.activity.classroom.ShopClassifyInfosActivity" />
+        <!-- 添加收货地址 -->
+        <activity android:name=".ui.activity.classroom.AddAddressActivity" />
+        <!-- 选择地址 -->
+        <activity android:name=".ui.activity.classroom.SelectAddressActivity" />
+        <!-- 修改地址地址 -->
+        <activity android:name=".ui.activity.classroom.UpdataAddressActivity" />
+
+        <!-- 个人信息界面 -->
+        <activity android:name=".ui.activity.mine.MineInfoActivity" />
+        <!-- 登录界面 -->
+        <activity android:name=".ui.activity.mine.LoginActivity" />
+        <!-- 手机注册界面 -->
+        <activity android:name=".ui.activity.mine.PhoneNumberRegisterActivity" />
+        <!-- 修改名字 -->
+        <activity android:name=".ui.activity.mine.ChangNameActivity" />
+        <!-- 忘记密码 -->
+        <activity android:name=".ui.activity.mine.ForgetPsdActivity" />
+        <!-- 设置密码 -->
+        <activity android:name=".ui.activity.mine.SettingActivity" />
+        <!-- 我的订单界面 -->
+        <activity android:name=".ui.activity.mine.MineOrderActivity" />
+        <!-- 订单详情 -->
+        <activity android:name=".ui.activity.mine.OrderDetailActivity" />
+        <!-- 订单详情 -->
+        <!-- 申请成为大师实名验证须知 -->
+        <activity android:name=".ui.activity.mine.ApplyMasterActivity" />
+        <!-- 申请成为大师申请页 -->
+        <activity
+            android:name=".ui.activity.mine.ApplyMasterResultActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!-- 审核状态界面 -->
+        <activity android:name=".ui.activity.mine.ApplyMasterStatusActivity" />
+        <activity
+            android:name=".ui.activity.mine.FeedBackActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!-- 我的信息 -->
+        <activity android:name=".ui.activity.mine.MyMessageActivity" />
+        <!-- 以下是第三方登录的activity -->
+
+
+        <!-- 积分 -->
+        <activity android:name=".ui.activity.calculate.zhuanyun.CreditsIntroActivity" />
+
+        <!-- 选择支付方式 -->
+        <activity android:name=".ui.activity.pay.PayActivity" />
+        <!-- 祈福转运 许愿树 -->
+        <activity android:name=".ui.activity.calculate.zhuanyun.WishTreeActivity" />
+
+        <!-- 祈福台 播发音乐 -->
+        <service
+            android:name=".service.MusicService"
+            android:exported="true" />
+        <!-- 摇签 播发音乐 -->
+        <service
+            android:name=".service.PlayYaoQIanMusicService"
+            android:exported="true" />
+        <!-- 订单确认 -->
+        <activity android:name=".ui.activity.classroom.goodsConfirm.GoodsConfirmActivity" />
+        <!-- 商品列表 -->
+        <activity android:name=".ui.activity.classroom.goodsList.GoodsListActivity" />
+
+        <receiver android:name=".receiver.NetworkConnectChangedReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- JPush -->
+        <receiver
+            android:name=".receiver.MyJPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.tongcheng.soothsay" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ui.activity.huangli.FortuneActivity2" />
+        <activity android:name=".ui.activity.huangli.other.FortuneActivity3" />
+        <activity android:name="com.living.ui.activity.WeChatActivity" />
+        <activity android:name="com.living.ui.activity.MVListActivity" />
+        <activity
+            android:name="com.living.ui.activity.MVItemActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.living.ui.activity.GongXiuLifeActivity" />
+        <activity
+            android:name="com.living.ui.activity.GongXiuLifeDetailsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.living.ui.activity.GongXiuHopeActivity" />
+        <activity android:name="com.living.ui.activity.GongXiuHopeDetailsActivity" />
+        <!-- android:windowSoftInputMode="adjustPan" -->
+        <activity android:name="com.living.ui.activity.SendTweetActivity" />
+        <activity android:name="com.living.ui.activity.ShoppingHomeActivity" />
+        <activity android:name="com.living.ui.activity.classroom.LocationActivity"/>
+        <activity android:name="com.living.ui.activity.MingLiWebViewActivity" />
+        <activity android:name="com.living.ui.activity.classroom.SearchActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tongcheng.soothsay.widget.MPagerSlidingTabStrip
+        android:id="@+id/pss_tab_immortal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:layout_toLeftOf="@+id/iv_more"
+        app:pstsDividerColor="@color/colorPrimary"
+        app:pstsIndicatorColor="@color/colorPrimary"
+        app:pstsIndicatorHeight="@dimen/dp_2"
+        app:pstsTabPaddingLeftRight="@dimen/dp_10"
+        app:pstsTabSelectedTextColor="@color/colorPrimary"
+        app:pstsTabTextColor="@color/tint_gray_text"
+        app:pstsTabTextSize="@dimen/sp_15"
+        app:pstsTabSelectedTextSize="@dimen/sp_15"
+        app:pstsShouldExpand="true"
+        app:pstsUnderlineHeight="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_immortal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/px20dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_wishing_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20dp"
+        android:layout_marginRight="@dimen/px24dp"
+        android:layout_marginLeft="@dimen/px24dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_light_type"
+            android:layout_width="@dimen/px210dp"
+            android:layout_height="@dimen/px210dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:src="@drawable/xuyuandeng_icon_01_normal" />
+
+        <TextView
+            android:id="@+id/tv_light_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_light_type"
+            android:layout_marginBottom="@dimen/px20dp"
+            android:layout_marginLeft="@dimen/px60dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:gravity="center"
+            android:text="招财灯"
+            android:textColor="@color/red_text"
+            android:textSize="@dimen/textSize_xl" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_light_type"
+            android:layout_marginLeft="@dimen/px30dp"
+            android:layout_marginTop="@dimen/px20dp"
+            android:layout_toRightOf="@id/iv_light_type"
+            android:text="信女：某某某"
+            android:textColor="@color/middle_gray_text"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="@dimen/px20dp"
+            android:text="1994-11-12"
+            android:textColor="@color/middle_gray_text"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:id="@+id/tv_wishing_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_date"
+            android:layout_marginTop="@dimen/px20dp"
+            android:text="心中愿望："
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_m" />
+
+        <TextView
+            android:id="@+id/tv_wishing_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_wishing_title"
+            android:layout_below="@id/tv_wishing_title"
+            android:layout_marginTop="@dimen/px20dp"
+            android:textColor="@color/middle_gray_text"
+            android:textSize="@dimen/textSize_m" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_clifford"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80dp"
+        android:layout_below="@id/rl_wishing_content"
+        android:layout_marginTop="@dimen/px20dp"
+        android:layout_marginRight="@dimen/px24dp"
+        android:layout_marginLeft="@dimen/px24dp"
+        android:background="@drawable/selector_btn_touch"
+        android:text="@string/txt_pary_for_him"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_l" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_clifford"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px20dp"
+        android:layout_marginTop="@dimen/px20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有"
+            android:textSize="@dimen/textSize_m"/>
+
+        <TextView
+            android:id="@+id/tv_wishing_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_wish"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/red_text"
+            android:textSize="@dimen/textSize_m"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人为他祈福"
+            android:textSize="@dimen/textSize_m"/>
+    </LinearLayout>
+</RelativeLayout>
